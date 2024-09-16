@@ -4,6 +4,7 @@ The portable Tor based on Tor expert project and Russian Antizapret.
 Support us:
 
 4377 7237 7311 4255 — ilyaigpetrov (расширение Обход блокировок рунета)
+
 5536 9141 8416 7645 — Verity Freedom (портативный Тор)
 
 Использование портативного Тора через расширение Обход блокировок рунета совместно с прокси Антизапрет. При поддержке сообщества (в особенности отмечу помощь от bananakid). Автор портативного Тора — Verity Freedom. Автор прокси Антизапрет — ValdikSS. Автор расширения Обход блокировок рунета — ilyaigpetrov. Tor Expert Bundle от Tor Project.
