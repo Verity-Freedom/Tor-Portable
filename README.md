@@ -15,6 +15,7 @@ Support us:
 
 Готово!
 
+----
 Using portable Tor through the extension Runet censorship bypass in conjunction with the Antizapret proxy. With the support of the community (especially the help from bananakid). The author of the portable Tor is Verity Freedom. The author of the Antizapret proxy is ValdikSS. The author of the extension Runet censorship bypass is ilyaigpetrov. Tor Expert Bundle from Tor Project.
 
 1) Make sure that there are flags in the extension: consider exceptions (in the "Exceptions" section), Use a PAC script proxy, Use YOUR local Tor, Use YOUR proxies only for YOUR sites, Proxy onion (In the "My proxies" section). Use anticensority mode (if it doesn't allow you to use Russian antizapret). In the "antizapret" mode only exception sites will be proxied through the Tor (proxy — yes), the rest will be picked up by antizapret, in the "anticensority" mode all sites will be proxied through it. The names of the flags may differ slightly because an automatic translator was used.
