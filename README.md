@@ -1,15 +1,15 @@
 # Tor-Portable
 
+Качайте последнюю версию в релизах! (releases)
+
+Download the latest version in releases!
+
+---
 Support us:
 
 5536 9141 8416 7645 — Verity Freedom (портативный Тор)
 
 4377 7237 7311 4255 — ilyaigpetrov (расширение Обход блокировок рунета)
-
----
-Качайте последнюю версию в релизах! (releases)
-
-Download the latest version in releases!
 
 ---
 Использование портативного Тора через расширение Обход блокировок рунета совместно с прокси Антизапрет. При поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid). Основной автор портативного Тора — Verity Freedom. Автор прокси Антизапрет — ValdikSS. Автор расширения Обход блокировок рунета — ilyaigpetrov. Tor Expert Bundle от Tor Project.
