@@ -8,6 +8,7 @@ Support us:
 
 ---
 Качайте последнюю версию в релизах! (releases)
+
 Download the latest version in releases!
 
 ---
