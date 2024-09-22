@@ -1,0 +1,36 @@
+CacheDirectory "C:\\AntiTor\\data"
+ClientOnionAuthDir "C:\\AntiTor\\data\\onion-auth"
+DataDirectory "C:\\AntiTor\\data"
+GeoIPFile "C:\\AntiTor\\data\\geoip"
+GeoIPv6File "C:\\AntiTor\\data\\geoip6"
+
+AutomapHostsOnResolve 1
+HardwareAccel 1
+UseBridges 1
+SafeLogging 0
+ExitNodes {HR}
+
+#Don't be afraid to redact your Torrc! Use the "#" symbol to hide strings from the program.
+
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,webtunnel exec pluggable_transports\lyrebird
+ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
+ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
+
+#Tor bridges configuration:
+#https://bridges.torproject.org/bridges/?transport=webtunnel
+#https://t.me/s/tor_bridges
+#bridges@torproject.org
+
+#Webtunnel bridges are considered to be the most fast and secure.
+
+Bridge webtunnel [2001:db8:db38:bf67:4350:a011:b323:aba8]:443 955F0FEF5D2EC860C0A1CEE9F6C24137A5DFE2D8 url=https://softcode.cloud/shel1phai9beXohpheHa ver=0.0.1
+Bridge webtunnel [2001:db8:2e6a:63f2:456a:1cc0:690e:d78d]:443 C05C827E5A85ACAE4CD73A8A5C0FA1E8EDFA4FAD url=https://arinalee.amelia.ec/apache ver=0.0.1
+Bridge webtunnel [2001:db8:49e2:b1f1:8193:df4a:5f7d:41b2]:443 D01A87AF2B3C6F664AEBD1C45D9EC3D06FBF48C9 url=https://foto.pho.be/qBctgmXaIUAzfXkQphtCQSTI ver=0.0.1
+#Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
+#Bridge snowflake 192.0.2.4:80 8838024498816A039FCBBAB14E6F40A0843051FA fingerprint=8838024498816A039FCBBAB14E6F40A0843051FA url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.net:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
+#Bridge obfs4 217.170.204.110:1445 BD20519EDE02F6B12C95D8F228E32EB0ABC5017F cert=MDjFmKmskH8KAfWL9D5Ls7iORX4Sru9uNsUgrglnygs9U4pfKCx6qr3K49YbBV0YQ1vzHA iat-mode=0
+#Bridge obfs4 150.230.148.45:9056 8A7782444203DA59602A121F975C016C015A3018 cert=swvtQzIePhZsjSc1Dq8dYNspVgs6Mfedeq+/+lssvhNN/LUcwp4y4WsQJJTh35BJj3ErVw iat-mode=0
+#Bridge obfs4 217.160.11.43:9003 9223AA23B09DF3BC8B90679F1EC6399918799FF9 cert=t7FvP8xe86khyPP3v7BIU3iuDs+0K8hsBLHDWV16PVoWIa0sT2LA2uGT70m4XRliD2Redg iat-mode=0
+#Bridge obfs4 23.94.120.176:8531 A34968093FBDE004333BC42EEEED7807C452429B cert=lzPjW5wICU68OEOrgx5cGr1zk7nT2SuxEIAvOAZ4qRDjYrrFyur4qjWx52v/bN49fYWJcw iat-mode=2
+#Bridge conjure 143.110.214.222:80 url=https://registration.refraction.network.global.prod.fastly.net/api front=github.githubassets.com
+#Bridge meek_lite 192.0.2.18:80 BE776A53492E1E044A26F17306E1BC46A55A1625 url=https://meek.azureedge.net/ front=ajax.aspnetcdn.com
