@@ -23,7 +23,8 @@ ClientTransportPlugin conjure exec pluggable_transports\conjure-client -register
 
 #Webtunnel bridges are considered to be the most fast and secure.
 
-Bridge webtunnel [2001:db8:db38:bf67:4350:a011:b323:aba8]:443 955F0FEF5D2EC860C0A1CEE9F6C24137A5DFE2D8 url=https://softcode.cloud/shel1phai9beXohpheHa ver=0.0.1
+Bridge webtunnel [2001:db8:8440:b147:a3d9:ca50:904:8bdd]:443 6F6C8E0069880AC253704507119464CE4BD1BA65 url=https://catcat.pictures/Fj7VnJi1mjigUKBb2rJ1TeWJ ver=0.0.1
+Bridge webtunnel [2001:db8:63b4:6bd7:a357:7858:898e:718c]:443 059AEB126918A33B8246E8136D565FF57753D5CF url=https://alwaysnewbie.eu.org/homesweethome ver=0.0.1
 Bridge webtunnel [2001:db8:2e6a:63f2:456a:1cc0:690e:d78d]:443 C05C827E5A85ACAE4CD73A8A5C0FA1E8EDFA4FAD url=https://arinalee.amelia.ec/apache ver=0.0.1
 Bridge webtunnel [2001:db8:49e2:b1f1:8193:df4a:5f7d:41b2]:443 D01A87AF2B3C6F664AEBD1C45D9EC3D06FBF48C9 url=https://foto.pho.be/qBctgmXaIUAzfXkQphtCQSTI ver=0.0.1
 #Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
