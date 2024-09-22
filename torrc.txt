@@ -1,8 +1,8 @@
-CacheDirectory "C:\\AntiTor\\data"
-ClientOnionAuthDir "C:\\AntiTor\\data\\onion-auth"
-DataDirectory "C:\\AntiTor\\data"
-GeoIPFile "C:\\AntiTor\\data\\geoip"
-GeoIPv6File "C:\\AntiTor\\data\\geoip6"
+CacheDirectory ..\data
+ClientOnionAuthDir ..\data\onion-auth
+DataDirectory ..\data
+GeoIPFile ..\data\geoip
+GeoIPv6File ..\data\geoip6
 
 AutomapHostsOnResolve 1
 HardwareAccel 1
