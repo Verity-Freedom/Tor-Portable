@@ -1,10 +1,10 @@
 # Tor-Portable
 
+### English Version At [README.en.md](README.en.md)
+
 Лёгкая в освоении, однокнопочная утилита для повседневного обхода цензуры (оптимизировалась под Ютуб). Одобрено автором Обхода блокировок рунета, имеется совместимость (совместное использование) с Антизапретом через расширение. В наличии exe с тихим запуском, лёгкая установка/удаление службы и революционные новые методы обхода блокировок с впечатляющей скоростью (мосты Webtunnel) 2024 года выпуска.
 
 Качайте последнюю версию в релизах! (releases)
-
-Download the latest version in releases!
 
 ---
 Support us:
@@ -23,12 +23,3 @@ Support us:
 5) Используйте файл antitor-service, если хотите установить или удалить Тор в качестве службы.
 
 Готово!
-
----
-Using portable Tor through the extension SwitchyOmega. With the support of the community (especially the help from DesuIsALie and bananakid). The main author of the portable Tor is Verity Freedom. Tor Expert Bundle from Tor Project.
-
-1) Run the program via AntiTor.exe, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar. To proxy browser traffic through Tor use SwitchyOmega extension.
-2) Bridges use five completely different connection types: obfs4, meek_lite, snowflake, conjure and webtunnel (default, it is optimal to use only it because of the higher speed). Replace the bridges by editing the torrc file, receive new ones via a bridge request in the tor browser or send an empty email to bridges@torproject.org. The new webtunnel bridge can be obtained at https://bridges.torproject.org/bridges/?transport=webtunnel. Bridges may disappear gradually, as the program informs you that one of the bridges has failed, which negatively affects the quality of the connection and can lead to its complete breakdown.
-3) Use the antitor-service file if you want to install or uninstall Tor as service.
-
-Ready!
