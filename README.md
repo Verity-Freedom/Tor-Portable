@@ -13,7 +13,7 @@ Support us:
 
 4377 7237 7311 4255 — ilyaigpetrov (расширение Runet censorship bypass)
 
-https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapret)
+https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapret, ВАЖНО в ноябре и декабре каждого года)
 
 ---
 Использование портативного Тора через расширение Обход блокировок рунета совместно с прокси Антизапрет. При поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid). Основной автор портативного Тора — Verity Freedom. Автор прокси Антизапрет — ValdikSS. Автор расширения Обход блокировок рунета — ilyaigpetrov. Tor Expert Bundle от Tor Project.
