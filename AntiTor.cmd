@@ -1,6 +1,5 @@
 powershell -Command "(gc '%CD%\torrc.txt') "^
   "-replace '^CacheDirectory.*$', ('CacheDirectory ..\data') "^
-  "-replace '^ClientOnionAuthDir.*$', ('ClientOnionAuthDir ..\data\onion-auth') "^
   "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
   "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
   "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
