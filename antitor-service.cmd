@@ -1,12 +1,16 @@
-@ECHO OFF
-PUSHD "%~dp0"
+@set @_cmd=1 /*
+@echo off
 
-net session >nul 2>&1
-if %errorLevel% NEQ 0 (
-    echo This script should be run with administrator privileges.
-    echo Right click - run as administrator.
-    pause
-    exit /b -1
+whoami /groups | findstr "S-1-16-12288" >nul && goto :admin
+if "%~1"=="RunAsAdmin" goto :error
+
+echo Requesting privileges elevation for managing Tor Win32 Service . . .
+cscript /nologo /e:javascript "%~f0" || goto :error
+exit /b
+
+:admin
+pushd "%~dp0"
+
 )
 
 sc stop "Tor Win32 Service"
@@ -23,6 +27,9 @@ if %errorLevel% NEQ 0 (
     sc start "Tor Win32 Service"
 )
 
-pause
+pause */
 
-POPD
+// JScript, restart batch script as administrator
+var objShell = WScript.CreateObject('Shell.Application');
+var ComSpec = WScript.CreateObject('WScript.Shell').ExpandEnvironmentStrings('%ComSpec%');
+objShell.ShellExecute(ComSpec, '/c ""' + WScript.ScriptFullName + '" RunAsAdmin"', '', 'runas', 1);
