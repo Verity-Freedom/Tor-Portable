@@ -7,6 +7,7 @@ AutomapHostsOnResolve 1
 HardwareAccel 1
 UseBridges 1
 SafeLogging 0
+#ExitNodes {COUNTRY-CODE}
 ExitNodes 45.95.169.223/26
 
 #Don't be afraid to redact your Torrc! Use the "#" symbol to hide strings from the program.
