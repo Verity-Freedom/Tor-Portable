@@ -17,7 +17,9 @@ ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
 ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
 
 #Tor bridges configuration:
+
 #https://bridges.torproject.org/bridges/?transport=webtunnel
+#https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel
 #https://t.me/s/tor_bridges
 #bridges@torproject.org
 
