@@ -10,7 +10,7 @@ SafeLogging 0
 #ExitNodes {COUNTRY-CODE}
 ExitNodes 45.95.169.223/26
 
-#Don't be afraid to redact your Torrc! Use the "#" symbol to hide strings from the program.
+#Don't be afraid to redact your torrc! Use the "#" symbol to hide strings from the program.
 
 ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,webtunnel exec pluggable_transports\lyrebird
 ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
