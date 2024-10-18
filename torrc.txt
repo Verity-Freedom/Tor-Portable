@@ -33,4 +33,3 @@ Bridge webtunnel [2001:db8:49e2:b1f1:8193:df4a:5f7d:41b2]:443 D01A87AF2B3C6F664A
 #Bridge obfs4 217.160.11.43:9003 9223AA23B09DF3BC8B90679F1EC6399918799FF9 cert=t7FvP8xe86khyPP3v7BIU3iuDs+0K8hsBLHDWV16PVoWIa0sT2LA2uGT70m4XRliD2Redg iat-mode=0
 #Bridge obfs4 23.94.120.176:8531 A34968093FBDE004333BC42EEEED7807C452429B cert=lzPjW5wICU68OEOrgx5cGr1zk7nT2SuxEIAvOAZ4qRDjYrrFyur4qjWx52v/bN49fYWJcw iat-mode=2
 #Bridge conjure 143.110.214.222:80 url=https://registration.refraction.network.global.prod.fastly.net/api front=github.githubassets.com
-#Bridge meek_lite 192.0.2.18:80 BE776A53492E1E044A26F17306E1BC46A55A1625 url=https://meek.azureedge.net/ front=ajax.aspnetcdn.com
