@@ -11,11 +11,12 @@
 *.gstatic.com
 *.ggpht.com
 
-Должно быть достаточно для большинства (Should be enough for most).
+Должно быть достаточно для большинства (Should be enough for most). Рекомендуется (Recommended).
 
 Параноидный список (Paranoid list):
 
 *.youtube.com
+*.youtube.tv
 *.youtube.ru
 *.youtubeeducation.com
 *.youtubekids.com
@@ -41,4 +42,4 @@
 *.google.ru
 *.goo.gl
 
-Для тех кто хочет полностью закрыть все возможные уязвимости (For those who want to completely close all possible vulnerabilities).
+Для тех кто хочет полностью закрыть все возможные уязвимости (For those who want to completely close all possible vulnerabilities). Используйте по необходимости (Use as needed).
