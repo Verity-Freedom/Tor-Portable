@@ -5,8 +5,8 @@ https://p.thenewone.lol:8443/proxy.pac
 [SwitchyOmega Conditions]
 @with result
 
-*.ntc.party +TOR
 *.onion +TOR
+*.habr.com +TOR
 *.youtube.com +TOR
 *.youtu.be +TOR
 *.ytimg.com +TOR
