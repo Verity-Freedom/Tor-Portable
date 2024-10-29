@@ -1,4 +1,4 @@
-#Don't be afraid to redact your torrc! Use the "#" symbol to hide strings from the program and switch between exits.
+#Don't be afraid to redact your torrc! Add and delete the "#" symbol to hide strings from the program and switch between exits.
 #Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube).
 #If you are a tech company, PLEASE do not block Tor as a means of connecting to your service. Tor is used in countries with high levels of internet censorship to bypass it, not to abuse your service. Thank you.
 
@@ -16,10 +16,10 @@ MiddleNodes 5.9.66.94, 94.23.172.32, 145.239.41.102, 95.216.33.30
 #Only fastest and most stable nodes here.
 
 ExitNodes 45.95.169.223/26
-#The default IP range. Stable and at least middle speed, not blocked by YouTube, country Croatia.
+#The default IP range. Stable and at least middle speed, not blocked by YouTube. Croatia.
 
 #ExitNodes 5.255.124.150
-#Use this if you want stable 4K YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Add "#" symbol to the default ExitNodes string. Country Netherlands.
+#Use this if you want stable 4K YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" symbol to the default ExitNodes string. Netherlands.
 
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
