@@ -25,7 +25,7 @@ ExitNodes 45.95.169.223/26
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
 
 #ExitNodesList 202.61.226.98, 45.95.169.227
-#The list of interesting and unblocked nodes to be used later.
+#The list of interesting and not blocked nodes to be used later.
 #You can check the status of IP (blocked or unblocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavaibale" error if blocked node is used, you can try this ExitNode 185.107.57.65 to make sure. Other videos will play normally.
 
