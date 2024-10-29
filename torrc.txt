@@ -1,3 +1,7 @@
+#Don't be afraid to redact your torrc! Use the "#" symbol to hide strings from the program and switch between exits.
+#Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube).
+#If you are a tech company, PLEASE do not block Tor as a means of connecting to your service. Tor is used in countries with high levels of internet censorship to bypass it, not to abuse your service. Thank you.
+
 CacheDirectory ..\data
 DataDirectory ..\data
 GeoIPFile ..\data\geoip
@@ -7,24 +11,37 @@ AutomapHostsOnResolve 1
 HardwareAccel 1
 UseBridges 1
 SafeLogging 0
-MiddleNodes 5.9.66.94, 94.23.172.32, 145.239.41.102
-ExitNodes 45.95.169.223/26
-#ExitNodes {COUNTRY-CODE}
 
-#Don't be afraid to redact your torrc! Use the "#" symbol to hide strings from the program.
+MiddleNodes 5.9.66.94, 94.23.172.32, 145.239.41.102, 95.216.33.30
+#Only fastest and most stable nodes here.
+
+ExitNodes 45.95.169.223/26
+#The default IP range. Stable and at least middle speed, not blocked by YouTube, country Croatia.
+
+#ExitNodes 5.255.124.150
+#Use this if you want stable 4K YouTube videos and faster speed (pls use it only if necessary, the IP can be blocked by YouTube if mass used). Add "#" symbol to the default ExitNodes string. Country Netherlands.
+
+#ExitNodes {COUNTRY-CODE}
+#Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
+
+#ExitNodesList 202.61.226.98, 45.95.169.227
+#The list of interesting and unblocked nodes to be used later.
+#You can check the status of IP (blocked or unblocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
+#There will be "video unavaibale" error if blocked node is used, you can try this ExitNode 185.107.57.65 to make sure. Other videos will play normally.
+
+#Relay search: https://metrics.torproject.org/rs.html#search
+
+#Tor bridges configuration:
+#https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel
+#https://bridges.torproject.org/bridges/?transport=webtunnel
+#https://t.me/s/tor_bridges
+#bridges@torproject.org
+
+#Webtunnel bridges are considered to be the most stable. Only fastest Webtunnel bridges are used currently.
 
 ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,webtunnel exec pluggable_transports\lyrebird
 ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
 ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
-
-#Tor bridges configuration:
-
-#https://bridges.torproject.org/bridges/?transport=webtunnel
-#https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel
-#https://t.me/s/tor_bridges
-#bridges@torproject.org
-
-#Webtunnel bridges are considered to be the most fast and secure.
 
 Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1
 Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1
