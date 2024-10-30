@@ -12,19 +12,19 @@ HardwareAccel 1
 UseBridges 1
 SafeLogging 0
 
-MiddleNodes 5.9.66.94, 94.23.172.32, 145.239.41.102, 95.216.33.30
-#Only fastest and most stable nodes here.
+MiddleNodes 145.239.41.102, 94.23.172.32
+#Only fastest and most stable nodes here, hosted by OVH SAS (literally all other nodes are worse currently). If Tor stopped working, temporarily add "#" to the string and try to replace them if you can.
 
 ExitNodes 45.95.169.223/26
 #The default IP range. Stable and at least middle speed, not blocked by YouTube. Croatia.
 
-#ExitNodes 5.255.124.150
-#Use this if you want stable 4K YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" symbol to the default ExitNodes string. Netherlands.
+#ExitNodes 202.61.226.98
+#Use this if you want stable 4K YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" to the default ExitNodes string. Germany.
 
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
 
-#ExitNodesList 202.61.226.98, 45.95.169.227
+#ExitNodesList 5.255.124.150, 45.95.169.227
 #The list of interesting and not blocked exit nodes to be used later.
 #You can check the status of IP (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavaibale" error if blocked node is used, you can try this exit 185.107.57.65 to make sure. Other videos will play normally.
