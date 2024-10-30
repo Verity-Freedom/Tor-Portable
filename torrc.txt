@@ -18,14 +18,14 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 ExitNodes 45.95.169.223/26
 #The default IP range. Stable and at least middle speed, not blocked by YouTube. Croatia.
 
-#ExitNodes 202.61.226.98
-#Use this if you want stable 4K YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" to the default ExitNodes string. Germany.
+#ExitNodes 5.255.124.150
+#Use this if you want stable 4K YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" to the default ExitNodes string. Netherlands.
 
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
 
-#ExitNodesList 5.255.124.150, 45.95.169.227
-#The list of interesting and not blocked exit nodes to be used later.
+#ExitNodesList 202.61.226.98, 45.95.169.227
+#The list of interesting and not blocked exits to be used later as a 4K optimal node. I think 202 is a little faster than 45, but slower than 5.255. 5.255 has real maximum speed of 47 mb/s and medium speed of 40 mb/s.
 #You can check the status of IP (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavaibale" error if blocked node is used, you can try this exit 185.107.57.65 to make sure. Other videos will play normally.
 
