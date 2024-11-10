@@ -13,8 +13,8 @@ AutomapHostsOnResolve 1
 HardwareAccel 1
 UseBridges 1
 SafeLogging 0
-Log notice file ..\data\info-notice.log
-#Log debug file ..\data\info-debug.log
+Log notice file info-notice.log
+#Log debug file info-debug.log
 Log notice stdout
 TruncateLogFile 1
 
