@@ -1,6 +1,8 @@
 #Don't be afraid to redact your torrc! Add and delete the "#" symbol to hide strings from the program and switch between exits.
 #Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube).
-#If you are a tech company, PLEASE do not block Tor as a means of connecting to your service. Tor is used in countries with high levels of internet censorship to bypass it, not to abuse your service. Thank you.
+#If you are a tech company, PLEASE do not block Tor as a means of connecting to your service. Tor is used in countries with a high level of Internet censorship to bypass it, not to abuse your service. Thank you.
+
+#Manual: https://2019.www.torproject.org/docs/tor-manual.html.en
 
 CacheDirectory ..\data
 DataDirectory ..\data
@@ -11,9 +13,13 @@ AutomapHostsOnResolve 1
 HardwareAccel 1
 UseBridges 1
 SafeLogging 0
+Log notice file ..\data\info-notice.log
+#Log debug file ..\data\info-debug.log
+Log notice stdout
+TruncateLogFile 1
 
 MiddleNodes 145.239.41.102, 94.23.172.32
-#Only fastest and most stable nodes here, hosted by OVH SAS (literally all other nodes are worse currently). If Tor stopped working, temporarily add "#" to the string and try to replace them if you can.
+#Only fastest and most stable nodes here, hosted by OVH SAS (all other nodes are worse currently). If Tor stopped working, temporarily add "#" to the string and try to replace them if you can.
 
 ExitNodes 45.95.169.223/26
 #The default IP range. Stable and at least middle speed, not blocked by YouTube. Croatia.
@@ -43,10 +49,10 @@ ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,webtunnel exec pl
 ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
 ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
 
-Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1
-Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1
 Bridge webtunnel [2001:db8:49e2:b1f1:8193:df4a:5f7d:41b2]:443 D01A87AF2B3C6F664AEBD1C45D9EC3D06FBF48C9 url=https://foto.pho.be/qBctgmXaIUAzfXkQphtCQSTI ver=0.0.1
-#Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1
+Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1
+Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1
+#Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1
 #Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
 #Bridge snowflake 192.0.2.4:80 8838024498816A039FCBBAB14E6F40A0843051FA fingerprint=8838024498816A039FCBBAB14E6F40A0843051FA url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.net:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
 #Bridge obfs4 217.170.204.110:1445 BD20519EDE02F6B12C95D8F228E32EB0ABC5017F cert=MDjFmKmskH8KAfWL9D5Ls7iORX4Sru9uNsUgrglnygs9U4pfKCx6qr3K49YbBV0YQ1vzHA iat-mode=0
