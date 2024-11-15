@@ -7,6 +7,9 @@ https://p.thenewone.lol:8443/proxy.pac
 
 *.onion +TOR
 *.habr.com +TOR
+*.voidboost.cc +TOR
+*.clarity.ms +TOR
+*.hdrezka.ag +TOR
 *.youtube.com +TOR
 *.youtu.be +TOR
 *.ytimg.com +TOR
