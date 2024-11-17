@@ -21,6 +21,7 @@ https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapr
 Автор расширения Обход блокировок рунета — ilyaigpetrov.
 Tor Expert Bundle от Tor Project.
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.
+Zapret от bol-van и Flowseal.
 
 1) В настоящее время я рекомендую использовать в качестве основного расширение ZeroOmega, так как оно позволяет пустить через Тор весь браузерный трафик, что полезно для избежания геолокации.
 А если оно установлено совместно с Обходом, то последний будучи выключенным начинает показывать список всех проксируемых Тором домёнов, для чего сам ZeroOmega должен находиться в режиме TOR.
