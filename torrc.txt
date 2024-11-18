@@ -22,13 +22,13 @@ TruncateLogFile 1
 MiddleNodes 83.77.218.29
 #Only fastest and most stable nodes here.
 
-#MiddleNodesList 145.239.41.102, 94.23.172.32
+#MiddleNodesList 83.77.218.29, 145.239.41.102, 94.23.172.32
 #Some pretty good middles in case you need a replacement.
 
 ExitNodes 45.95.169.223/26
 #The default IP range. Stable and at least middle speed, not blocked by YouTube.
 
-#ExitNodes 45.95.169.227
+#ExitNodes 5.255.124.150
 #Use this if you want stable 4K 60 YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" to the default ExitNodes string.
 
 #ExitNodes {COUNTRY-CODE}
