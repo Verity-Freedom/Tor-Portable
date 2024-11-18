@@ -16,7 +16,6 @@ https://p.thenewone.lol:8443/proxy.pac
 *.googlevideo.com +TOR
 *.googleapis.com +TOR
 *.googleusercontent.com +TOR
-*.gstatic.com +TOR
 *.ggpht.com +TOR
 
 * +PAC
