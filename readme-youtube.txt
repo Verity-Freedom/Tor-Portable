@@ -8,7 +8,6 @@
 *.googlevideo.com
 *.googleapis.com
 *.googleusercontent.com
-*.gstatic.com
 *.ggpht.com
 
 Должно быть достаточно для большинства (Should be enough for most). Рекомендуется (Recommended).
