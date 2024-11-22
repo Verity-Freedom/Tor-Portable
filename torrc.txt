@@ -35,7 +35,7 @@ ExitNodes 45.95.169.223/26
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
 
-#ExitNodesList 202.61.226.98 (DE), 45.95.169.227 (HR), 5.255.124.150 (NL)
+#ExitNodesList 202.61.226.98 (DE), 107.189.6.36 (LU), 45.95.169.227 (HR), 5.255.124.150 (NL)
 #The list of interesting and not blocked exits to be used later as a 4K 60 optimal node. Not all of them may be working or working equally good.
 #You can check the status of IP (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavaibale" error if blocked node is used, you can try this exit 185.107.57.65 to make sure. Other videos will play normally.
