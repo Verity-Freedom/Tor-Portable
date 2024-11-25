@@ -22,7 +22,7 @@ TruncateLogFile 1
 MiddleNodes 145.239.41.102
 #Only fastest and most stable nodes here.
 
-#MiddleNodesList 2.57.214.221, 2.57.214.222, 145.239.41.102, 94.23.172.32
+#MiddleNodesList 83.77.218.29, 145.239.41.102, 94.23.172.32
 #Some pretty good middles in case you need a replacement.
 
 ExitNodes 45.95.169.223/26
