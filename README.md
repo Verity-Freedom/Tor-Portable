@@ -11,7 +11,7 @@ Support us:
 
 4377 7237 7311 4255 — ilyaigpetrov (расширение Runet censorship bypass)
 
-**https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapret, ВАЖНО в ноябре и декабре каждого года)**
+***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapret, ВАЖНО в ноябре и декабре каждого года)***
 
 Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).
 Основной автор портативного Тора — Verity Freedom.
