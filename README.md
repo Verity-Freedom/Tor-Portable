@@ -56,7 +56,7 @@ https://p.thenewone.lol:8443/proxy.pac
 *.googleusercontent.com +TOR
 *.ggpht.com +TOR
 
-* +PAC<pre>
+* +PAC</pre>
 
 ![2](https://github.com/user-attachments/assets/e347fa0b-4dc6-4bd5-9dd3-4f25132e259b)
 
