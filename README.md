@@ -36,7 +36,7 @@ Zapret от bol-van и Flowseal.
 
 Для настройки Омеги нам понадобится содержимое readme-omega.txt, которое я здесь и выложу. Далее мы к нему вернёмся.
 
-https://disk.yandex.ru/d/XpKKtN9K2McDmA
+<pre>https://disk.yandex.ru/d/XpKKtN9K2McDmA
 https://p.thenewone.lol:8443/proxy.pac
 127.0.0.1 9050
 
@@ -56,7 +56,7 @@ https://p.thenewone.lol:8443/proxy.pac
 *.googleusercontent.com +TOR
 *.ggpht.com +TOR
 
-* +PAC
+* +PAC</pre>
 
 ![2](https://github.com/user-attachments/assets/e347fa0b-4dc6-4bd5-9dd3-4f25132e259b)
 
