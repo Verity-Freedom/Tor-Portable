@@ -4,9 +4,9 @@
 Возможно, единственное в мире средство, инициализирующее сразу три метода обхода блокировок (резистентная сеть PAC прокси серверов, VPN и DPI обход) для одновременного использования.
 В наличии exe с тихим запуском, лёгкая установка и удаление службы, новейший (2024 год) протокол противодействия цензуре, полное раздельное туннелирование и многое другое, полностью бесплатно.
 
-Качайте последнюю версию в релизах! (releases)
+Качайте последнюю версию [в релизах](https://github.com/Verity-Freedom/Tor-Portable/releases)!
 
-Download the latest version in releases!
+Download the latest version [in releases](https://github.com/Verity-Freedom/Tor-Portable/releases)!
 
 Read the English instructions below.
 
