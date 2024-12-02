@@ -63,7 +63,6 @@
  ::START
  ::::::::::::::::::::::::::::
 
-)
 sc stop "Tor Win32 Service"
 sc delete "Tor Win32 Service"
 if %errorLevel% NEQ 0 (
