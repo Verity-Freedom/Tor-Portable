@@ -62,10 +62,19 @@
  ::::::::::::::::::::::::::::
  ::START
  ::::::::::::::::::::::::::::
+set "serviceName=Tor Win32 Service"
+sc query "%serviceName%" | find "RUNNING" >nul
 
-sc stop "Tor Win32 Service"
-sc delete "Tor Win32 Service"
-if %errorLevel% NEQ 0 (
+if %errorLevel% EQU 0 (
+   sc stop "Tor Win32 Service"
+   sc delete "Tor Win32 Service"
+   powershell -Command "(gc '%CD%\torrc.txt') "^
+  "-replace '^CacheDirectory.*$', ('CacheDirectory ..\data') "^
+  "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
+  "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
+  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
+  "| Out-File -encoding ASCII '%CD%\torrc.txt'"
+) else (
     powershell -Command "(gc '%CD%\torrc.txt') "^
       "-replace '^CacheDirectory.*$', ('CacheDirectory \"%CD%\data\"' -replace '\\','\\') "^
       "-replace '^DataDirectory.*$', ('DataDirectory \"%CD%\data\"' -replace '\\','\\') "^
