@@ -1,3 +1,4 @@
+@echo off
 set "serviceName=Tor Win32 Service"
 sc query "%serviceName%" | find "RUNNING" >nul
 
@@ -7,7 +8,6 @@ if %errorLevel% EQU 0 (
 :: Automatically check & get admin rights
 :: see "https://stackoverflow.com/a/12264592/1016343" for description
 ::::::::::::::::::::::::::::::::::::::::::::
- @echo off
  CLS
  ECHO.
  ECHO =============================
