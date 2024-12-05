@@ -74,7 +74,7 @@ if %errorLevel% EQU 0 (
   "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
   "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
   "| Out-File -encoding ASCII '%CD%\torrc.txt'"
-   TIMEOUT /T 1
+   TIMEOUT /T 2
    cd tor
    start /min tor -f ..\torrc.txt
 ) else (
