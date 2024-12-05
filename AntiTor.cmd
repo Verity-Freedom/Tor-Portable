@@ -4,10 +4,11 @@ sc query "%serviceName%" | find "RUNNING" >nul
 
 if %errorLevel% EQU 0 (
 ::::::::::::::::::::::::::::::::::::::::::::
-:: Elevate.cmd - Version 7
+:: Elevate.cmd - Version 8
 :: Automatically check & get admin rights
 :: see "https://stackoverflow.com/a/12264592/1016343" for description
 ::::::::::::::::::::::::::::::::::::::::::::
+
  CLS
  ECHO.
  ECHO =============================
@@ -66,6 +67,7 @@ if %errorLevel% EQU 0 (
  ::::::::::::::::::::::::::::
  ::START
  ::::::::::::::::::::::::::::
+
    sc stop "Tor Win32 Service"
    sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
