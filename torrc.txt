@@ -5,11 +5,9 @@
 
 #Manual: https://2019.www.torproject.org/docs/tor-manual.html.en
 
-CacheDirectory ..\data
 DataDirectory ..\data
 GeoIPFile ..\data\geoip
 GeoIPv6File ..\data\geoip6
-
 AutomapHostsOnResolve 1
 HardwareAccel 1
 UseBridges 1
