@@ -1,6 +1,6 @@
 # Tor-Portable
 
-Универсальная утилита для повседневного обхода цензуры (оптимизировалась под Ютуб) и совместного использования с PAC Антизапрет. Одобрено автором расширения Обход блокировок рунета.
+Универсальная утилита для повседневного обхода цензуры (оптимизировалась под Ютуб и Дискорд) и совместного использования с PAC Антизапрет. Одобрено автором расширения Обход блокировок рунета.
 Возможно, единственное в мире средство, инициализирующее сразу три метода обхода блокировок (резистентная сеть PAC прокси серверов, VPN и DPI обход) для одновременного использования.
 В наличии exe с тихим запуском, лёгкая установка и удаление службы, новейший (2024 год) протокол противодействия цензуре, полное раздельное туннелирование и многое другое, полностью бесплатно.
 
@@ -22,83 +22,42 @@ Support us:
 Автор расширения Обход блокировок рунета — ilyaigpetrov.
 Tor Expert Bundle от Tor Project.
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.
-Zapret от bol-van и Flowseal.
+Discord-drover от hdrover.
 
 # Инструкция
 
 Для начала нам необходимо поставить расширения. Начнём с [Обхода блокировок рунета](https://chromewebstore.google.com/detail/обход-блокировок-рунета/npgcnondjocldhldegnakemclmfkngch) — используем его как чекер, будет выводить нам домёны страницы при наведении на него мышкой, которые затем можно ввести в проксируемые Тором исключения.
 
-![0](https://github.com/user-attachments/assets/bccfff38-49a6-482b-8ac2-c763efe5f8e3)
-
-![1](https://github.com/user-attachments/assets/f1278cc1-e443-4c9a-adf5-0e75e152c843)
+![0](https://github.com/user-attachments/assets/b9cde27a-bdde-41b8-ab60-fca56455f989)
+![1](https://github.com/user-attachments/assets/ae4e09f5-aa22-45ac-ae1a-24e9205e3d7c)
 
 Поставили его и сразу отключили. Даже отключённым он сможет исполнять свою единственную нужную нам функцию. Обязательно закрепите и его, и Омегу в панель расширений. Чекер будет работать корректно только в режиме TOR, про режимы будет рассказано позднее. Если чекер внезапно перестал работать, это могло произойти из-за использования стороннего VPN. Для возобновления его работоспособности я ПОЛНОСТЬЮ отключаю его (не как пункт в меню, а как расширение для браузера) и включаю вновь. Для меня это проблема, ибо иногда я использую сторонние VPN.
 
-Дальше нам необходимо поставить расширение [SwitchyOmega](https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) или же [ZeroOmega](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped). Разница между ними в том, что ZeroOmega не грозит отключение в Google Chrome, ибо он написан на более новом языке программирования и активно развивается. До 08.12.2024 я использовал SwitchyOmega, но [очередное обновление](https://github.com/zero-peak/ZeroOmega/releases/tag/3.3.16) привнесло в ZeroOmega слишком значительный функционал, чтобы оставаться на старой версии чисто из принципа. Файлы расширений находятся в папке, не пытайтесь установить SwitchyOmega на Файрфокс из магазина — он слишком стар там и не будет работать корректно, запустится только из файла. Также рекомендую сразу же поставить лучший Адблок — [Ublock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), он нам понадобится, чтобы противостоять рекламе разблокированного Ютуба. Ставить ZeroOmega крайне рекомендуется всем, а SwitchyOmega только в очень старые браузеры.
+Дальше нам необходимо поставить расширение [SwitchyOmega](https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) или же [ZeroOmega](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped). Разница между ними в том, что ZeroOmega не грозит отключение в Google Chrome, ибо он написан на более новом языке программирования и активно развивается. До 08.12.2024 я использовал SwitchyOmega, но [очередное обновление](https://github.com/zero-peak/ZeroOmega/releases/tag/3.3.16) привнесло в ZeroOmega слишком значительный функционал, чтобы оставаться на старой версии чисто из принципа. Файлы расширений находятся в папке, не пытайтесь установить SwitchyOmega на Файрфокс из магазина — он слишком стар там и не будет работать корректно, запустится только из файла. Также рекомендую сразу же поставить лучший Адблок — [Ublock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), он нам понадобится, чтобы противостоять рекламе разблокированного Ютуба. Ставить ZeroOmega крайне рекомендуется всем, а SwitchyOmega только в очень старые браузеры. Если вам нужно поставить именно SwitchyOmega, вам дорога [в старую версию инструкции](https://github.com/Verity-Freedom/Tor-Portable/tree/277f1733691334222552cb7336071d6cca4f0f7c), ибо дальше я буду говорить о ZeroOmega.
 
-Скачиваем архив из [релизов](https://github.com/Verity-Freedom/Tor-Portable/releases). Обратите повышенное внимание, для какой версии Windows вы ставите программу, ибо ранее несколько человек запутались в этом (слава нашим героям, без их вмешательства в жизни бы не добавил это уточнение). Распакуйте его и зайдите в полученную папку, внутри откройте zapret-discord-youtube, запустите general.bat или же один из general (ALT).bat (для работы на Win 7 необходимо сначала запустить файл FIX ZAPRET WIN 7.cmd, также вариантом фикса является [интеграция некоторых платных обновлений в Windows 7](https://nnmclub.to/forum/download.php?id=1201544)). Это разблокирует нам Дискорд, но также способно починить Ютуб даже без Тора (с сохранением геоограничений, что неоптимально). Быстро проверить, сработало или нет, можно попытавшись зайти на адрес discord.com — если не вышло, запускайте ALT поочерёдно. Запрет будет работать одновременно с Тором, но снизу в этом случае появятся сразу два окна. Чтобы убрать окно Тора, если он уже был запущен, но сохранить его работоспособность, вы можете запустить его как службу через antitor-service.cmd. Сам Тор запускается через AntiTor.exe, думаю это довольно очевидно.
+Скачиваем архив из [релизов](https://github.com/Verity-Freedom/Tor-Portable/releases). Сам Тор запускается через AntiTor.exe, сворачиваясь в панель задач, что делает его совместимым с автозагрузкой (shell:startup). Чтобы убрать окно Тора, если он уже был запущен, но сохранить его работоспособность, вы можете запустить его как службу через antitor-service.cmd. Обратите повышенное внимание, для какой версии Windows вы ставите программу, ибо ранее несколько человек запутались в этом (слава нашим героям, без их вмешательства в жизни бы не добавил это уточнение). Распаковав релиз и зайдя в полученную папку, откройте drover, запустите файл drover.exe. Это разблокирует клиентское приложение Дискорда вместе с голосовыми чатами без всякого пинга, но Тор должен быть постоянно запущен.
 
-Для настройки Омеги нам понадобится содержимое readme-omega.txt, которое я здесь и выложу. Далее мы к нему вернёмся.
+![2](https://github.com/user-attachments/assets/106686fa-9d38-4a15-86f1-f7d44b0c7726)
 
-<pre>https://disk.yandex.ru/d/XpKKtN9K2McDmA
-https://p.thenewone.lol:8443/proxy.pac
-127.0.0.1 9050
+Опционально, но рекомендуется поставить лучший, народный адблок — [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), чтобы вас не беспокоила реклама разблокированного без всяких региональных ограничений Ютуба. Его уважают и разработчики, и простые пользователи, как самый лучший блокировщик рекламы.
 
-[SwitchyOmega Conditions]
-@with result
+Для Омеги вам необходимо синхронизировать все настройки с моими, чтобы не настраивать их вручную. Это поставит вам и всё необходимое, и красивую тему. Используйте ссылку <pre>https://raw.githubusercontent.com/Verity-Freedom/Tor-Portable/refs/heads/main/ZeroOmegaOptions.bak</pre> для мгновенной синхронизации, куда именно нужно вставить её показано на изображении.
 
-*.onion +TOR
-*.habr.com +TOR
-*.voidboost.cc +TOR
-*.clarity.ms +TOR
-*.hdrezka.ag +TOR
-*.youtube.com +TOR
-*.youtu.be +TOR
-*.ytimg.com +TOR
-*.googlevideo.com +TOR
-*.googleapis.com +TOR
-*.googleusercontent.com +TOR
-*.ggpht.com +TOR
+![3](https://github.com/user-attachments/assets/f8854f37-bc4d-4b26-acab-71b2733b9e45)
 
-* +PAC</pre>
+Если у вас уже были поставлены свои сайты в исключения в режиме AUTO, перед синхронизацией скопируйте их заранее, потом сможете легко вернуть их через редактирование исходного кода.
 
-![2](https://github.com/user-attachments/assets/e347fa0b-4dc6-4bd5-9dd3-4f25132e259b)
+Режимы вы можете переключать нажатием кнопкой мыши по расширению. Режимов три — system, AUTO и TOR. System используется для совместимости со сторонними VPN, полностью отключая проксирование. Выглядит как чёрный кружок с белым центром. Режим AUTO — фиолетовый круг с чёрным центром, вам необходимо рассматривать как основной для работы расширения. По умолчанию он использует устойчивую сеть PAC прокси-серверов Антизапрет для полного раздельного туннелирования только заблокированных сайтов, однако при смене режима на Антицензорити возможно использование собственного сервера по тому же принципу раздельного туннелирования. Антизапрет работает только для россиян, так как содержит список сайтов, заблокированных в России.
 
-Поставьте и уберите галочки как у меня здесь. Жёлтым цветом я выделил то, что делать необязательно, но желательно. В данном случае я убрал вам перезагрузку вкладки при смене режима и выделил это жёлтым цветом, а красным потребовал у вас убрать прокликивание дополнительных подтверждений при настройке (эти подтверждения он и так и так будет у вас спрашивать, просто иначе они будут в двойном количестве). Жёлтым я также выделил режим system proxy, в котором Тор полностью отключен, но может быть использован системный VPN — используйте его в зависимости от надобности. Вам необходимо сделать названия режимов такими же, как и у меня, позже поймёте, почему. Вы можете понять, какой режим в какой у меня переименован по их значкам, ибо значки обозначают типы режимов. Вместо того чтобы переименовывать можете и создать режим, главное, чтобы его тип совпал в конечном итоге с названием.
+![4](https://github.com/user-attachments/assets/c0672119-4316-4c03-b147-428862b7b4de)
 
-Настраиваем режим TOR как показано здесь:
+Единственное средство обхода блокировок, которое может работать параллельно с Тором и совместимо с ним в режиме AUTO, является Zapret, который вы при желании можете установить самостоятельно (например Zapret разблокировывает Дискорд и способен разблокировать Ютуб на российском ip, не требуя блокировщика рекламы, однако он может не вовремя сломаться, не сможет снять региональные ограничения и является сторонней независимой от Тора разработкой; тем не менее в некоторых ситуациях подобное совместное использование может быть довольно удобным и он многократно обновлялся). Никогда не ставьте Zapret в сборке от peekbot, в нём содержится очень хорошо замаскированный майнер.
 
-![3](https://github.com/user-attachments/assets/812ad2ff-6746-4e3a-9d38-6b616408e00c)
+В режиме TOR мы можем снимать блокировки со всяких спотифаев и чатжпт ценой отключения доступа к российским сайтам по типу госуслуг и некоторых других, которые блокируют Тор на стороне. Не забудьте, что только в режиме TOR будет корректно работать чекер, который мы настроили в самом начале. Это режим проксирования Тором всего браузерного трафика, выглядит как фиолетовый круг с белым центром. В этом режиме возможно измерить скорость подключения через сайт по типу speedcheck.org, а оптимизацию скорости можно провести через редактирование файла torrc.txt (я не могу пустить всех на один и тот же скоростной ip во избежание перегрузки и защиты от ботов, а потому пускаю людей на диапазон, скорость которого может быть чуть более лимитирована, ибо многие ip Тора уже частично заблокированы на Ютубе). Вашей скорости должно хватать на 2К 60 или как минимум 1080 60 в любом случае, так что оптимизация скорости это чисто опциональное решение. Вы можете проявить креативный подход, поменяв тему расширения и цвета режимов, однако в этом случае я не гарантирую, что вы сможете однозначно трактовать их и отличать друг от друга. Для переключения между режимами используется quick switch, вы можете отключить его в любой момент, кликнув правой кнопкой мыши по расширению.
 
-Можете скопировать нужные нам значения выше из readme-omega.txt или написать их самостоятельно.
+![5](https://github.com/user-attachments/assets/122299fc-d61a-487d-9976-839961c80530)
 
-Создаём абсолютно новый режим PAC в типе PAC Profile. Необходимо только для россиян.
-
-![4](https://github.com/user-attachments/assets/9a1e814f-a401-4b45-8e73-707b7ac59503)
-
-![5](https://github.com/user-attachments/assets/7ba1784a-3fbd-40a6-bc1f-739bcfd7fe06)
-
-В этом режиме мы вставляем ссылку https://p.thenewone.lol:8443/proxy.pac и нажимаем скачать профиль (download profile). После сохраняем изменения. Это скачает нам Антизапрет — прокси с раздельным туннелированием для разблокировки основной части заблокированных сайтов. В случае, если скачивание заблокировано, скопируйте содержимое файла Antizapret.txt из папки и вставьте его в поле PAC Script. Если не получается вставить в поле PAC Script, удалите сначала ссылку, упомянутую выше — она помешает сделать это. Если у Антизапрета сломаются сами сервера, этот способ не поможет, но в ином случае вы просто разблокируете доступ к нему без всяких потерь.
-
-Так как только теперь у нас готовы все режимы, я хочу, чтобы вы убедились, что у вас включен quick switch в настройках Омеги, и все режимы в нём стоят корректно. Это понадобится нам в будущем.
-
-Далее мы переходим в режим AUTO. У вас он ранее назывался как-то иначе, но там всегда было слово auto.
-
-![6](https://github.com/user-attachments/assets/5945e61b-62e7-4092-8044-15f4d6709c1f)
-
-Нажимаем Edit source code и вставляем содержимое readme-omega.txt сверху, начиная от [SwitchyOmega Conditions] и заканчивая * +PAC. Это сконфигурирует режим AUTO так, что большинство сайтов не будет проксироваться, основная часть заблокированных сайтов будет пускаться через PAC Антизапрет, и только несколько сайтов будут пускаться через Тор, ибо Антизапрет слишком медленный и тот же Ютуб практически не проксирует (только аватарки). Именно здесь важно, что у вас названия должны совпадать с моими, ибо названия всех режимов активно используются в этом коде. Тор уберёт на Ютубе геоблокировки ценой появления рекламы. Вы должны были не забыть поставить Ublock Origin.
-
-Если вы правильно настроили quick switch, режимы вы можете переключать кнопкой мыши. Режимов три — system, AUTO и TOR. Про system и AUTO я уже рассказал выше, а вот в режиме TOR мы можем снимать блокировки со всяких спотифаев и чатжпт ценой отключения доступа к российским сайтам по типу госуслуг и некоторых других, которые блокируют Тор на стороне. Не забудьте, что только в режиме TOR будет корректно работать чекер, который мы настроили в самом начале. Чтобы вы не запутались между режимами, я рекомендую выставить их цвета такими же, как и у меня. Хотя вы можете забить на это или напротив проявить креативный подход. Режим quick switch вы можете отключить в любой момент через правую кнопку мыши.
-
-![7](https://github.com/user-attachments/assets/924004de-ca87-4ea2-9d70-f64773e2d984)
-
-![8](https://github.com/user-attachments/assets/50bc43e4-477f-4b2c-82a2-2810753daf39)
-
-![9](https://github.com/user-attachments/assets/9764eb09-c3fb-423b-8c43-653673bd27a6)
-
-Скорость Тора можете проверять по speedcheck.org в режиме TOR. Целевая скорость для большинства из вас — 2К 60 видео на Ютубе без прогрузок. Но есть возможность ускорить его вплоть до 4К 60 редактированием файла torrc.txt и использованием скоростного ip. Я не стал ставить скоростной ip всем вам, боясь перегрузить его, ибо некоторые ip Тора частично заблокированы на Ютубе. Также вам необходимо заменять мосты в случае, если один из них откажет, или брать их у меня в новейших релизах (далеко не факт, что я заменю их, ибо это довольно рутинная и бесполезная работа). Несколько мостов уже есть в файле torrc.txt, все остальные содержатся в bridges-webtunnel-list.txt.
-
-В случае, если в логах появляется множество уведомлений о невозможности связаться с мостом, то упал мост, а если программа зависает на 45% и уведомления о невозможности связаться с мостом не шлёт, то упали или миддл, или экзит. Я подобное всегда способен увидеть, но вам стоит учиться обслуживать Тор самостоятельно через работу с torrc.
+Также вам необходимо заменять мосты в случае, если один из них откажет, или брать их у меня в новейших релизах (далеко не факт, что я заменю их, ибо это довольно рутинная и бесполезная работа). Несколько мостов уже есть в файле torrc.txt, все остальные содержатся в bridges-webtunnel-list.txt. В случае, если в логах появляется множество уведомлений о невозможности связаться с мостом, то упал мост, а если программа зависает на 45% и уведомления о невозможности связаться с мостом не шлёт, то упали или миддл, или экзит. Я подобное всегда способен увидеть, но вам стоит учиться обслуживать Тор самостоятельно через работу с torrc. Лог работы программы содержится по адресу AntiTor\tor\info-notice.log, также именно этот лог выдаётся вам в командной строке.
 
 # Разблокировываем ВЕСЬ ИНТЕРНЕТ играючи!
 
@@ -120,21 +79,21 @@ https://p.thenewone.lol:8443/proxy.pac
 
 # English instructions
 
-Developed with the support of the community (especially the help from DesuIsALie and bananakid).
-The main author of the portable Tor is Verity Freedom.
-Tor Expert Bundle from Tor Project.
-SwitchyOmega from FelisCatus, ZeroOmega from zero-top.
+Developed with the support of the community (especially the help from DesuIsALie and bananakid). The main author of the portable Tor is Verity Freedom. Tor Expert Bundle from Tor Project.
+SwitchyOmega from FelisCatus, ZeroOmega from zero-top. Runet Censorship Bypass from ilyaigpetrov. Discord-drover from hdrover.
 
-1) Run the program via AntiTor.exe, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar.
-To proxy browser traffic through Tor use ZeroOmega extension, read how to use it in readme-omega folder.
-Previously, a completely similar, older SwitchyOmega extension was used, but unfortunately not all modern browsers are compatible with it. You can use it if you are not going to leave Manifest V2.
+Run the program via AntiTor.exe, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar.
+To proxy browser traffic through Tor use ZeroOmega extension, read more about it in readme-visual. Previously, an older SwitchyOmega extension was used, but it's obsolete now. SwitchyOmega recommended only for old browsers.
+In Russia we also use Runet Censorship Bypass extension, but only to know more about proxified domains, so anyone can use it this way too.
+Switch between modes using the mouse button: TOR (everything is proxified), AUTO (only some sites are proxified), system (nothing is proxified, you can use a third-party VPN). PAC Antizapret only for Russians.
+We are using Drover to proxify Discord through Tor and bypass UDP block.
 
-2) Bridges use four completely different connection types: obfs4, snowflake, conjure and webtunnel (default, it is optimal to use only it because of the higher speed).
+Bridges use four completely different connection types: obfs4, snowflake, conjure and webtunnel (default, it is optimal to use only it because of the greater stability).
 Replace the bridges by editing the torrc file, receive new ones via a bridge request in the tor browser or send an empty email to bridges@torproject.org.
-The new webtunnel bridge can be obtained at https://bridges.torproject.org/bridges/?transport=webtunnel and https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel.
+The new webtunnel bridge can be obtained at https://bridges.torproject.org/bridges/?transport=webtunnel and https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel, there is also a large list of webtunnel bridges inside.
 Bridges may disappear gradually, as the program informs you that one of the bridges has failed, which negatively affects the quality of the connection and can lead to its complete breakdown.
-I recommend reading the torrc file, because in addition to the code for the correct operation of the program, it contains many important technical details and even has settings to increase speed (language English).
+I recommend reading torrc.txt, because in addition to the code for the correct operation of the program, it contains many important technical details and even has settings to increase speed (language English).
 
-3) Use the antitor-service file if you want to install or uninstall Tor as service.
+Use the antitor-service file if you want to install or uninstall Tor as service.
 
 Ready!
