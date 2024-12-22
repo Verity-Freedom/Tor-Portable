@@ -41,7 +41,7 @@ Discord-drover от hdrover.
 
 Опционально, но рекомендуется поставить лучший, народный адблок — [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), чтобы вас не беспокоила реклама разблокированного без всяких региональных ограничений Ютуба. Его уважают и разработчики, и простые пользователи, как самый лучший блокировщик рекламы.
 
-Для Омеги вам необходимо синхронизировать все настройки с моими, чтобы не настраивать их вручную. Это поставит вам и всё необходимое, и красивую тему xcode-dusk. Используйте ссылку <pre>https://raw.githubusercontent.com/Verity-Freedom/Tor-Portable/refs/heads/main/ZeroOmegaOptions.bak</pre> для мгновенной синхронизации, куда именно нужно вставить её показано на изображении.
+Для Омеги вам необходимо синхронизировать все настройки с моими, чтобы не настраивать их вручную. Это поставит вам и всё необходимое, и красивую тему (нескучные обои!) xcode-dusk. Тема изменится после обновления вкладки. Используйте ссылку <pre>https://raw.githubusercontent.com/Verity-Freedom/Tor-Portable/refs/heads/main/ZeroOmegaOptions.bak</pre> для мгновенной синхронизации, куда именно нужно вставить её показано на изображении.
 
 ![3](https://github.com/user-attachments/assets/f8854f37-bc4d-4b26-acab-71b2733b9e45)
 
