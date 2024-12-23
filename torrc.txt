@@ -12,6 +12,9 @@ AutomapHostsOnResolve 1
 HardwareAccel 1
 MaxClientCircuitsPending 1
 UseBridges 1
+MapAddress *.hdrezka.ag *.hdrezka.ag.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
+MapAddress *.voidboost.cc *.voidboost.cc.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
+MapAddress *.clarity.ms *.clarity.ms.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
 SafeLogging 0
 Log notice file notice.log
 Log notice stdout
@@ -23,22 +26,22 @@ MiddleNodes 94.23.172.32
 #Only fastest and most stable nodes here.
 
 #MiddleNodesList 83.77.218.29, 145.239.41.102, 94.23.172.32
-#Some pretty good middles in case you need a replacement.
+#Some pretty good middles in case you need a replacement. The true secret of high speed of the middle is double port.
 
 ExitNodes 45.95.169.223/26
 #The default IP range. Stable and at least middle speed, not blocked by YouTube.
 
-#ExitNodes 202.61.226.98
+#ExitNodes 8DB706C9B7ABA89F08FCE919DE18DAC63266EC8D
 #Use this if you want stable 4K 60 YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" to the default ExitNodes string.
 #Find out the bandwidth of any bridge, middle or exit node at https://metrics.torproject.org/rs.html#search.
 
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
 
-#ExitNodesList 202.61.226.98 (DE), 107.189.6.36 (LU), 45.95.169.227 (HR)
+#ExitNodesList 8DB706C9B7ABA89F08FCE919DE18DAC63266EC8D (DE), 3EBF6E6034F6844AC80990A2AE46A3B5B674D3DA (LU), B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76 (HR)
 #The list of interesting and not blocked exits to be used later as a 4K 60 optimal node. Not all of them may be working or working equally good.
 #You can check the status of IP (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
-#There will be "video unavaibale" error if blocked node is used, you can try this exit 185.107.57.65 to make sure. Other videos will play normally.
+#There will be "video unavaibale" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
 
 #Tor bridges configuration:
 #https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel
