@@ -13,6 +13,7 @@ HardwareAccel 1
 MaxClientCircuitsPending 1
 UseBridges 1
 MapAddress *.hdrezka.ag *.hdrezka.ag.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
+MapAddress *.hdrezka.ac *.hdrezka.ac.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
 MapAddress *.voidboost.cc *.voidboost.cc.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
 MapAddress *.clarity.ms *.clarity.ms.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
 SafeLogging 0
