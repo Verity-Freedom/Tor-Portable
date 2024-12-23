@@ -14,7 +14,6 @@ MaxClientCircuitsPending 1
 UseBridges 1
 SafeLogging 0
 Log notice file notice.log
-#Log debug file debug.log
 Log notice stdout
 TruncateLogFile 1
 
