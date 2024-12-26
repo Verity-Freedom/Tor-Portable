@@ -1,6 +1,7 @@
 @echo off
+chcp 1251
 ::::::::::::::::::::::::::::::::::::::::::::
-:: Elevate.cmd - Version 8
+:: Elevate.cmd - Version 9 custom
 :: Automatically check & get admin rights
 :: see "https://stackoverflow.com/a/12264592/1016343" for description
 ::::::::::::::::::::::::::::::::::::::::::::
@@ -72,13 +73,13 @@ if %errorLevel% EQU 0 (
   "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
   "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
   "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
-  "| Out-File -encoding ASCII '%CD%\torrc.txt'"
+  "| Out-File -encoding default '%CD%\torrc.txt'"
 ) else (
     powershell -Command "(gc '%CD%\torrc.txt') "^
       "-replace '^DataDirectory.*$', ('DataDirectory \"%CD%\data\"' -replace '\\','\\') "^
       "-replace '^GeoIPFile.*$', ('GeoIPFile \"%CD%\data\geoip\"' -replace '\\','\\') "^
       "-replace '^GeoIPv6File.*$', ('GeoIPv6File \"%CD%\data\geoip6\"' -replace '\\','\\') "^
-      "| Out-File -encoding ASCII '%CD%\torrc.txt'"
+      "| Out-File -encoding default '%CD%\torrc.txt'"
     sc create "Tor Win32 Service" binPath= "\"%CD%\tor\tor.exe\" --nt-service -f \"%CD%\torrc.txt\"" start= "auto"
     sc description "Tor Win32 Service" "Provides an anonymous Internet communication system"
     sc start "Tor Win32 Service"

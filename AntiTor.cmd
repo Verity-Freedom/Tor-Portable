@@ -1,10 +1,11 @@
 @echo off
+chcp 1251
 set "serviceName=Tor Win32 Service"
 sc query "%serviceName%" | find "RUNNING" >nul
 
 if %errorLevel% EQU 0 (
 ::::::::::::::::::::::::::::::::::::::::::::
-:: Elevate.cmd - Version 8
+:: Elevate.cmd - Version 9 custom
 :: Automatically check & get admin rights
 :: see "https://stackoverflow.com/a/12264592/1016343" for description
 ::::::::::::::::::::::::::::::::::::::::::::
@@ -72,7 +73,7 @@ if %errorLevel% EQU 0 (
   "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
   "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
   "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
-  "| Out-File -encoding ASCII '%CD%\torrc.txt'"
+  "| Out-File -encoding default '%CD%\torrc.txt'"
    TIMEOUT /T 1 /nobreak
    cd tor
    start /min tor -f ..\torrc.txt
