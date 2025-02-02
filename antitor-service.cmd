@@ -63,8 +63,8 @@ chcp 1251
  ::::::::::::::::::::::::::::
  ::START
  ::::::::::::::::::::::::::::
-set "serviceName=Tor Win32 Service"
-sc query "%serviceName%" | find "RUNNING" >nul
+taskkill /im "tor.exe"
+sc query "Tor Win32 Service" | find "RUNNING" >nul
 
 if %errorLevel% EQU 0 (
    sc stop "Tor Win32 Service"
@@ -83,6 +83,16 @@ if %errorLevel% EQU 0 (
     sc create "Tor Win32 Service" binPath= "\"%CD%\tor\tor.exe\" --nt-service -f \"%CD%\torrc.txt\"" start= "auto"
     sc description "Tor Win32 Service" "Provides an anonymous Internet communication system"
     sc start "Tor Win32 Service"
+)
+
+sc query "Tor Win32 Service" | find "STOPPED" >nul
+if %errorLevel% EQU 0 (
+   sc delete "Tor Win32 Service"
+   powershell -Command "(gc '%CD%\torrc.txt') "^
+  "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
+  "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
+  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
+  "| Out-File -encoding default '%CD%\torrc.txt'"
 )
 
 pause
