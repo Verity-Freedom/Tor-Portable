@@ -23,16 +23,16 @@ TruncateLogFile 1
 
 #The log is inside the "tor" folder.
 
-MiddleNodes 94.23.172.32, 145.239.41.102
+MiddleNodes 145.239.41.102, 94.23.172.32
 #Only fastest and most stable nodes here. The true secret of high speed of the middle is double port.
 
-#MiddleNodesList 83.77.218.29, 185.220.100.240, 145.239.41.102, 94.23.172.32
+#MiddleNodesList 83.77.218.29, 145.239.41.102, 94.23.172.32
 #Some pretty good middles in case you need a replacement.
 
-#ExitNodes 45.95.169.223/26
+ExitNodes 45.95.169.223/26
 #The default IP range. Stable and at least middle speed, not blocked by YouTube.
 
-ExitNodes 8DB706C9B7ABA89F08FCE919DE18DAC63266EC8D
+#ExitNodes 8DB706C9B7ABA89F08FCE919DE18DAC63266EC8D
 #Use this if you want stable 4K 60 YouTube videos and faster speed (please use it only if necessary, the IP can be blocked by YouTube if mass used). Don't forget to add "#" to the default ExitNodes string.
 #Find out the bandwidth of any bridge, middle or exit node at https://metrics.torproject.org/rs.html#search.
 
