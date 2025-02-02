@@ -26,7 +26,7 @@ Discord-drover от hdrover.
 
 # Инструкция
 
-Обратите повышенное внимание, для какой версии Windows вы ставите программу, ибо ранее несколько человек запутались в этом (слава нашим героям, без их вмешательства в жизни бы не добавил это уточнение). Скачиваем архив из [релизов](https://github.com/Verity-Freedom/Tor-Portable/releases), распаковываем и заходим в полученную папку. Тор запускается через AntiTor.exe, моментально сворачиваясь, что делает его совместимым с автозагрузкой shell:startup и закреплением в панель задач. Чтобы убрать окно Тора, но сохранить его работоспособность, вы можете создать/удалить службу через antitor-service.cmd (не забудьте предварительно закрыть его). Откройте drover, запустите файл drover.exe и нажмите install. Это разблокирует клиентское приложение Дискорда вместе с голосовыми чатами без всяких задержек благодаря обходу UDP, но Тор должен работать или службой, или быть запущен.
+Обратите повышенное внимание, для какой версии Windows вы ставите программу, ибо ранее несколько человек запутались в этом (слава нашим героям, без их вмешательства в жизни бы не добавил это уточнение). Скачиваем архив из [релизов](https://github.com/Verity-Freedom/Tor-Portable/releases), распаковываем и заходим в полученную папку. Тор запускается через AntiTor.exe, моментально сворачиваясь, что делает его совместимым с автозагрузкой shell:startup и закреплением в панель задач. Чтобы убрать окно Тора, но сохранить его работоспособность, вы можете создать/удалить службу через service-manager.cmd (не забудьте предварительно закрыть его). Откройте drover, запустите файл drover.exe и нажмите install. Это разблокирует клиентское приложение Дискорда вместе с голосовыми чатами без всяких задержек благодаря обходу UDP, но Тор должен работать или службой, или быть запущен.
 
 ![0](https://github.com/user-attachments/assets/66a0b920-b238-44e6-85d4-cbd7066224a8)
 
@@ -97,6 +97,6 @@ The new webtunnel bridge can be obtained at https://bridges.torproject.org/bridg
 Bridges may disappear gradually, as the program informs you that one of the bridges has failed, which negatively affects the quality of the connection and can lead to its complete breakdown.
 I recommend reading torrc.txt, because in addition to the code for the correct operation of the program, it contains many important technical details and even has settings to increase speed (language English).
 
-Use the antitor-service file if you want to install or uninstall Tor as service.
+Use the service-manager file if you want to install or uninstall Tor as service.
 
 Ready!
