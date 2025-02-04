@@ -63,7 +63,7 @@ chcp 1251
  ::::::::::::::::::::::::::::
  ::START
  ::::::::::::::::::::::::::::
-taskkill /im "tor.exe"
+taskkill /im "tor.exe" >nul 2>&1
 sc query "Tor Win32 Service" | find "RUNNING" >nul
 
 if %errorLevel% EQU 0 (
