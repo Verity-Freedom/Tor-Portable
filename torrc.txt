@@ -12,10 +12,12 @@ AutomapHostsOnResolve 1
 HardwareAccel 1
 MaxClientCircuitsPending 1
 UseBridges 1
-MapAddress *.hdrezka.ag *.hdrezka.ag.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
-MapAddress *.hdrezka.ac *.hdrezka.ac.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
-MapAddress *.voidboost.cc *.voidboost.cc.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
-MapAddress *.clarity.ms *.clarity.ms.B3DA6D0F4C5C67E1AE8E4DF20C832622A3FE2B76.exit
+MapAddress *.hdrezka.ag *.hdrezka.ag.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
+MapAddress *.hdrezka.ac *.hdrezka.ac.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
+MapAddress *.voidboost.cc *.voidboost.cc.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
+MapAddress *.voidboost.org *.voidboost.org.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
+MapAddress *.clarity.ms *.clarity.ms.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
+MapAddress *.rezka.cloud *.rezka.cloud.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
 SafeLogging 0
 Log notice file notice.log
 Log notice stdout
