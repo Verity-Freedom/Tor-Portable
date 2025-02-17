@@ -1,6 +1,7 @@
 #Don't be afraid to redact your torrc! Add and delete the "#" symbol to hide strings from the program and switch between exits.
-#Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube).
-#If you are a tech company, PLEASE do not block Tor as a means of connecting to your service. Tor is used in countries with a high level of Internet censorship to bypass it, not to abuse your service. Thank you.
+#Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube). I may be wrong about this, but collected data says its true.
+#If you are a tech company, PLEASE do not block Tor as a means of connecting to your service.
+#Tor is used in countries with a high level of Internet censorship to bypass it, not to abuse your service. Thank you.
 #If Tor isn't working on Win 7 after manual update, use this: https://github.com/stunndard/golangwin7patch/releases.
 
 #Manual: https://2019.www.torproject.org/docs/tor-manual.html.en
@@ -8,20 +9,20 @@
 DataDirectory ..\data
 GeoIPFile ..\data\geoip
 GeoIPv6File ..\data\geoip6
-AutomapHostsOnResolve 1
 HardwareAccel 1
 MaxClientCircuitsPending 1
 UseBridges 1
+SafeLogging 0
+Log notice file notice.log
+Log notice stdout
+TruncateLogFile 1
+
 MapAddress *.hdrezka.ag *.hdrezka.ag.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
 MapAddress *.hdrezka.ac *.hdrezka.ac.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
 MapAddress *.voidboost.cc *.voidboost.cc.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
 MapAddress *.voidboost.org *.voidboost.org.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
 MapAddress *.clarity.ms *.clarity.ms.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
 MapAddress *.rezka.cloud *.rezka.cloud.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
-SafeLogging 0
-Log notice file notice.log
-Log notice stdout
-TruncateLogFile 1
 
 #The log is inside the "tor" folder.
 
@@ -31,13 +32,16 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 #MiddleNodesList 185.220.100.241, 145.239.41.102, 94.23.172.32, 83.77.218.29
 #Some pretty good middles in case you need a replacement.
 
-ExitNodes 6376F708BD865B477B2FBA68098EED046E34E64C
-#The default node. Stable speed, not blocked by YouTube.
-
-#ExitNodesList 6376F708BD865B477B2FBA68098EED046E34E64C (HR), 8DB706C9B7ABA89F08FCE919DE18DAC63266EC8D (DE), 62A4E6BFE875437879EB7981C3FC0310D3506AF5 (DK)
-#The list of interesting and not blocked exits to be used as an optimal node.
+#ExitNodes A0B4BD14D86B8D1D77AED742BF8381764B624295
+#The exit node. Stable speed, not blocked by YouTube and Discord. Not used by default for security measures, can be enabled by removing "#" symbol.
+#Not changed to random if was used and died, Tor will stick on 45% (true for 0.4.8.14), need to be replaced or put back into default mode.
 #You can check the status of exit (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavaibale" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
+#For 6376F708BD865B477B2FBA68098EED046E34E64C the https://www.youtube.com/watch?v=laTBNUS8Cyo is blocked, the reason is this node was used for a very long time by many people.
+#Restart after exit change.
+
+#ExitNodesList A0B4BD14D86B8D1D77AED742BF8381764B624295
+#The constant list of good exits to not lose any of them. For user purposes.
 
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
