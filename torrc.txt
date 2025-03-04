@@ -32,15 +32,15 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 #MiddleNodesList 185.220.100.241, 145.239.41.102, 94.23.172.32, 83.77.218.29
 #Some pretty good middles in case you need a replacement.
 
-#ExitNodes A0B4BD14D86B8D1D77AED742BF8381764B624295
+#ExitNodes A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8
 #The exit node. Stable speed, not blocked by YouTube and Discord. Not used by default for security measures, can be enabled by removing "#" symbol.
 #Not changed to random if was used and died, Tor will stick on 45% (true for 0.4.8.14), need to be replaced or put back into default mode.
 #You can check the status of exit (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
-#There will be "video unavaibale" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
+#There will be "video unavailable" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
 #For 6376F708BD865B477B2FBA68098EED046E34E64C the https://www.youtube.com/watch?v=laTBNUS8Cyo is blocked, the reason is this node was used for a very long time by many people.
 #Restart after exit change.
 
-#ExitNodesList A0B4BD14D86B8D1D77AED742BF8381764B624295
+#ExitNodesList A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8
 #The constant list of good exits to not lose any of them. For user purposes.
 
 #ExitNodes {COUNTRY-CODE}
@@ -59,9 +59,15 @@ ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
 ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
 
 Bridge webtunnel [2001:db8:a62f:3205:a2b8:80f2:8491:9497]:443 CDCF334F257ACAD04A2C6CD9725B7FC686160912 url=https://meskio.net/eCDFZe3boSv+b2iqHiaY4ZgPxXBc ver=0.0.1
-Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1
-#Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1
-#Bridge webtunnel [2001:db8:ba30:5074:c2e6:663:42e8:de84]:443 6C3C97ECF9D5984838CCFA4774C25E281E87E9D6 url=https://dns.rawbit.ninja/jbsEXCoUvbZLbd3taETimEfM ver=0.0.1
+Bridge webtunnel [2001:db8:cc50:fa:264f:d1b8:79a:6a81]:443 38C7ADB125A7AEA7A668C5AE300F6DCEA6BFB340 url=https://surf.mysticboarding.cz/S2vNtMmDc72E3uSmAroQaUyj ver=0.0.1
+Bridge webtunnel [2001:db8:a8b5:9d82:9ae6:354f:671:e5da]:443 E3AE862BBB49EA5FACF4FDF09C8F1FE0D6F3CE4B url=https://d.img-cdn.net/mExFXMqeh1PcoDRRyz/ ver=0.0.1
+Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1
+Bridge webtunnel [2001:db8:1178:dc13:afaf:da8e:f592:398a]:443 07C77888D2367C25CA875E2174D9B225140940E9 url=https://nextcloud.privacy-vbox.de/iJmug5bRcsKeVv45h7a0fvkM ver=0.0.1
+Bridge webtunnel [2001:db8:986e:c5ca:6049:65ed:af8c:fb5d]:443 B0F930FBB2AD6E0464F8DE0A92BB2D211CB9B010 url=https://lulea.frostbay.org/TheNorthernGateway ver=0.0.1
+Bridge webtunnel [2001:db8:44:614b:42f5:f87c:7072:151]:443 F0C55D7B465C94F71A9A8F0479073BC02565DA36 url=https://quantentoast.de/CDgakmo0QO5Rvo2jRCtu4n9D ver=0.0.1
+Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1
+Bridge webtunnel [2001:db8:a634:bf27:a89e:4:2de:cb6]:443 8943BF53C9561C75A7302ED59575EF71E2B26562 url=https://fast.heelsn.eu/MsCfO3oc0rCsRkzDbZw8G8bT ver=0.0.1
+Bridge webtunnel [2001:db8:3c2c:39cc:f980:6874:a6f6:3db3]:443 61F2DF88E5534C757CB5CADCD19FEAABB381DC23 url=https://example6.bond/pedik ver=0.0.1
 #Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
 #Bridge snowflake 192.0.2.4:80 8838024498816A039FCBBAB14E6F40A0843051FA fingerprint=8838024498816A039FCBBAB14E6F40A0843051FA url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.l.google.com:19302,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.net:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
 #Bridge obfs4 217.170.204.110:1445 BD20519EDE02F6B12C95D8F228E32EB0ABC5017F cert=MDjFmKmskH8KAfWL9D5Ls7iORX4Sru9uNsUgrglnygs9U4pfKCx6qr3K49YbBV0YQ1vzHA iat-mode=0
