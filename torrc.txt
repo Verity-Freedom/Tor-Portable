@@ -37,10 +37,9 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 #Not changed to random if was used and died, Tor will stick on 45% (true for 0.4.8.14), need to be replaced or put back into default mode.
 #You can check the status of exit (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavailable" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
-#For 6376F708BD865B477B2FBA68098EED046E34E64C the https://www.youtube.com/watch?v=laTBNUS8Cyo is blocked, the reason is this node was used for a very long time by many people.
 #Restart after exit change.
 
-#ExitNodesList A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8
+#ExitNodesList A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8, 6376F708BD865B477B2FBA68098EED046E34E64C
 #The constant list of good exits to not lose any of them. For user purposes.
 
 #ExitNodes {COUNTRY-CODE}
