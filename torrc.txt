@@ -32,7 +32,7 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 #MiddleNodesList 185.220.100.241, 145.239.41.102, 94.23.172.32, 83.77.218.29
 #Some pretty good middles in case you need a replacement.
 
-#ExitNodes A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8
+#ExitNodes 6376F708BD865B477B2FBA68098EED046E34E64C
 #The exit node. Stable speed, not blocked by YouTube and Discord. Not used by default for security measures, can be enabled by removing "#" symbol.
 #Not changed to random if was used and died, Tor will stick on 45% (true for 0.4.8.14), need to be replaced or put back into default mode.
 #You can check the status of exit (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
