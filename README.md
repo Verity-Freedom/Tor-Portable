@@ -32,7 +32,7 @@ Discord-drover от hdrover.
 
 Нам необходимо поставить расширения. Начнём с IPvFoo ([Chrome](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ipvfoo/)) — это чекер, будет выводить нам домёны страницы при клике на него мышкой, которые затем можно ввести в проксируемые Тором исключения. Это нужно в первую очередь мне как разработчику, остальные могут пропустить этот шаг, основной функционал не изменится.
 
-Дальше нам необходимо поставить расширение ZeroOmega ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)). Расширение имеет manifest v3 и не будет работать в очень старых браузерах, в таком случае рекомендую обновиться, ибо с постоянным прирастанием нового функционала совет остаться на старой версии теряет всякий смысл. Обязательно закрепите и чекер, и Омегу в панель расширений.
+Дальше нам необходимо поставить расширение ZeroOmega ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)). Обязательно закрепите и чекер, и Омегу в панель расширений.
 
 Опционально, но рекомендуется поставить лучший, народный адблок — uBlock Origin ([Chrome](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ublock-origin/)), чтобы вас не беспокоила реклама разблокированного без всяких региональных ограничений Ютуба. Его уважают и разработчики, и простые пользователи, как самый лучший блокировщик рекламы.
 
