@@ -12,14 +12,12 @@ Support us:
 
 5536 9141 8416 7645 — Verity Freedom (портативный Tor)
 
-4377 7237 7311 4255 — ilyaigpetrov (расширение Runet censorship bypass)
-
 ***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapret, ВАЖНО в ноябре и декабре каждого года)***
 
 Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).
 Основной автор портативного Тора — Verity Freedom.
 Автор прокси Антизапрет — ValdikSS.
-Автор расширения Обход блокировок рунета — ilyaigpetrov.
+Автор расширения IPvFoo — pmarks-net.
 Tor Expert Bundle от Tor Project.
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.
 Discord-drover от hdrover.
@@ -32,15 +30,9 @@ Discord-drover от hdrover.
 
 ![0](https://github.com/user-attachments/assets/66a0b920-b238-44e6-85d4-cbd7066224a8)
 
-Нам необходимо поставить расширения. Начнём с Обхода блокировок рунета ([Chrome](https://chromewebstore.google.com/detail/обход-блокировок-рунета/npgcnondjocldhldegnakemclmfkngch), [Firefox](https://addons.mozilla.org/ru/firefox/addon/обход-блокировок-рунета/)) — используем его как чекер, будет выводить нам домёны страницы при наведении на него мышкой, которые затем можно ввести в проксируемые Тором исключения. Это нужно в первую очередь мне как разработчику, остальные могут пропустить этот шаг, основной функционал не изменится.
+Нам необходимо поставить расширения. Начнём с IPvFoo ([Chrome](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ipvfoo/)) — это чекер, будет выводить нам домёны страницы при клике на него мышкой, которые затем можно ввести в проксируемые Тором исключения. Это нужно в первую очередь мне как разработчику, остальные могут пропустить этот шаг, основной функционал не изменится.
 
-![1](https://github.com/user-attachments/assets/a05efc20-db01-4289-9920-d955b369fd35)
-
-![2](https://github.com/user-attachments/assets/ae883374-a7fc-4b1e-b331-ec668e87cf13)
-
-Поставили его и сразу отключили. Даже отключённым он сможет исполнять свою единственную нужную нам функцию. Обязательно закрепите и его, и Омегу (следующий абзац) в панель расширений. Чекер будет работать корректно только в режиме TOR Омеги, пока его у вас нет. Если чекер внезапно перестал работать, я ПОЛНОСТЬЮ отключаю его (не как пункт в меню, а как расширение для браузера) и включаю вновь. Похожим и даже более профессиональным чекером является IPvFoo ([Chrome](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ipvfoo/)), но я им не пользуюсь, так как в нём для просмотра домёнов надо кликать мышкой; зато он будет работать корректно не только в режиме TOR.
-
-Дальше нам необходимо поставить расширение ZeroOmega ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)). Расширение имеет manifest v3 и не будет работать в очень старых браузерах, в таком случае рекомендую обновиться, ибо с постоянным прирастанием нового функционала совет остаться на старой версии теряет всякий смысл.
+Дальше нам необходимо поставить расширение ZeroOmega ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)). Расширение имеет manifest v3 и не будет работать в очень старых браузерах, в таком случае рекомендую обновиться, ибо с постоянным прирастанием нового функционала совет остаться на старой версии теряет всякий смысл. Обязательно закрепите и чекер, и Омегу в панель расширений.
 
 Опционально, но рекомендуется поставить лучший, народный адблок — uBlock Origin ([Chrome](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ublock-origin/)), чтобы вас не беспокоила реклама разблокированного без всяких региональных ограничений Ютуба. Его уважают и разработчики, и простые пользователи, как самый лучший блокировщик рекламы.
 
@@ -101,13 +93,13 @@ Discord-drover от hdrover.
 
 ## English instructions
 
-Developed with the support of the community (especially the help from DesuIsALie and bananakid). The main author of the portable Tor is Verity Freedom. Tor Expert Bundle from Tor Project.
-SwitchyOmega from FelisCatus, ZeroOmega from zero-top. Runet Censorship Bypass from ilyaigpetrov. Discord-drover from hdrover.
+Developed with the support of the community (especially the help from DesuIsALie and bananakid). The main author of Tor Portable is Verity Freedom. Tor Expert Bundle from Tor Project.
+SwitchyOmega from FelisCatus, ZeroOmega from zero-top. IPvFoo from pmarks-net. Discord-drover from hdrover.
 
 Run the program via AntiTor.exe, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar.
 To proxy browser traffic through Tor use ZeroOmega extension, read more about it in readme-visual. Previously, an older SwitchyOmega extension was used, but it's obsolete now. SwitchyOmega recommended only for old browsers.
-In Russia we also use Runet Censorship Bypass extension, but only to know more about proxified domains, so anyone can use it this way too.
-Switch between modes using the mouse button: TOR (everything is proxified), AUTO (only some sites are proxified), system (nothing is proxified, you can use a third-party VPN). PAC Antizapret only for Russians.
+IPvFoo is used to know current page domains.
+Switch between ZeroOmega modes using the mouse button: TOR (everything is proxified by only one proxy), AUTO (only some sites are proxified), system (nothing is proxified, you can use a third-party VPN). PAC Antizapret only for Russians.
 We are using Drover to proxify Discord through Tor and bypass UDP block.
 
 Bridges use four completely different connection types: obfs4, snowflake, conjure and webtunnel (default, it is optimal to use only it because of the greater stability).
