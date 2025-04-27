@@ -28,7 +28,7 @@ Discord-drover от hdrover.
 
 Откройте папку drover, запустите файл drover.exe и нажмите install. Это разблокирует клиентское приложение Дискорда вместе с голосовыми чатами без всяких задержек благодаря обходу UDP. Начиная с этого момента для корректной работы Тор должен являться или службой, или быть запущен как программа.
 
-![0](https://github.com/user-attachments/assets/66a0b920-b238-44e6-85d4-cbd7066224a8)
+![0](https://github.com/user-attachments/assets/4ce15641-4a57-4825-8356-177bc9dbca93)
 
 Нам необходимо поставить расширения. Начнём с IPvFoo ([Chrome](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ipvfoo/)) — это чекер, будет выводить нам домёны страницы при клике на него мышкой, которые затем можно ввести в проксируемые Тором исключения. Это нужно в первую очередь мне как разработчику, остальные могут пропустить этот шаг, основной функционал не изменится.
 
