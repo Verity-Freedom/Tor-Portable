@@ -16,13 +16,7 @@ SafeLogging 0
 Log notice file notice.log
 Log notice stdout
 TruncateLogFile 1
-
-MapAddress *.hdrezka.ag *.hdrezka.ag.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
-MapAddress *.hdrezka.ac *.hdrezka.ac.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
-MapAddress *.voidboost.cc *.voidboost.cc.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
-MapAddress *.voidboost.org *.voidboost.org.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
-MapAddress *.clarity.ms *.clarity.ms.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
-MapAddress *.rezka.cloud *.rezka.cloud.62A4E6BFE875437879EB7981C3FC0310D3506AF5.exit
+MapAddress *.example.com *.example.com.6376F708BD865B477B2FBA68098EED046E34E64C.exit
 
 #The log is inside the "tor" folder.
 
@@ -53,8 +47,7 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 
 #Webtunnel bridges are considered to be the most stable. Only fastest Webtunnel bridges are recommended to use.
 
-ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,webtunnel exec pluggable_transports\lyrebird
-ClientTransportPlugin snowflake exec pluggable_transports\snowflake-client
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,snowflake,webtunnel exec pluggable_transports\lyrebird
 ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
 
 Bridge webtunnel [2001:db8:a62f:3205:a2b8:80f2:8491:9497]:443 CDCF334F257ACAD04A2C6CD9725B7FC686160912 url=https://meskio.net/eCDFZe3boSv+b2iqHiaY4ZgPxXBc ver=0.0.1
