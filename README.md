@@ -6,7 +6,7 @@
 
 Без внимательного чтения инструкции у вас НАСТРОИТЬ НИЧЕГО НЕ ПОЛУЧИТСЯ!
 
-Read the English instructions below.
+**Read the English instructions below.**
 
 Support us:
 
