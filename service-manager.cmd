@@ -70,9 +70,9 @@ if %errorLevel% EQU 0 (
    sc stop "Tor Win32 Service"
    sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
-  "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
-  "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
-  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
+  "-replace '^DataDirectory.*$', ('DataDirectory ../data') "^
+  "-replace '^GeoIPFile.*$', ('GeoIPFile ../data/geoip') "^
+  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ../data/geoip6') "^
   "| Out-File -encoding default '%CD%\torrc.txt'"
 ) else (
     powershell -Command "(gc '%CD%\torrc.txt') "^
@@ -89,9 +89,9 @@ sc query "Tor Win32 Service" | find "STOPPED" >nul
 if %errorLevel% EQU 0 (
    sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
-  "-replace '^DataDirectory.*$', ('DataDirectory ..\data') "^
-  "-replace '^GeoIPFile.*$', ('GeoIPFile ..\data\geoip') "^
-  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ..\data\geoip6') "^
+  "-replace '^DataDirectory.*$', ('DataDirectory ../data') "^
+  "-replace '^GeoIPFile.*$', ('GeoIPFile ../data/geoip') "^
+  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ../data/geoip6') "^
   "| Out-File -encoding default '%CD%\torrc.txt'"
 )
 
