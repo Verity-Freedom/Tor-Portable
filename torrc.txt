@@ -6,9 +6,9 @@
 
 #Manual: https://2019.www.torproject.org/docs/tor-manual.html.en
 
-DataDirectory ..\data
-GeoIPFile ..\data\geoip
-GeoIPv6File ..\data\geoip6
+DataDirectory ../data
+GeoIPFile ../data/geoip
+GeoIPv6File ../data/geoip6
 HardwareAccel 1
 MaxClientCircuitsPending 1
 UseBridges 1
@@ -43,8 +43,8 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 
 #Webtunnel bridges are considered to be the most stable. Only fastest Webtunnel bridges are recommended to use.
 
-ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,snowflake,webtunnel exec pluggable_transports\lyrebird
-ClientTransportPlugin conjure exec pluggable_transports\conjure-client -registerURL https://registration.refraction.network/api
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,snowflake,webtunnel exec pluggable_transports/lyrebird
+ClientTransportPlugin conjure exec pluggable_transports/conjure-client -registerURL https://registration.refraction.network/api
 
 Bridge webtunnel [2001:db8:a62f:3205:a2b8:80f2:8491:9497]:443 CDCF334F257ACAD04A2C6CD9725B7FC686160912 url=https://meskio.net/eCDFZe3boSv+b2iqHiaY4ZgPxXBc ver=0.0.1
 Bridge webtunnel [2001:db8:cc50:fa:264f:d1b8:79a:6a81]:443 38C7ADB125A7AEA7A668C5AE300F6DCEA6BFB340 url=https://surf.mysticboarding.cz/S2vNtMmDc72E3uSmAroQaUyj ver=0.0.1
