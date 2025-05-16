@@ -18,4 +18,3 @@ WantedBy=default.target
 EOF
 systemctl --user daemon-reload
 systemctl --user enable tor.service --now
-fi
