@@ -11,7 +11,7 @@ After=network-online.target
 Type=notify
 Restart=always
 WorkingDirectory=$(dirname "$0")
-ExecStart=/bin/sh -c './AntiTor.sh'
+ExecStart=/bin/sh './AntiTor.sh'
 
 [Install]
 WantedBy=default.target
