@@ -22,6 +22,14 @@ Tor Expert Bundle от Tor Project.
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.
 Discord-drover от hdrover.
 
+<a href="https://star-history.com/# Verity-Freedom/Tor-Portable&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Verity-Freedom/Tor-Portable&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Verity-Freedom/Tor-Portable&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Verity-Freedom/Tor-Portable&type=Date" />
+ </picture>
+</a>
+
 ## Инструкция
 
 Обратите повышенное внимание, для какой OS и её версии вы ставите программу, ибо ранее несколько человек запутались в этом (слава нашим героям, без их вмешательства в жизни бы не добавил это уточнение). Перейдите по [ссылке на IPNS](https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/), скачайте и распакуйте архив, зайдите в полученную вами папку. Тор запускается через AntiTor.exe (или AntiTor.cmd, если исполняемый файл вам не нужен), моментально сворачиваясь, что делает его совместимым с автозагрузкой (win+r shell:startup) и закреплением в панель задач. Чтобы убрать окно Тора, но сохранить его работоспособность, вы можете создать/удалить службу через двойной запуск service-manager.cmd. Тор НЕНАВИДИТ специальные символы по типу скобочек, они могут помешать ему запуститься (например в папке program files (x86)); при этом при запуске в папке с кириллицей проблем не будет.
