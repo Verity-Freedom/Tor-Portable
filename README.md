@@ -22,7 +22,7 @@ Tor Expert Bundle от Tor Project.
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.
 Discord-drover от hdrover.
 
-<a href="https://star-history.com/# Verity-Freedom/Tor-Portable&Date">
+<a href="https://star-history.com/#Verity-Freedom/Tor-Portable&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Verity-Freedom/Tor-Portable&type=Date&theme=dark" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Verity-Freedom/Tor-Portable&type=Date" />
