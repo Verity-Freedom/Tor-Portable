@@ -65,6 +65,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
  REM START
  REM :::::::::::::::::::::::::
  REM Run shell as admin (example) - put here code as you like
+
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" | find "RUNNING" >nul
 
