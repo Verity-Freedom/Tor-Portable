@@ -1,10 +1,11 @@
 @echo off
 chcp 1251
-::::::::::::::::::::::::::::::::::::::::::::
-:: Elevate.cmd - Version 9 custom
-:: Automatically check & get admin rights
-:: see "https://stackoverflow.com/a/12264592/1016343" for description
-::::::::::::::::::::::::::::::::::::::::::::
+REM :::::::::::::::::::::::::::::::::::::::::
+REM Elevate.cmd - Version 9
+REM Automatically check & get admin rights
+REM see "https://stackoverflow.com/a/12264592/1016343" for description
+REM :::::::::::::::::::::::::::::::::::::::::
+ 
  CLS
  ECHO.
  ECHO =============================
@@ -60,9 +61,10 @@ chcp 1251
  setlocal & cd /d %~dp0
  if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
- ::::::::::::::::::::::::::::
- ::START
- ::::::::::::::::::::::::::::
+ REM :::::::::::::::::::::::::
+ REM START
+ REM :::::::::::::::::::::::::
+ REM Run shell as admin (example) - put here code as you like
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" | find "RUNNING" >nul
 
