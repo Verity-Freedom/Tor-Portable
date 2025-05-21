@@ -22,15 +22,15 @@ MapAddress *.example.com *.example.com.6376F708BD865B477B2FBA68098EED046E34E64C.
 MiddleNodes 145.239.41.102, 94.23.172.32
 #Only fastest and most stable nodes here.
 
-#ExitNodes 59267EC3DC757CF850DA0F5AF03AB5E69C75FEB7
+#ExitNodes
 #The exit node. Stable speed, not blocked by YouTube and Discord. Not used by default for security measures, can be enabled by removing "#" symbol.
 #Not changed to random if was used and died, Tor will stick on 45% (true for 0.4.8.14), need to be replaced or put back into default mode.
 #You can check the status of exit (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
 #There will be "video unavailable" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
 #Restart after exit change.
 
-#ExitNodesList A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8, 59267EC3DC757CF850DA0F5AF03AB5E69C75FEB7
-#The constant list of good exits to not lose any of them. For user purposes.
+#ExitNodesList
+#The list of good exits to not lose any of them. For user purposes.
 
 #ExitNodes {COUNTRY-CODE}
 #Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
