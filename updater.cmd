@@ -8,6 +8,11 @@ TIMEOUT /T 2
 )
 
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro.zip', '%CD%\change-mode\pro.zip')"
+if %errorLevel% EQU 0 (
+echo Pro mode updated successfully! Continue updating or close the window now.
+)
+pause
+
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/bridges-webtunnel-list.txt', '%CD%\bridges-webtunnel-list.txt')"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/geoip', '%CD%\data\geoip')"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/geoip6', '%CD%\data\geoip6')"
@@ -20,7 +25,7 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ip
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/lyrebird.exe', '%CD%\tor\pluggable_transports\lyrebird.exe')"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/conjure-client.exe', '%CD%\tor\pluggable_transports\conjure-client.exe')"
 if %errorLevel% EQU 0 (
-echo Tor Portable files updated successfully!
+echo All files updated successfully!
 )
 
 pause
