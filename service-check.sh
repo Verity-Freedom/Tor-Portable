@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 systemctl --user  status tor.service
 
-sleep 10
+read -p "Press Enter to continue"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 mkdir ~/.config/systemd
 mkdir ~/.config/systemd/user
 cat <<EOF > ~/.config/systemd/user/tor.service
