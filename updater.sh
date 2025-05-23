@@ -3,7 +3,7 @@ killall tor
 wget https://ipfs.io/ipns/51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro.zip -O ./change-mode/pro.zip
 if [ $? -eq 0 ]; then
 read -p "Pro mode updated successfully! Press Enter to continue updating or close the window now."
-else read -p "An unexpected error occured! Aborting..."
+else read -p "An unexpected error occurred! Aborting..."
 exit
 fi
 wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/geoip -O ./data/geoip
