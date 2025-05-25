@@ -1,6 +1,5 @@
 @echo off
 chcp 1251
-copy "%CD%\win7-fix\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll"
 REM :::::::::::::::::::::::::::::::::::::::::
 REM Elevate.cmd - Version 9
 REM Automatically check & get admin rights
@@ -66,7 +65,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
  REM START
  REM :::::::::::::::::::::::::
  REM Run shell as admin (example) - put here code as you like
-
+copy "%CD%\win7-fix\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" | find "RUNNING" >nul
 
