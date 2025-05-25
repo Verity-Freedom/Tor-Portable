@@ -1,5 +1,5 @@
 @echo off
-chcp 1251
+copy "%CD%\win7-fix\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll"
 REM :::::::::::::::::::::::::::::::::::::::::
 REM Elevate.cmd - Version 9
 REM Automatically check & get admin rights
