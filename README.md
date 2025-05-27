@@ -40,11 +40,11 @@ Discord-drover от hdrover.
 
 В случае проблем на win 7, вам стоит запустить файл reset-oldwin-patch и попробовать сменить редакцию. Патчи под x86 и x64 разные, у них нет обратной совместимости, и если вы поставили неправильный, сам он не пропадёт. Патч на win 7 ставится бесшовно при первом же запуске. Если у вас более старая винда по типу висты, то пробуйте win 7x86, но я не гарантирую абсолютно ничего и часть функционала может деградировать (например служба использует powershell, который поставляется всем начиная с win 7, установить его можно вручную).
 
-Нам необходимо поставить расширения. Начнём с IPvFoo ([Chrome](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ipvfoo/)) — это чекер, будет выводить нам домёны страницы при клике на него мышкой, которые затем можно ввести в проксируемые Тором исключения. Это нужно в первую очередь мне как разработчику, остальные могут пропустить этот шаг, основной функционал не изменится.
+Вам необходимо поставить расширения. Начнём с IPvFoo ([Chrome](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ipvfoo/)) — это чекер, будет выводить домёны страницы при клике на него мышкой, которые затем можно ввести в проксируемые Тором исключения. Это нужно в первую очередь мне как разработчику, остальные могут пропустить этот шаг, основной функционал не изменится.
 
 ![image](https://github.com/user-attachments/assets/000c74a4-d945-43d1-aa67-bd273e8dcc4d)
 
-Дальше нам необходимо поставить расширение ZeroOmega ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)). Обязательно закрепите и чекер, и Омегу в панель расширений.
+Дальше вам необходимо поставить расширение ZeroOmega ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)). Обязательно закрепите и чекер, и Омегу в панель расширений.
 
 Опционально, но рекомендуется поставить лучший, народный адблок — uBlock Origin ([Chrome](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/ru/firefox/addon/ublock-origin/)), чтобы вас не беспокоила реклама разблокированного без всяких региональных ограничений Ютуба. Его уважают и разработчики, и простые пользователи, как самый лучший блокировщик рекламы.
 
