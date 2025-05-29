@@ -67,11 +67,11 @@ REM :::::::::::::::::::::::::::::::::::::::::
  REM Run shell as admin (example) - put here code as you like
 copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
-sc query "Tor Service" | find "RUNNING" >nul
+sc query "Tor Win32 Service" | find "RUNNING" >nul
 
 if %errorLevel% EQU 0 (
-   sc stop "Tor Service"
-   sc delete "Tor Service"
+   sc stop "Tor Win32 Service"
+   sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
   "-replace '^DataDirectory.*$', ('DataDirectory ../data') "^
   "-replace '^GeoIPFile.*$', ('GeoIPFile ../data/geoip') "^
@@ -83,14 +83,14 @@ if %errorLevel% EQU 0 (
       "-replace '^GeoIPFile.*$', ('GeoIPFile \"%CD%\data\geoip\"' -replace '\\','\\') "^
       "-replace '^GeoIPv6File.*$', ('GeoIPv6File \"%CD%\data\geoip6\"' -replace '\\','\\') "^
       "| Out-File -encoding default '%CD%\torrc.txt'"
-    sc create "Tor Service" binPath= "\"%CD%\tor\tor.exe\" --nt-service -f \"%CD%\torrc.txt\"" start= "auto"
-    sc description "Tor Service" "Provides an anonymous Internet communication system"
-    sc start "Tor Service"
+    sc create "Tor Win32 Service" binPath= "\"%CD%\tor\tor.exe\" --nt-service -f \"%CD%\torrc.txt\"" start= "auto"
+    sc description "Tor Win32 Service" "Provides an anonymous Internet communication system"
+    sc start "Tor Win32 Service"
 )
 
-sc query "Tor Service" | find "STOPPED" >nul
+sc query "Tor Win32 Service" | find "STOPPED" >nul
 if %errorLevel% EQU 0 (
-   sc delete "Tor Service"
+   sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
   "-replace '^DataDirectory.*$', ('DataDirectory ../data') "^
   "-replace '^GeoIPFile.*$', ('GeoIPFile ../data/geoip') "^
