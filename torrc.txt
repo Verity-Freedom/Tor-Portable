@@ -46,11 +46,11 @@ MiddleNodes 145.239.41.102, 94.23.172.32
 ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,snowflake,webtunnel exec pluggable_transports/lyrebird
 ClientTransportPlugin conjure exec pluggable_transports/conjure-client -registerURL https://registration.refraction.network/api
 
+Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1
+Bridge webtunnel [2001:db8:8d16:cb5b:d7f5:504b:8768:bdd3]:443 570FEB15763CC623146E8433ACA751948A6756D4 url=https://pl.808.re/SDglNGoixITem7ZHxQKXSscK ver=0.0.2
 Bridge webtunnel [2001:db8:a62f:3205:a2b8:80f2:8491:9497]:443 CDCF334F257ACAD04A2C6CD9725B7FC686160912 url=https://meskio.net/eCDFZe3boSv+b2iqHiaY4ZgPxXBc ver=0.0.1
 Bridge webtunnel [2001:db8:cc50:fa:264f:d1b8:79a:6a81]:443 38C7ADB125A7AEA7A668C5AE300F6DCEA6BFB340 url=https://surf.mysticboarding.cz/S2vNtMmDc72E3uSmAroQaUyj ver=0.0.1
 Bridge webtunnel [2001:db8:a8b5:9d82:9ae6:354f:671:e5da]:443 E3AE862BBB49EA5FACF4FDF09C8F1FE0D6F3CE4B url=https://d.img-cdn.net/mExFXMqeh1PcoDRRyz/ ver=0.0.1
-Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1
-Bridge webtunnel [2001:db8:1178:dc13:afaf:da8e:f592:398a]:443 07C77888D2367C25CA875E2174D9B225140940E9 url=https://nextcloud.privacy-vbox.de/iJmug5bRcsKeVv45h7a0fvkM ver=0.0.1
 Bridge webtunnel [2001:db8:986e:c5ca:6049:65ed:af8c:fb5d]:443 B0F930FBB2AD6E0464F8DE0A92BB2D211CB9B010 url=https://lulea.frostbay.org/TheNorthernGateway ver=0.0.1
 Bridge webtunnel [2001:db8:44:614b:42f5:f87c:7072:151]:443 F0C55D7B465C94F71A9A8F0479073BC02565DA36 url=https://quantentoast.de/CDgakmo0QO5Rvo2jRCtu4n9D ver=0.0.1
 Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1
