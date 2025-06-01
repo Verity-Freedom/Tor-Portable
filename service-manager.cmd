@@ -97,5 +97,4 @@ if %errorLevel% EQU 0 (
   "-replace '^GeoIPv6File.*$', ('GeoIPv6File ../data/geoip6') "^
   "| Out-File -encoding default '%CD%\torrc.txt'"
 )
-
-TIMEOUT /T 3
+timeout /t 3 /nobreak
