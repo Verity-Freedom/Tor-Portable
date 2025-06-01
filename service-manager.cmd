@@ -98,4 +98,4 @@ if %errorLevel% EQU 0 (
   "| Out-File -encoding default '%CD%\torrc.txt'"
 )
 
-pause
+TIMEOUT /T 2
