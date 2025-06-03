@@ -111,9 +111,6 @@ Discord-drover от hdrover.
 
 ## English instructions
 
-Developed with the support of the community (especially the help from DesuIsALie and bananakid). The main author of Tor Portable is Verity Freedom. Tor Expert Bundle from Tor Project.
-SwitchyOmega from FelisCatus, ZeroOmega from zero-top. IPvFoo from pmarks-net. Discord-drover from hdrover.
-
 Run the program via AntiTor.exe, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar.
 To proxy browser traffic through Tor use ZeroOmega extension, read more about it in readme-visual. Previously, an older SwitchyOmega extension was used, but it's obsolete now. SwitchyOmega recommended only for old browsers.
 IPvFoo is used to know current page domains.
