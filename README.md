@@ -113,7 +113,6 @@ Discord-drover от hdrover.
 
 Run the program via AntiTor.exe, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar.
 To proxy browser traffic through Tor use ZeroOmega extension, read more about it in readme-visual. Previously, an older SwitchyOmega extension was used, but it's obsolete now. SwitchyOmega recommended only for old browsers.
-IPvFoo is used to know current page domains.
 Switch between ZeroOmega modes using the mouse button: TOR (everything is proxified by only one proxy), AUTO (only some sites are proxified), system (nothing is proxified, you can use a third-party VPN). PAC Antizapret only for Russians.
 We are using Drover to proxify Discord through Tor and bypass UDP block.
 
