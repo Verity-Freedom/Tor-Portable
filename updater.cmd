@@ -4,12 +4,15 @@ taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" | find "RUNNING"
 if %errorLevel% EQU 0 (
 call service-manager.cmd
-TIMEOUT /T 2
+timeout /t 3 /nobreak
 )
 
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro.zip', '%CD%\change-mode\pro.zip')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/default.zip', '%CD%\change-mode\default.zip')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/default/torrc.txt', '%CD%\change-mode\modes\default\torrc.txt"')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro/torrc.txt', '%CD%\change-mode\modes\pro\torrc.txt"')"
 if %errorLevel% EQU 0 (
-echo Pro mode updated successfully! Continue updating or close the window now.
+echo Modes updated successfully! Continue updating or close the window now.
 )
 pause
 
