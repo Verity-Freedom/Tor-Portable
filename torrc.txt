@@ -1,3 +1,5 @@
+#The mode is default.
+
 #Don't be afraid to redact your torrc! Add and delete the "#" symbol to hide strings from the program and switch between exits.
 #Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube). I may be wrong about this, but collected data says its true.
 #If you are a tech company, PLEASE do not block Tor as a means of connecting to your service.
