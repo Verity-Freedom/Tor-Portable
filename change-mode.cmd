@@ -14,6 +14,6 @@ pause
 exit
 ) else (
 copy "%CD%\change-mode\modes\default\torrc.txt" "%CD%\torrc.txt"
-echo "The error occurred. Attempted to update the mode and set it to default. The error should be gone."
+echo "An error occurred. Attempted to update the mode and set it to default. The error should be gone."
 pause
 )
