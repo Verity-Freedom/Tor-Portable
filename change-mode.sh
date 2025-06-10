@@ -1,5 +1,6 @@
 #!/bin/bash
-
+killall tor
+systemctl --user disable tor.service --now
 grep -q "The mode is default" torrc.txt
 if [ $? -eq 0 ]; then
 cp -fr ./change-mode/modes/pro/torrc.txt torrc.txt
