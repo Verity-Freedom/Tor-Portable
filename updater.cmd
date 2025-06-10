@@ -25,8 +25,8 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ip
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/service-manager.cmd', '%CD%\service-manager.cmd')"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/tor.exe', '%CD%\tor\tor.exe')"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/tor-gencert.exe', '%CD%\tor\tor-gencert.exe')"
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win7/lyrebird.exe', '%CD%\tor\pluggable_transports\lyrebird.exe')"
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win7/conjure-client.exe', '%CD%\tor\pluggable_transports\conjure-client.exe')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/lyrebird.exe', '%CD%\tor\pluggable_transports\lyrebird.exe')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_win8+/conjure-client.exe', '%CD%\tor\pluggable_transports\conjure-client.exe')"
 if %errorLevel% EQU 0 (
 echo All files updated successfully!
 )
