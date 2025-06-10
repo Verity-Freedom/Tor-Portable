@@ -1,13 +1,13 @@
 #!/bin/bash
 
-grep "The mode is default" torrc.txt
+grep -q "The mode is default" torrc.txt
 if [ $? -eq 0 ]; then
 cp -fr ./change-mode/modes/pro/torrc.txt torrc.txt
 read -p "The mode was changed to pro."
 exit
 fi
 
-grep "The mode is pro" torrc.txt
+grep -q "The mode is pro" torrc.txt
 if [ $? -eq 0 ]; then
 cp -fr ./change-mode/modes/default/torrc.txt torrc.txt
 read -p "The mode was changed to default."
