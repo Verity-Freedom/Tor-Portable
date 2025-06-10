@@ -1,7 +1,10 @@
 #!/bin/bash
-wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro.zip -O ./change-mode/pro.zip
+wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro.zip -O ./change-mode/pro.zip &&
+wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/default.zip -O ./change-mode/default.zip &&
+wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/default/torrc.txt -O ./change-mode/modes/default/torrc.txt &&
+wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/pro/torrc.txt -O ./change-mode/modes/pro/torrc.txt
 if [ $? -eq 0 ]; then
-read -p "Pro mode updated successfully! Press Enter to continue updating or close the window now."
+read -p "Modes were updated successfully! Press Enter to continue updating or close the window now."
 else read -p "An unexpected error occurred! Aborting..."
 exit
 fi
