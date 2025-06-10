@@ -2,16 +2,18 @@
 findstr /c:"The mode is default" torrc.txt
 if %errorLevel% EQU 0 (
 copy "%CD%\change-mode\modes\pro\torrc.txt" "%CD%\torrc.txt"
-echo "The mode was changed to pro"
+echo "The mode was changed to pro."
 pause
 exit
 )
 findstr /c:"The mode is pro" torrc.txt
 if %errorLevel% EQU 0 (
 copy "%CD%\change-mode\modes\default\torrc.txt" "%CD%\torrc.txt"
-echo "The mode was changed to default"
+echo "The mode was changed to default."
 pause
 exit
-)
-
+) else (
+copy "%CD%\change-mode\modes\default\torrc.txt" "%CD%\torrc.txt"
+echo "The error occurred. Attempted to update the mode and set it to default. The error should be gone."
 pause
+)
