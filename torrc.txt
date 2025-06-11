@@ -13,7 +13,6 @@ GeoIPFile ../data/geoip
 GeoIPv6File ../data/geoip6
 HardwareAccel 1
 MaxClientCircuitsPending 1
-CircuitBuildTimeout 5
 UseBridges 1
 SafeLogging 0
 Log notice file notice.log
