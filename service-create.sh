@@ -1,4 +1,5 @@
 #!/bin/bash
+killall tor
 mkdir ~/.config/systemd
 mkdir ~/.config/systemd/user
 cat <<EOF > ~/.config/systemd/user/tor.service
