@@ -2,12 +2,12 @@ https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel
 https://metrics.torproject.org/rs.html#search/transport:webtunnel
 https://www.speedcheck.org (it is still recommended to check their speed separately before using in conflux)
 
-== GOOD BRIDGES ==
-Bridge webtunnel [2001:db8:63b4:6bd7:a357:7858:898e:718c]:443 059AEB126918A33B8246E8136D565FF57753D5CF url=https://alwaysnewbie.eu.org/homesweethome ver=0.0.1 - Scarameow, very old bridge from September 2024
-Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1 - WTBrLJ4QIWZZk1, another old bridge that was dead
-Bridge webtunnel [2001:db8:a62f:3205:a2b8:80f2:8491:9497]:443 CDCF334F257ACAD04A2C6CD9725B7FC686160912 url=https://meskio.net/eCDFZe3boSv+b2iqHiaY4ZgPxXBc ver=0.0.1 - WebTunnelBr, 19.11.2024 TOP 2
-Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1 - Yann, 19.11.2024 TOP 3
-Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1 - WTBrlcaFUb5NJj, 19.11.2024 TOP 4
+== NAMED BRIDGES ==
+Bridge webtunnel [2001:db8:63b4:6bd7:a357:7858:898e:718c]:443 059AEB126918A33B8246E8136D565FF57753D5CF url=https://alwaysnewbie.eu.org/homesweethome ver=0.0.1 - Scarameow
+Bridge webtunnel [2001:db8:6281:baa0:afc0:9579:b303:59a7]:443 377CF6FCBFD2E57D0775EA6F2E8D3EF0D8CDD02F url=https://cryptomeanscryptography.club/TfDS3X50Rf3dR5x3Q3vLS25o ver=0.0.1 - WTBrLJ4QIWZZk1
+Bridge webtunnel [2001:db8:a62f:3205:a2b8:80f2:8491:9497]:443 CDCF334F257ACAD04A2C6CD9725B7FC686160912 url=https://meskio.net/eCDFZe3boSv+b2iqHiaY4ZgPxXBc ver=0.0.1 - WebTunnelBr
+Bridge webtunnel [2001:db8:1fc0:eebe:5e6e:d6ee:f53e:6889]:443 4A3859C089DF40A4FFADC10A79DFEBE4F8272535 url=https://verry.org/K2A2utQIMou4Ia2WjVseyDjV ver=0.0.1 - Yann
+Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1 - WTBrlcaFUb5NJj
 Bridge webtunnel [2001:db8:e3c6:f3ba:6cee:4720:a2da:822c]:443 9BDB48D89A520ACEDDEF61709EE2A497A52F2955 url=https://cool.pmvl.eu/803FifIHPKHnbjVounxSrFtg ver=0.0.1 - klabauterbachNW
 Bridge webtunnel [2001:db8:1178:dc13:afaf:da8e:f592:398a]:443 07C77888D2367C25CA875E2174D9B225140940E9 url=https://nextcloud.privacy-vbox.de/iJmug5bRcsKeVv45h7a0fvkM ver=0.0.1 - klabauterbachHW
 Bridge webtunnel [2001:db8:b5b6:b5e5:bf36:f954:3d5d:5b4d]:443 718AF34BD1BC47AE1F5069BE9AB63B7CC5D37B84 url=https://bojack.pmvl.eu/fbMFir2rBpRm6eAeKPdz2ZBb ver=0.0.1 - klabauterbachRW
@@ -106,10 +106,12 @@ Bridge webtunnel [2001:db8:4fe2:49d2:2b7d:8576:5ede:e177]:443 C9AB6F207432161589
 Bridge webtunnel [2001:db8:5f24:a703:dbde:bec8:d285:d600]:443 EFCEA1B038931F73BA155FE1E5945BCEBD62212C url=https://ttt.enerhome.site/ttt_TOR_Cjy8764jkUtopY ver=0.0.1 - tttTOR
 Bridge webtunnel [2001:db8:6d91:1d3e:230b:9d98:8e29:eefc]:443 C762244C9E351B4A63EF1EF4585A38535C3023D8 url=https://anastasia.anondns.net/atkzL9N85rspiiRudpeCh9gq ver=0.0.1 - An45t4si4
 Bridge webtunnel [2001:db8:880a:108b:916e:70d9:1f77:d755]:443 933C998EC827D1C17CC93D1292BBC41735867CF8 url=https://wt.xoomlia.com/Lsd6ebydoA5t5JdXGLq71O2I ver=0.0.1 - TunnelToFreedom2
+Bridge webtunnel [2001:db8:12ff:2d55:9130:36a7:c49b:d1f4]:443 933C998EC827D1C17CC93D1292BBC41735867CF8 url=https://x7t2qctb.xoomlia.com/qzxrtfmu/ ver=0.0.1 - TunnelToFreedomY
 Bridge webtunnel [2001:db8:5ed8:4b36:c633:cd40:3040:6cb1]:443 B51FD3150E208A600D00BCA5963B0EF5C867574F url=https://rot.ronaak.eu:4433/iUFRXvAp3E3MHDiJ8453BaaM ver=0.0.2 - Ronaak
 Bridge webtunnel [2001:db8:b452:7389:e4dd:990:c3b9:d99e]:443 32E4FE7D3D76E1C301FA692D1BC74A4D0E06783A url=https://no1.nexusocean.org ver=0.0.1 - nexus1
 Bridge webtunnel [2001:db8:e6eb:7a2f:a859:c47:4364:cc1f]:443 F8E6DE838D5E41E05A0744ED4DBCE8C40513EB45 url=https://no2.nexusocean.org ver=0.0.1 - nexus2
 Bridge webtunnel [2001:db8:ec38:ad64:f0fb:d7c2:2e26:4c4a]:443 5FC9FFCBA10611A1C17851A4B0BE1352FBC8909F url=https://redstarsl.cc/cme9f87hmdc8s7dychbsm897xy ver=0.0.1 - WebTunnelBr
+Bridge webtunnel [2001:db8:db12:d3f0:335f:5cb1:f305:bdd1]:443 F0657A8419A7C14027CD79D33CA018D9487CB302 url=https://heresthespace.com/oAH2lLnop5li9wV ver=0.0.2 - 581
 
 == BAURUINE CLUSTER ==
 Bridge webtunnel [2001:db8:3efd:128e:fb6a:992a:3271:7eee]:443 1A86C82FECF9EC1CE252751509D19F1D39A8B0F6 url=https://pythonpioneer.website/ieheithooPaiXi9manga ver=0.0.1
