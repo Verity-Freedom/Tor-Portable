@@ -12,7 +12,6 @@ killall tor
 systemctl --user disable tor.service --now
 wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/geoip -O ./data/geoip &&
 wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/geoip6 -O ./data/geoip6 &&
-wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/bridges-webtunnel-list.txt -O ./bridges-webtunnel-list.txt &&
 wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_linux/tor -O ./tor/tor &&
 wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_linux/lyrebird -O ./tor/pluggable_transports/lyrebird &&
 wget https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/Autoupdate/AntiTor_linux/conjure-client -O ./tor/pluggable_transports/conjure-client &&
