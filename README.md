@@ -6,11 +6,11 @@
 
 Без внимательного чтения инструкции у вас НАСТРОИТЬ НИЧЕГО НЕ ПОЛУЧИТСЯ!
 
-Support us:
+Поддержать нас:
 
-5536 9141 8416 7645 — Verity Freedom (портативный Tor)
+5536 9141 8416 7645 — Verity Freedom (портативный Тор)
 
-***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Antizapret, ВАЖНО в ноябре и декабре каждого года)***
+***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Антизапрет, ВАЖНО в ноябре и декабре каждого года)***
 
 Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).
 Основной автор портативного Тора — Verity Freedom.
