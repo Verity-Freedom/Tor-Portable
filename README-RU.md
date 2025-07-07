@@ -8,7 +8,7 @@
 
 Поддержать нас:
 
-5536 9141 8416 7645 — Verity Freedom (портативный Тор)
+0xb9569717b5f1ee67a2ace2b999a61e3d8d4cce52 USDT BEP20, https://www.donationalerts.com/r/verity_freedom — Verity Freedom (портативный Тор)
 
 ***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Антизапрет, ВАЖНО в ноябре и декабре каждого года)***
 
