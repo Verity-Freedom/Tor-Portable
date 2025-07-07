@@ -14,16 +14,11 @@
 
 ***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Антизапрет, ВАЖНО в ноябре и декабре каждого года)***
 
-Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).
-
-Основной автор портативного Тора — Verity Freedom.
-
-Автор прокси Антизапрет — ValdikSS.
-
-Tor Expert Bundle от Tor Project.
-
-SwitchyOmega от FelisCatus, ZeroOmega от zero-top.
-
+Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).  
+Основной автор портативного Тора — Verity Freedom.  
+Автор прокси Антизапрет — ValdikSS.  
+Tor Expert Bundle от Tor Project.  
+SwitchyOmega от FelisCatus, ZeroOmega от zero-top.  
 Discord-drover от hdrover.
 
 <a href="https://star-history.com/#Verity-Freedom/Tor-Portable&Date">
