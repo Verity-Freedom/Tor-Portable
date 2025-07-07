@@ -6,8 +6,6 @@
 
 Без внимательного чтения инструкции у вас НАСТРОИТЬ НИЧЕГО НЕ ПОЛУЧИТСЯ!
 
-**Read the English instructions below.**
-
 Support us:
 
 5536 9141 8416 7645 — Verity Freedom (портативный Tor)
@@ -99,20 +97,3 @@ VIRTUAL принимает значения любого другого режи
 После выполнения всех заданий вы можете знать, что овладели Tor Portable в совершенстве.
 
 На некоторых сайтах (например polymarket.com) могут быть сложности с регистрацией даже в режиме VIRTUAL на PROXY, так как у него слишком много защит. Что уж говорить о Торе, который блокируют все, кто хочет. Это очередное напоминание, какую ошибку совершили разработчики, открыв все торовские адреса для публичного доступа, хоть они и сделали это [осознанно](https://gitlab.torproject.org/tpo/core/tor/-/issues/41098), и они знают, что это проблема.
-
-## English instructions
-
-Run the program via AntiTor.exe or AntiTor.cmd, let it work in the background. Preferably put a label leading to AntiTor.exe to startup (startup is called by the shell:startup command in the win+r menu), it also can be pinned to the taskbar.
-To proxy browser traffic through Tor use ZeroOmega extension, read more about it in readme-visual. Previously, an older SwitchyOmega extension was used, but it's obsolete now. SwitchyOmega recommended only for old browsers.
-Switch between ZeroOmega modes using the mouse button: TOR (everything is proxified by only one proxy), AUTO (only some sites are proxified), System (nothing is proxified, you can use a third-party VPN). PAC Antizapret only for Russians.
-We are using Drover to proxify Discord through Tor and bypass UDP block.
-
-Bridges use four completely different connection types: obfs4, snowflake, conjure and webtunnel (default, it is optimal to use only it because of the greater stability).
-Replace the bridges by editing the torrc file, receive new ones via a bridge request in the tor browser or send an empty email to bridges@torproject.org.
-The new webtunnel bridge can be obtained at https://bridges.torproject.org/bridges/?transport=webtunnel and https://github.com/scriptzteam/Tor-Bridges-Collector/blob/main/bridges-webtunnel, there is also a large list of webtunnel bridges inside.
-Bridges may disappear gradually, as the program informs you that one of the bridges has failed, which negatively affects the quality of the connection and can lead to its complete breakdown.
-I recommend reading torrc.txt, because in addition to the code for the correct operation of the program, it contains many important technical details and even has settings to increase speed (language English).
-
-Use the service-manager file if you want to install or uninstall Tor as service.
-
-Ready!
