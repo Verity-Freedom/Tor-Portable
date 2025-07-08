@@ -73,4 +73,6 @@ Tor Portable itself has two modes: pro and default, which are switched via the c
 
 If you want to try to completely avoid restrictions from sites like Grok.com, you should install [Psiphon TM](https://github.com/Verity-Freedom/Tor-Portable/releases/tag/v1.0), and change VIRTUAL mode from TOR to PROXY. But I'm not recommending this to everyone, since Psiphon TM is not that properly developed (at the time of writing this), and is much slower than Tor. I should try to at least create the Linux version of it, but I use it on my Windows the way it is.
 
+To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre).
+
 That's all for now. Good luck.
