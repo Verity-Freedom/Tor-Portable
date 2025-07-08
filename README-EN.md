@@ -33,4 +33,4 @@ Without further ado, here we go.
 
 ## Installation
 
-Unlike the Russian readme, here during the installation process I will describe in detail the logic of my decisions, so that you can perhaps follow in my footsteps.
+Here during the installation process I will describe in detail the logic of my decisions, so that you can perhaps follow in my footsteps.
