@@ -44,6 +44,7 @@ Select the Tor you need and unpack it. AntiDetect does not have an exe file with
 If you are running win 7 version, do not mix up the bitness. If you mixed up the bitness, open the reset-oldwin-patch file and download the version with a different bitness. Win 7x86 currently uses an outdated version of the Webtunnel protocol and may perform worse than others.
 
 If Discord does not work in your country, install Discord Drover. After installing Discord Drover, Tor should be running, and Discord will not work normally without it anymore until proper deinstallation of this mod.
+
 ![0](https://github.com/user-attachments/assets/aa520f99-cc6a-45f3-84d5-6da15b587225)
 
 Then install the ZeroOmega extension ([Chrome](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/), [GitHub](https://github.com/zero-peak/ZeroOmega)). Pin it to your extensions bar. Before using ZeroOmega on Firefox, you need to grant it the "Run in private windows" permission. ZeroOmega is the best platform for mass deployment of browser proxy settings, so you can 5 star it in your store. On Win 7, it may be possible to install an extension only from a local file (it is known that the Google store can lie about incompatibility).
