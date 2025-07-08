@@ -19,7 +19,7 @@
 </a>
 
 Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).  
-Основной автор портативного Тора — Verity Freedom. Концепт, патч вин 7, конфиги и службы от Verity Freedom.
+Основной автор портативного Тора — Verity Freedom. Концепт, патч вин 7, конфиги и службы от Verity Freedom.  
 Автор прокси Антизапрет — ValdikSS.  
 Tor Expert Bundle от Tor Project.  
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.  
