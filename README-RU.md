@@ -19,11 +19,12 @@
 </a>
 
 Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).  
-Основной автор портативного Тора — Verity Freedom.  
+Основной автор портативного Тора — Verity Freedom. Концепт, патч вин 7, конфиги и службы от Verity Freedom.
 Автор прокси Антизапрет — ValdikSS.  
 Tor Expert Bundle от Tor Project.  
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.  
-Discord-drover от hdrover.
+Discord-drover от hdrover.  
+Фикс протокола Webtunnel от Xunlei.
 
 ## Инструкция
 
