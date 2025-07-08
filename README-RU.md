@@ -24,7 +24,8 @@
 Tor Expert Bundle от Tor Project.  
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.  
 Discord-drover от hdrover.  
-Фикс протокола Webtunnel от Xunlei.
+Фикс протокола Webtunnel от Xunlei.  
+Техническая помощь от NoPlagiarism.
 
 ## Инструкция
 
