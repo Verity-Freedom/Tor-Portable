@@ -71,6 +71,8 @@ ZeroOmega has a very advanced address parser. It can be used to refill domains i
 
 Tor Portable itself has two modes: pro and default, which are switched via the change-mode file. Switching to pro mode is necessary to partially compensate for the lack of hidden Tor exits, since sometimes sites impose restrictions on them, such as the inability to send images in Discord or some inaccessible music videos on YouTube, or inability to talk with Gemini. Pro mode is using only one exit. But the default mode uses completely random exits (so these restrictions are triggered randomly), and should survive much longer, while even having a pro mode won't help you avoid restrictions on some sites.
 
+![5](https://github.com/user-attachments/assets/bc404d5e-f8eb-498d-a894-1aade051eedb)
+
 If you want to try to completely avoid restrictions from sites like Grok.com, you should install [Psiphon TM](https://github.com/Verity-Freedom/Tor-Portable/releases/tag/v1.0), and change VIRTUAL mode from TOR to PROXY. But I'm not recommending this to everyone, since Psiphon TM is not that properly developed (at the time of writing this), and is much slower than Tor. I should try to at least create the Linux version of it, but I use it on my Windows the way it is.
 
 To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre).
