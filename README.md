@@ -1,5 +1,6 @@
-[РУССКОЕ ЧИТАЙМЕНЯ](https://github.com/Verity-Freedom/Tor-Portable/blob/main/README-RU.md)
+**[РУССКОЕ ЧИТАЙМЕНЯ](https://github.com/Verity-Freedom/Tor-Portable/blob/main/README-RU.md)**
 
+----
 # Tor Portable
 
 The fine-tuned Tor core for any browser configurations. EN, CN and RU configs. Customly fixed Webtunnel proto. Linux, win 7 and win 8+ support.
