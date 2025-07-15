@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 killall tor
 mkdir ~/.config/systemd
 mkdir ~/.config/systemd/user

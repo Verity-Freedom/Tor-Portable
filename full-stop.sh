@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 killall tor
 systemctl --user disable tor.service --now
 rm ~/.config/systemd/user/tor.service

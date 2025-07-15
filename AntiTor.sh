@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cd tor
 LD_LIBRARY_PATH=.
 ./tor -f ../torrc.txt

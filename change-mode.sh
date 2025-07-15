@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 killall tor
 systemctl --user disable tor.service --now
 grep -q "The mode is default" torrc.txt
