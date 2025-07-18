@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-killall tor
+lsof -t ./tor/ld-linux-x86-64.so.2 | xargs kill
 systemctl --user disable tor.service --now
 grep -q "The mode is default" torrc.txt
 if [ $? -eq 0 ]; then
