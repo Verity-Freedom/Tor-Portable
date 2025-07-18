@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-killall tor
-killall ld-linux-x86-64.so.2
+lsof -t ./tor/ld-linux-x86-64.so.2 | xargs kill
 mkdir ~/.config/systemd
 mkdir ~/.config/systemd/user
 cat <<EOF > ~/.config/systemd/user/tor.service
