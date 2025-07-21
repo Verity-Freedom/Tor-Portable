@@ -80,4 +80,4 @@ If you want to try to completely avoid restrictions from sites like Grok.com, yo
 
 To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre).
 
-That's all for now. Good luck.
+That's all for now. You can write anything to me [here](https://github.com/Verity-Freedom/Tor-Portable/issues/8). Good luck.
