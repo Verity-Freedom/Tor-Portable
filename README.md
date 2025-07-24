@@ -42,7 +42,7 @@ Tor Portable is hosted on the IPNS "eternal cloud", which is extremely convenien
 
 [Download the release from here](https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/).
 
-Select the Tor you need and unpack it. Avoid spaces and special characters in the paths to your folder. AntiDetect does not have an exe file without a digital signature, so it does not provoke antiviruses. Other options for Windows can provoke a false antivirus reaction, but have an exe. Running AntiTor will open a console with connection information, while running service-create/manager (Linux/Windows) will open Tor silently. To remove the service, run service-manager again (use full-stop to exit Tor on Linux). AntiTor and service-* are the only two files that will run Tor correctly. Tor will start with all the necessary universal connection settings.
+Select the Tor you need and unpack it. Avoid spaces and special characters in the paths to your folder. AntiDetect does not have an exe file without a digital signature. Other options for Windows can provoke a false antivirus reaction, but have an exe. Running AntiTor will open a console with connection information, while running service-create/manager (Linux/Windows) will open Tor silently. To remove the service, run service-manager again (use full-stop to exit Tor on Linux). AntiTor and service-* are the only two files that will run Tor correctly. Tor will start with all the necessary universal connection settings.
 
 If you are running win 7 version, do not mix up the bitness. If you mixed up the bitness, open the reset-oldwin-patch file and download the version with a different bitness. Win 7x86 currently uses an outdated version of the Webtunnel protocol and may perform worse than others.
 
