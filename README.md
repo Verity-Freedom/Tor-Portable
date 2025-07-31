@@ -20,7 +20,7 @@ The main author of Tor Portable is Verity Freedom. Concept, configurations, win 
 The author of the Antizapret proxy is ValdikSS.  
 Tor Expert Bundle by Tor Project.  
 SwitchyOmega by FelisCatus, ZeroOmega by zero-top.  
-Discord-drover by hdrover.  
+Discord-drover by hdrover, discord-linux-bypass by nik9play.  
 Webtunnel protocol fix by Xunlei.  
 Technical help by NoPlagiarism.
 
@@ -46,7 +46,7 @@ Select the Tor you need and unpack it. Avoid spaces and special characters in th
 
 If you are running win 7 version, do not mix up the bitness. If you mixed up the bitness, open the reset-oldwin-patch file and download the version with a different bitness. Win 7x86 currently uses an outdated version of the Webtunnel protocol and may perform worse than others.
 
-If Discord does not work in your country, install Discord Drover. After installing Discord Drover, Tor should be running, and Discord will not work normally without it anymore until proper deinstallation of this mod.
+If Discord does not work in your country, install Discord fix. After installing Discord fix, Tor should be running, and Discord will not work normally without it anymore until proper deinstallation of this mod.
 
 ![0](https://github.com/user-attachments/assets/aa520f99-cc6a-45f3-84d5-6da15b587225)
 
