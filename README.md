@@ -36,7 +36,7 @@ Without further ado, here we go.
 
 ## Installation
 
-First of all, if you want an experience similar to Tor Portable on Android, there is a great program from Gedsh. I translated [the guide](https://wiki.malw.link/index.php?title=InviZible_Pro&oldid=445) for you.
+First of all, if you want an experience similar to Tor Portable on Android, there is a great program from Gedsh. I translated [the guide](https://github.com/Verity-Freedom/Tor-Portable/wiki/InviZible-Pro-EN) for you.
 
 Tor Portable is hosted on the IPNS "eternal cloud", which is extremely convenient for independent information distribution, since proprietary clouds are unreliable (for many reasons, and even GitHub has mistakenly removed Tor Portable several times, making it unavailable). For this, pinata.cloud and ipns.ipfs.network were used. I don't recommend anyone to use free proprietary clouds like MEGA with their censorship and lack of features, as dependence on them deprives you of technological sovereignty.
 
