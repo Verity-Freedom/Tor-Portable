@@ -30,7 +30,7 @@ The Tor Project develops breakthrough technologies for bypassing censorship. How
 
 Binding to a browser and slow consideration of every change prevents maintaining support for Windows 7 and quickly applying important fixes to protocol vulnerabilities. In an open source environment, this means that there will be those who will make these fixes faster. Ensuring the popularity of these solutions is achieved by keeping them simple and accessible. Tor Portable is a simple, fully portable core with configuration files for interacting with it. My goal is to provide free access to the Internet for the maximum number of people while living in a country with strict censorship and an authoritarian regime.
 
-To achieve my goal, I freely combine, modify and distribute available free solutions with the most promising future today. My motivation is crystal clear, and I don't pretend to do anything greater than this. It's enough that some of my users like what I do, while I do this because of a deep aversion to authoritarianism and the desire to get some of the popularity for it. The project shares the BSD-3 license common to Tor.
+To achieve my goal, I freely combine, modify and distribute available open-source solutions with the most promising future today. My motivation is crystal clear, and I don't pretend to do anything greater than this. It's enough that some of my users like what I do, while I do this because of a deep aversion to authoritarianism and the desire to get some of the popularity for it. The project shares the BSD-3 license common to Tor.
 
 Without further ado, here we go.
 
