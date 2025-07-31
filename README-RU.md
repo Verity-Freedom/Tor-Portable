@@ -23,7 +23,7 @@
 Автор прокси Антизапрет — ValdikSS.  
 Tor Expert Bundle от Tor Project.  
 SwitchyOmega от FelisCatus, ZeroOmega от zero-top.  
-Discord-drover от hdrover, discord-linux-bypass от nik9play.
+Discord-drover от hdrover, discord-linux-bypass от nik9play.  
 Фикс протокола Webtunnel от Xunlei.  
 Техническая помощь от NoPlagiarism.
 
