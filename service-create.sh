@@ -18,5 +18,4 @@ ExecStart=$(pwd)/AntiTor.sh
 [Install]
 WantedBy=default.target
 EOF
-systemctl --user daemon-reload
 systemctl --user enable tor.service --now

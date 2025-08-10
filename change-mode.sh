@@ -3,7 +3,6 @@ lsof -t ./tor/ld-linux-x86-64.so.2 | xargs kill
 killall tor --quiet
 systemctl --user disable tor.service --now
 rm ~/.config/systemd/user/tor.service
-systemctl --user daemon-reload
 grep -q "The mode is default" torrc.txt
 if [ $? -eq 0 ]; then
 cp -fr ./change-mode/modes/pro/torrc.txt torrc.txt
