@@ -63,7 +63,7 @@ https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0h
 
 ![1](https://github.com/user-attachments/assets/ba35f792-2e3a-4113-94da-f26a3e9fad26)
 
-All three configs have three main modes: System, AUTO and VIRTUAL. In System there is no proxying, in AUTO only blocked sites are proxied, in VIRTUAL everything is proxied by Tor. The modes are switched by clicking the mouse button on the extension. Black circle - System, purple circle with a black center - AUTO, purple circle - VIRTUAL. VIRTUAL is used to speedcheck (e.g. speedcheck.org) your Tor speed and protect your privacy. Change the mode to the one you need immediately after synchronization.
+All three configs have three main modes: System, AUTO and VIRTUAL. In System there is no proxying, in AUTO only blocked sites are proxied, in VIRTUAL everything is proxied by Tor. The modes are switched by clicking the mouse button on the extension. Black circle - System, purple circle with a black center - AUTO, purple circle - VIRTUAL. VIRTUAL is used to speedcheck (e.g. speedtest.net) your Tor speed and protect your privacy. Change the mode to the one you need immediately after synchronization.
 
 You are using quick switch to switch between modes, optionally you can disable it at any time by right-clicking on the extension and pressing Enable Quick Switch. Then you will have to select the modes manually in the menu that opens with the left mouse button on the icon. You can be creative by changing the theme of the extension and the colors of the modes. To restore everything as it was, re-sync.
 
