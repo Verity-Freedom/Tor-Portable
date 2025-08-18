@@ -16,7 +16,7 @@ Support me: 0xb9569717b5f1ee67a2ace2b999a61e3d8d4cce52 USDT BEP20, https://www.d
 </a>
 
 Developed with community support (especially thanks to [bananakid](https://github.com/anticensority/runet-censorship-bypass/issues/224#issuecomment-2025676123) and [DesuIsALie](https://github.com/Verity-Freedom/Tor-Portable/issues/2#issuecomment-2362230547)).  
-The main author of Tor Portable is Verity Freedom. Concept, configurations, Win 7 patch, Linux portable deployment, services by Verity Freedom.  
+The main author of Tor Portable is Verity Freedom. Concept, configurations, Win 7 patch, Linux portable deployment, services, guide by Verity Freedom.  
 [Win 7 patcher](https://github.com/stunndard/golangwin7patch) by stunnard.  
 [Hosts list](https://github.com/dartraiden/no-russia-hosts) by dartraiden.  
 The author of the [Antizapret proxy](http://antizapret.prostovpn.org/) is ValdikSS.  
@@ -24,7 +24,7 @@ The author of the [Antizapret proxy](http://antizapret.prostovpn.org/) is Valdik
 [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) by FelisCatus, [ZeroOmega](https://github.com/zero-peak/ZeroOmega) by zero-top.  
 [Discord-drover](https://github.com/hdrover/discord-drover) by hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) by nik9play.  
 [Webtunnel protocol fix](https://ntc.party/t/мосты-webtunnel-в-tor-browser/15595/150) by Xunlei.  
-[Technical help](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) by NoPlagiarism, also helped naming Tor bridges (private frozen project) and testing Webtunnel protocol.
+[Technical help](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) by NoPlagiarism, also helped naming Tor bridges (private frozen project) and testing Webtunnel.
 
 ## Philosophy
 
