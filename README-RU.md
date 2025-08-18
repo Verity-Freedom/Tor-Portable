@@ -18,14 +18,16 @@
  </picture>
 </a>
 
-Разработано при поддержке сообщества (в особенности отмечу помощь от DesuIsALie и bananakid).  
-Основной автор портативного Тора — Verity Freedom. Концепт, патч вин 7, конфиги и службы от Verity Freedom.  
-Автор прокси Антизапрет — ValdikSS.  
-Tor Expert Bundle от Tor Project.  
-SwitchyOmega от FelisCatus, ZeroOmega от zero-top.  
-Discord-drover от hdrover, discord-linux-bypass от nik9play.  
-Фикс протокола Webtunnel от Xunlei.  
-Техническая помощь от NoPlagiarism.
+Разработано при поддержке сообщества (в особенности отмечу помощь от [bananakid](https://github.com/anticensority/runet-censorship-bypass/issues/224#issuecomment-2025676123) и [DesuIsALie](https://github.com/Verity-Freedom/Tor-Portable/issues/2#issuecomment-2362230547)).  
+Основной автор портативного Тора — Verity Freedom. Концепт, патч Вин 7, конфиги, службы, портативное развёртывание на Линукс, гайд от Verity Freedom.  
+[Патчер Win 7](https://github.com/stunndard/golangwin7patch) от stunnard.  
+[Лист хостов](https://github.com/dartraiden/no-russia-hosts) от dartraiden.  
+Автор [прокси Антизапрет](http://antizapret.prostovpn.org/) — ValdikSS.  
+[Tor Expert Bundle](https://www.torproject.org/download/tor/) от Tor Project.  
+[SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) от FelisCatus, [ZeroOmega](https://github.com/zero-peak/ZeroOmega) от zero-top.  
+[Discord-drover](https://github.com/hdrover/discord-drover) от hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) от nik9play.  
+[Фикс протокола Webtunnel](https://ntc.party/t/мосты-webtunnel-в-tor-browser/15595/150) от Xunlei.  
+[Техническая помощь](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) от NoPlagiarism, также помог проименовать Тор мосты (приватный замороженный проект) и тестировать Вебтуннель.
 
 ## Инструкция
 
