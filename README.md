@@ -20,11 +20,12 @@ The main author of Tor Portable is Verity Freedom. Concept, configurations, Win 
 [Win 7 patcher](https://github.com/stunndard/golangwin7patch) by stunnard.  
 [Hosts list](https://github.com/dartraiden/no-russia-hosts) by dartraiden.  
 The author of the [Antizapret proxy](http://antizapret.prostovpn.org/) is ValdikSS.  
-[Tor Expert Bundle](https://www.torproject.org/download/tor/) by Tor Project.  
+[Tor Expert Bundle](https://www.torproject.org/download/tor/) by Tor Project.  Linux [portable](https://github.com/NixOS/nixpkgs/issues/425977) [deployment](https://github.com/NixOS/nixpkgs/issues/427078) technical help and tests by 7c6f434c and imsweetdogs.
 [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) by FelisCatus, [ZeroOmega](https://github.com/zero-peak/ZeroOmega) by zero-top.  
 [Discord-drover](https://github.com/hdrover/discord-drover) by hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) by nik9play.  
 [Webtunnel protocol fix](https://ntc.party/t/мосты-webtunnel-в-tor-browser/15595/150) by Xunlei.  
-[Technical help](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) by NoPlagiarism, also helped naming Tor bridges (private frozen project) and testing Webtunnel.
+[Technical help](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) by NoPlagiarism, also helped naming Tor bridges (private frozen project) and testing Webtunnel.  
+Technical help and tests in Linux [portable](https://github.com/NixOS/nixpkgs/issues/425977) [deployment](https://github.com/NixOS/nixpkgs/issues/427078) by 7c6f434c and imsweetdogs respectively.
 
 ## Philosophy
 
