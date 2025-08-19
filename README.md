@@ -25,7 +25,7 @@ The author of the [Antizapret proxy](http://antizapret.prostovpn.org/) is Valdik
 [Discord-drover](https://github.com/hdrover/discord-drover) by hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) by nik9play.  
 [Webtunnel protocol fix](https://ntc.party/t/мосты-webtunnel-в-tor-browser/15595/150) by Xunlei.  
 [Technical help](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) by NoPlagiarism, also helped naming Tor bridges (private frozen project) and testing Webtunnel.  
-Technical help and tests in Linux [portable](https://github.com/NixOS/nixpkgs/issues/425977) [deployment](https://github.com/NixOS/nixpkgs/issues/427078) by 7c6f434c and imsweetdogs respectively.
+Tests and technical help in Linux [portable](https://github.com/NixOS/nixpkgs/issues/425977) [deployment](https://github.com/NixOS/nixpkgs/issues/427078) by imsweetdogs and 7c6f434c respectively.
 
 ## Philosophy
 
