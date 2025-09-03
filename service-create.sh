@@ -10,7 +10,6 @@ Wants=network-online.target
 After=network-online.target
 
 [Service]
-Type=notify
 Restart=always
 WorkingDirectory=$(pwd)
 ExecStart=$(pwd)/AntiTor.sh
@@ -19,3 +18,5 @@ ExecStart=$(pwd)/AntiTor.sh
 WantedBy=default.target
 EOF
 systemctl --user enable tor.service --now
+
+read -p "Press Enter to continue"
