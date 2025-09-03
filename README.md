@@ -1,6 +1,6 @@
-[Telegram channel](https://t.me/Tor_Portable)
-
 **[РУССКОЕ ЧИТАЙМЕНЯ](https://github.com/Verity-Freedom/Tor-Portable/blob/main/README-RU.md)**
+
+[Telegram channel](https://t.me/Tor_Portable)
 
 ----
 # Tor Portable
