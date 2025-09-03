@@ -27,5 +27,3 @@ WantedBy=default.target
 EOF
 systemctl --user enable tor.service --now
 systemctl --user status tor.service
-
-read -p "Press Enter to continue"
