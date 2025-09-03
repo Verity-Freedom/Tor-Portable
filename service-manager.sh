@@ -26,4 +26,6 @@ ExecStart=$(pwd)/AntiTor.sh
 WantedBy=default.target
 EOF
 systemctl --user enable tor.service --now
-systemctl --user status tor.service
+echo "PLease wait 10 seconds while I load the data"
+sleep 10
+./service-check.sh
