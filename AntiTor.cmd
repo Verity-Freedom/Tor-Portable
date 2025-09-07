@@ -28,7 +28,9 @@ if %os_ver% equ 05.1 set osName=Windows XP
 if %os_ver% equ 05.0 set osName=Windows 2000
 if %os_ver% lss 05.0 set osName=Windows ME or 98 or less
 
+echo %PROCESSOR_ARCHITECTURE% | findstr /c:"86" >nul && GOTO Win86
 if %os_ver% GEQ 06.2 GOTO Execution
+:Win86
 if exist "C:\Windows\System32\acryptprimitives.dll" GOTO Execution
 chcp 1251
 REM :::::::::::::::::::::::::::::::::::::::::
