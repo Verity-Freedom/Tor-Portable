@@ -1,4 +1,4 @@
-Если совсем лень читать, [есть неплохой видеогайд](https://ipfs.io/ipfs/bafybeicgytyokctpwsuya66yvzwxnjmahexcgisaivcdxszohprygxvzbq/%D0%9D%D0%9E%D0%92%D0%AB%D0%99%20%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0%20TOR%20%EF%BD%9C%20AntiTor%20%28TorPortable%29%20%5B8HO9jhADip4%5D.webm).
+Если совсем лень читать, [есть неплохой видеогайд](https://ipfs.io/ipfs/bafybeicgytyokctpwsuya66yvzwxnjmahexcgisaivcdxszohprygxvzbq/НОВЫЙ%20обход%20блокировки%20через%20сервера%20TOR%20｜%20AntiTor%20%28TorPortable%29%20%5B8HO9jhADip4%5D.webm).
 
 # Tor Portable
 
