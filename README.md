@@ -2,7 +2,7 @@
 
 [Telegram channel](https://t.me/Tor_Portable)
 
-----
+---
 # Tor Portable
 
 The fine-tuned Tor core for any browser configurations. EN, CN and RU configs. Customly fixed Webtunnel proto. Linux, win 7 and win 8+ support.
