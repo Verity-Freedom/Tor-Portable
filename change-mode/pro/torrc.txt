@@ -1,0 +1,56 @@
+#The mode is pro.
+
+#Don't be afraid to redact your torrc! Add and delete the "#" symbol to hide strings from the program and switch between exits.
+#Don't use more than one IP or IP range at a time as an ExitNode, it's causing errors on sites with protection (like Youtube). I may be wrong about this, but collected data says its true.
+#If you are a tech company, PLEASE do not block Tor as a means of connecting to your service.
+#Tor is used in countries with a high level of Internet censorship to bypass it, not to abuse your service. Thank you.
+
+#Manual: https://2019.www.torproject.org/docs/tor-manual.html.en
+
+DataDirectory ../data
+GeoIPFile ../data/geoip
+GeoIPv6File ../data/geoip6
+HardwareAccel 1
+MaxClientCircuitsPending 1
+UseBridges 1
+SafeLogging 0
+Log notice file notice.log
+Log notice stdout
+TruncateLogFile 1
+#MapAddress *.example.com *.example.com.0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E.exit
+#The log is inside the "tor" folder.
+
+MiddleNodes 145.239.41.102, 94.23.172.32
+#Only fastest and most stable nodes here.
+
+ExitNodes A47C8E0D64E733EDC8CB4409BDE07DB3C0ED28A8
+#The exit node. Stable speed, not blocked by YouTube and Discord. Not used by default for security measures, can be enabled by removing "#" symbol.
+#Not changed to random if was used and died, Tor will stick on 45% (true for 0.4.8.14), need to be replaced or put back into default mode.
+#You can check the status of exit (blocked or not blocked) via access to certain videos, I usually use this one https://www.youtube.com/watch?v=O_ItSLCZWb0.
+#There will be "video unavailable" error if blocked node is used, you can try this exit 0406DF11FC1C04CAF8B771CA2B9BA7C473E9DE4E to make sure. Other videos will play normally.
+#Restart after exit change.
+
+#ExitNodesList
+#The list of good exits to not lose any of them. For user purposes.
+
+#ExitNodes {COUNTRY-CODE}
+#Use this if you want to switch to a certain country. Replace "COUNTRY-CODE" with an actual country code.
+
+#Tor bridges configuration:
+#https://bridges.torproject.org/bridges/?transport=webtunnel
+#https://t.me/s/tor_bridges
+#bridges@torproject.org
+
+#Webtunnel bridges are considered to be the most stable. Only fastest Webtunnel bridges are recommended to use.
+
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit,snowflake exec lyrebird.sh
+ClientTransportPlugin webtunnel exec webtunnel.sh
+ClientTransportPlugin conjure exec conjure.sh -registerURL https://registration.refraction.network/api
+
+Bridge webtunnel [2001:db8:5ed8:4b36:c633:cd40:3040:6cb1]:443 B51FD3150E208A600D00BCA5963B0EF5C867574F url=https://rot.ronaak.eu:4433/iUFRXvAp3E3MHDiJ8453BaaM ver=0.0.2 servername=stackoverflow.com
+Bridge webtunnel [2001:db8:8d16:cb5b:d7f5:504b:8768:bdd3]:443 570FEB15763CC623146E8433ACA751948A6756D4 url=https://pl.808.re/SDglNGoixITem7ZHxQKXSscK ver=0.0.2 servername=stackoverflow.com
+Bridge webtunnel [2001:db8:cc50:fa:264f:d1b8:79a:6a81]:443 38C7ADB125A7AEA7A668C5AE300F6DCEA6BFB340 url=https://surf.mysticboarding.cz/S2vNtMmDc72E3uSmAroQaUyj ver=0.0.1 servername=stackoverflow.com
+Bridge webtunnel [2001:db8:77cb:5ce6:9995:7466:7ffa:b3f8]:443 770EA6412C8D3997ABFFF7173A3E53F1D3660167 url=https://shallotfarm.org/jcHgyp7m90iQr9QaVSprq1wP ver=0.0.1 servername=stackoverflow.com
+Bridge webtunnel [2001:db8:44:614b:42f5:f87c:7072:151]:443 F0C55D7B465C94F71A9A8F0479073BC02565DA36 url=https://quantentoast.de/CDgakmo0QO5Rvo2jRCtu4n9D ver=0.0.1 servername=stackoverflow.com
+#Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.antisip.com:3478,stun:stun.epygi.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.mixvoip.com:3478,stun:stun.nextcloud.com:3478,stun:stun.bethesda.net:3478,stun:stun.nextcloud.com:443 utls-imitate=hellorandomizedalpn
+#Bridge snowflake 192.0.2.4:80 8838024498816A039FCBBAB14E6F40A0843051FA fingerprint=8838024498816A039FCBBAB14E6F40A0843051FA url=https://1098762253.rsc.cdn77.org/ fronts=www.cdn77.com,www.phpmyadmin.net ice=stun:stun.antisip.com:3478,stun:stun.epygi.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.mixvoip.com:3478,stun:stun.nextcloud.com:3478,stun:stun.bethesda.net:3478,stun:stun.nextcloud.com:443 utls-imitate=hellorandomizedalpn
