@@ -1,3 +1,5 @@
+[Назад на главную страницу проекта](https://github.com/Verity-Freedom/Tor-Portable).
+
 Если совсем лень читать, [есть неплохой видеогайд](https://ipfs.io/ipfs/bafybeicgytyokctpwsuya66yvzwxnjmahexcgisaivcdxszohprygxvzbq/НОВЫЙ%20обход%20блокировки%20через%20сервера%20TOR%20｜%20AntiTor%20%28TorPortable%29%20%5B8HO9jhADip4%5D.webm).
 
 Мой [Телеграм-канал](https://t.me/Tor_Portable).
