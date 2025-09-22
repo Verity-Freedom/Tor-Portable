@@ -1,6 +1,6 @@
 Если совсем лень читать, [есть неплохой видеогайд](https://ipfs.io/ipfs/bafybeicgytyokctpwsuya66yvzwxnjmahexcgisaivcdxszohprygxvzbq/НОВЫЙ%20обход%20блокировки%20через%20сервера%20TOR%20｜%20AntiTor%20%28TorPortable%29%20%5B8HO9jhADip4%5D.webm).
 
-[Назад на главную страницу (отсюда лучше видно интерфейс, например количество звёзд и релизы)](https://github.com/Verity-Freedom/Tor-Portable).
+[Назад на главную страницу (отсюда лучше видно интерфейс, например звёзды и релизы)](https://github.com/Verity-Freedom/Tor-Portable).
 
 Основной гайд также немного отличается от русского по содержанию, если знаете английский, то стоит ознакомиться с ним.
 
