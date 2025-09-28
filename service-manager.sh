@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+cd "$(dirname "$0")"
 if systemctl --user is-active --quiet tor.service; then
 systemctl --user disable tor.service --now
 rm ~/.config/systemd/user/tor.service
