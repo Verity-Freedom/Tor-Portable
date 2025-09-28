@@ -86,6 +86,6 @@ If you want to try to completely avoid restrictions from sites like Grok.com, yo
 
 To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre) or [tun2socks](https://github.com/xjasonlyu/tun2socks).
 
-Updater is updater. It updates everything fast and seamlessly. There is not much to it, but I'm proud that I made it.
+Updater is updater. It updates everything fast and seamlessly. There is not much to it, but I'm really proud that I made it.
 
 That's all for now. You can write anything to me [here](https://github.com/Verity-Freedom/Tor-Portable/issues/8). Good luck.
