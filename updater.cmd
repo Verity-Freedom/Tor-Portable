@@ -13,5 +13,3 @@ echo del "%userprofile%\updater.cmd"
 ) > "%userprofile%\updater.cmd"
 start "" "%userprofile%\updater.cmd"
 for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
-
-
