@@ -102,7 +102,7 @@ copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dl
 
 :Execution
 cd /d %~dp0
-sc query "Tor Win32 Service" | find "RUNNING"
+sc query "Tor Win32 Service"
 if %errorLevel% EQU 0 (
 call service-manager.cmd
 timeout /t 3 /nobreak
