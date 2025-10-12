@@ -67,7 +67,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
  REM Run shell as admin (example) - put here code as you like
 copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
-sc query "Tor Win32 Service" | find "RUNNING" >nul
+sc query "Tor Win32 Service" >nul
 
 if %errorLevel% EQU 0 (
    sc stop "Tor Win32 Service"
@@ -88,13 +88,4 @@ if %errorLevel% EQU 0 (
     sc start "Tor Win32 Service"
 )
 
-sc query "Tor Win32 Service" | find "STOPPED" >nul
-if %errorLevel% EQU 0 (
-   sc delete "Tor Win32 Service"
-   powershell -Command "(gc '%CD%\torrc.txt') "^
-  "-replace '^DataDirectory.*$', ('DataDirectory ../data') "^
-  "-replace '^GeoIPFile.*$', ('GeoIPFile ../data/geoip') "^
-  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ../data/geoip6') "^
-  "| Out-File -encoding default '%CD%\torrc.txt'"
-)
 timeout /t 3 /nobreak
