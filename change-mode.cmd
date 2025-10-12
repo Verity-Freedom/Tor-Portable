@@ -1,6 +1,6 @@
 @echo off
 taskkill /im tor.exe >nul 2>&1
-sc query "Tor Win32 Service" | find "RUNNING"
+sc query "Tor Win32 Service"
 if %errorLevel% EQU 0 (
 call service-manager.cmd
 timeout /t 3 /nobreak
