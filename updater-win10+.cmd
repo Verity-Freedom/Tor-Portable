@@ -14,5 +14,5 @@ echo del "%userprofile%\updater.cmd" >nul
 echo exit
 ) > "%userprofile%\updater.cmd"
 start "" "%userprofile%\updater.cmd"
-timeout /t 1 /nobreak
+ping 127.0.0.1 -n 1 -w 500
 for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
