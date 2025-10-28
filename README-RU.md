@@ -35,7 +35,6 @@
 [Tor Expert Bundle](https://www.torproject.org/download/tor/) от Tor Project.  
 [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) от FelisCatus, [ZeroOmega](https://github.com/zero-peak/ZeroOmega) от zero-top.  
 [Discord-drover](https://github.com/hdrover/discord-drover) от hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) от nik9play.  
-[Фикс протокола Webtunnel](https://ntc.party/t/мосты-webtunnel-в-tor-browser/15595/150) от Xunlei.  
 [Техническая помощь](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) от NoPlagiarism, также помог проименовать Тор мосты (приватный замороженный проект) и тестировать Webtunnel.  
 Тесты и техническая помощь в [портативном](https://github.com/NixOS/nixpkgs/issues/425977) [развёртывании](https://github.com/NixOS/nixpkgs/issues/427078) на Linux от imsweetdogs и 7c6f434c соответственно.
 
