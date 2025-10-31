@@ -15,6 +15,7 @@ echo rmdir "%userprofile%\user-config" /s /q
 echo start cmd /C del "%userprofile%\updater.cmd"
 echo exit
 ) > "%userprofile%\updater.cmd"
+copy "%CD%\torrc.txt" "%CD%\user-config\torrc.txt"
 xcopy "%CD%\user-config" "%userprofile%\user-config" /i /e
 start "" "%userprofile%\updater.cmd"
 rmdir "%CD%" /s /q
