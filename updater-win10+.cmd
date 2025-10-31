@@ -6,7 +6,6 @@ call service-manager.cmd
 timeout /t 3 /nobreak
 )
 (
-echo @echo off
 echo curl.exe https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win8+_current.zip -O
 echo tar -xf "%CD%\AntiTor_win8+_current.zip"
 echo del "%CD%\AntiTor_win8+_current.zip"
