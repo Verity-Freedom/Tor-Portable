@@ -73,15 +73,15 @@ if %errorLevel% EQU 0 (
    sc stop "Tor Win32 Service"
    sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
-  "-replace '^DataDirectory.*$', ('DataDirectory ../data') "^
-  "-replace '^GeoIPFile.*$', ('GeoIPFile ../data/geoip') "^
-  "-replace '^GeoIPv6File.*$', ('GeoIPv6File ../data/geoip6') "^
+  "-replace '^DataDirectory.*$', ('DataDirectory ../data/user-data') "^
+  "-replace '^GeoIPFile.*$', ('GeoIPFile geoip') "^
+  "-replace '^GeoIPv6File.*$', ('GeoIPv6File geoip6') "^
   "| Out-File -encoding default '%CD%\torrc.txt'"
 ) else (
     powershell -Command "(gc '%CD%\torrc.txt') "^
-      "-replace '^DataDirectory.*$', ('DataDirectory \"%CD%\data\"' -replace '\\','\\') "^
-      "-replace '^GeoIPFile.*$', ('GeoIPFile \"%CD%\data\geoip\"' -replace '\\','\\') "^
-      "-replace '^GeoIPv6File.*$', ('GeoIPv6File \"%CD%\data\geoip6\"' -replace '\\','\\') "^
+      "-replace '^DataDirectory.*$', ('DataDirectory \"%CD%\data\user-data\"' -replace '\\','\\') "^
+      "-replace '^GeoIPFile.*$', ('GeoIPFile \"%CD%\tor\geoip\"' -replace '\\','\\') "^
+      "-replace '^GeoIPv6File.*$', ('GeoIPv6File \"%CD%\tor\geoip6\"' -replace '\\','\\') "^
       "| Out-File -encoding default '%CD%\torrc.txt'"
     sc create "Tor Win32 Service" binPath= "\"%CD%\tor\tor.exe\" --nt-service -f \"%CD%\torrc.txt\"" start= "auto"
     sc description "Tor Win32 Service" "Provides an anonymous Internet communication system"
