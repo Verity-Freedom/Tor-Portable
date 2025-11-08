@@ -28,7 +28,7 @@
 </a>
 
 Разработано при поддержке сообщества (в особенности отмечу помощь от [bananakid](https://github.com/anticensority/runet-censorship-bypass/issues/224#issuecomment-2025676123) и [DesuIsALie](https://github.com/Verity-Freedom/Tor-Portable/issues/2#issuecomment-2362230547)).  
-Основной автор портативного Тора — Verity Freedom. Концепт, патч Win 7, конфиги, службы, портативное развёртывание на Linux, [система обновлений](https://github.com/Verity-Freedom/GRV), гайд от Verity Freedom.  
+Основной автор портативного Тора — Verity Freedom. Концепт, патч Win 7, конфиги, службы, портативное развёртывание на Linux, [система обновлений](https://github.com/Verity-Freedom/GRU), гайд от Verity Freedom.  
 [Патчер Win 7](https://github.com/stunndard/golangwin7patch) от stunnard.  
 [Лист хостов](https://github.com/dartraiden/no-russia-hosts) от dartraiden.  
 Автор [прокси Антизапрет](http://antizapret.prostovpn.org/) — ValdikSS.  
@@ -75,7 +75,7 @@ VIRTUAL принимает значения любого другого режи
 
 ![5](https://github.com/user-attachments/assets/bc404d5e-f8eb-498d-a894-1aade051eedb)
 
-Апдейтер это апдейтер. Он обновляет всё быстро и бесшовно. Это хоть и немногое, но я очень горд, что сделал его. [Он следует принципам GRV](https://github.com/Verity-Freedom/GRV).
+Апдейтер это апдейтер. Он обновляет всё быстро и бесшовно. Это хоть и немногое, но я очень горд, что сделал его. [Он следует принципам GRU](https://github.com/Verity-Freedom/GRU).
 
 Отдельной шуткой является тот факт, что помимо блокировок для Тора, для россиян, у Ютуба есть и блокировки на VPN, которые крайне редко, но можно спровоцировать, примером является [это аномальное видео](https://www.youtube.com/watch?v=laTBNUS8Cyo). Вопрос, зачем вообще бороться с блокировкой такой соцсети, которая и так отлично справляется с блокировкой самой себя, пусть останется риторическим.
 
