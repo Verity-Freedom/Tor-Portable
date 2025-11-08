@@ -18,7 +18,7 @@ Support me: 0xb9569717b5f1ee67a2ace2b999a61e3d8d4cce52 USDT BEP20, https://www.d
 </a>
 
 Developed with community support (especially thanks to [bananakid](https://github.com/anticensority/runet-censorship-bypass/issues/224#issuecomment-2025676123) and [DesuIsALie](https://github.com/Verity-Freedom/Tor-Portable/issues/2#issuecomment-2362230547)).  
-The main author of Tor Portable is Verity Freedom. Concept, configurations, Win 7 patch, Linux portable deployment, [update system](https://github.com/Verity-Freedom/GRV), services, guide by Verity Freedom.  
+The main author of Tor Portable is Verity Freedom. Concept, configurations, Win 7 patch, Linux portable deployment, [update system](https://github.com/Verity-Freedom/GRU), services, guide by Verity Freedom.  
 [Win 7 patcher](https://github.com/stunndard/golangwin7patch) by stunnard.  
 [Hosts list](https://github.com/dartraiden/no-russia-hosts) by dartraiden.  
 The author of the [Antizapret proxy](http://antizapret.prostovpn.org/) is ValdikSS.  
@@ -87,6 +87,6 @@ If you want to try to completely avoid restrictions from sites like Grok.com, yo
 
 To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre) or [tun2socks](https://github.com/xjasonlyu/tun2socks).
 
-Updater is updater. It updates everything fast and seamlessly. There is not much to it, but I'm really proud that I made it. [It follows GRV specs](https://github.com/Verity-Freedom/GRV).
+Updater is updater. It updates everything fast and seamlessly. There is not much to it, but I'm really proud that I made it. [It follows GRU specs](https://github.com/Verity-Freedom/GRU).
 
 That's all for now. You can write anything to me [here](https://github.com/Verity-Freedom/Tor-Portable/issues/8). Good luck.
