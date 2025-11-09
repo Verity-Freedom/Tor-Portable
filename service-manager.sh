@@ -8,8 +8,7 @@ read -p "Tor service was deleted"
 exit
 fi
 lsof -t ./tor/ld-linux-x86-64.so.2 | xargs kill
-mkdir ~/.config/systemd
-mkdir ~/.config/systemd/user
+mkdir -p ~/.config/systemd/user
 cat <<EOF > ~/.config/systemd/user/tor.service
 [Unit]
 Description=Tor Portable
