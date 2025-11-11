@@ -11,3 +11,6 @@ unzip ./AntiTor_linux_current.zip
 rm ./AntiTor_linux_current.zip
 cp -r ~/data ./
 rm -r ~/data
+if grep -q "The mode is pro" ./data/torrc.txt; then
+cp ./change-mode/pro/torrc.txt torrc.txt
+fi
