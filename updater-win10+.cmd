@@ -11,6 +11,8 @@ echo tar -xf "%CD%\AntiTor_win8+_current.zip"
 echo del "%CD%\AntiTor_win8+_current.zip"
 echo xcopy "%userprofile%\data" "%CD%\data" /i /e
 echo rmdir "%userprofile%\data" /s /q
+echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
+echo if %%errorLevel%% EQU 0 copy "%CD%\change-mode\pro\torrc.txt" "%CD%\torrc.txt"
 echo start cmd /C del "%userprofile%\updater.cmd"
 echo exit
 ) > "%userprofile%\updater.cmd"
