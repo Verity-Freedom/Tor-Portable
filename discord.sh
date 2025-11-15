@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-export BYPASS_DELAY=50
-export BYPASS_FAKE_PACKETS=2
-export LD_PRELOAD=./libdiscordbypass.so
+export BYPASS_DELAY=50 BYPASS_FAKE_PACKETS=2 LD_PRELOAD=./libdiscordbypass.so
 if command -v discord
 then
 discord --proxy-server=socks5://127.0.0.1:9050
