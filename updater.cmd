@@ -11,11 +11,8 @@ echo start "" "%userprofile%\extractor.vbs"
 echo exit
 ) > "%userprofile%\updater.cmd"
 (
-cmd /u /c echo ZipFile="%CD%\AntiTor_win8+_current.zip"
-cmd /u /c echo ExtractTo="%CD%"
 cmd /u /c echo set objShell = CreateObject("Shell.Application"^)
-cmd /u /c echo set FilesInZip=objShell.NameSpace(ZipFile^).items
-cmd /u /c echo objShell.NameSpace(ExtractTo^).CopyHere(FilesInZip^)
+cmd /u /c echo objShell.NameSpace("%CD%"^).CopyHere(objShell.NameSpace("%CD%\AntiTor_win8+_current.zip"^).items^)
 cmd /u /c echo CreateObject("WScript.Shell"^).Run "%userprofile%\cleaner.cmd"
 ) > "%userprofile%\extractor.vbs"
 (
