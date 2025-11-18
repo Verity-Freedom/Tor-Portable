@@ -11,8 +11,7 @@ echo start "" "%userprofile%\extractor.vbs"
 echo exit
 ) > "%userprofile%\updater.cmd"
 (
-cmd /u /c echo set objShell = CreateObject("Shell.Application"^)
-cmd /u /c echo objShell.NameSpace("%CD%"^).CopyHere(objShell.NameSpace("%CD%\AntiTor_win8+_current.zip"^).items^)
+cmd /u /c echo CreateObject("Shell.Application"^).NameSpace("%CD%"^).CopyHere(CreateObject("Shell.Application"^).NameSpace("%CD%\AntiTor_win8+_current.zip"^).items^)
 cmd /u /c echo CreateObject("WScript.Shell"^).Run "%userprofile%\cleaner.cmd"
 ) > "%userprofile%\extractor.vbs"
 (
