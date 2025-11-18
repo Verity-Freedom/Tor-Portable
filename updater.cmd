@@ -1,4 +1,4 @@
-cd /d %~dp0
+cd /d "%~dp0"
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service"
 if %errorLevel% EQU 0 (
