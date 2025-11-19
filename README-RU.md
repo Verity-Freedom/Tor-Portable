@@ -36,6 +36,7 @@
 [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) от FelisCatus, [ZeroOmega](https://github.com/zero-peak/ZeroOmega) от zero-top.  
 [Discord-drover](https://github.com/hdrover/discord-drover) от hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) от nik9play.  
 [Техническая помощь](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) от NoPlagiarism, также помог проименовать Тор мосты (приватный замороженный проект) и тестировать Webtunnel.  
+Тесты Win 7 и битности ([1](https://github.com/Verity-Freedom/Tor-Portable/issues/8#issuecomment-2906773975), [2](https://github.com/Verity-Freedom/Tor-Portable/issues/21#issuecomment-2907699471)) от qwers99.  
 Тесты и техническая помощь в [портативном](https://github.com/NixOS/nixpkgs/issues/425977) [развёртывании](https://github.com/NixOS/nixpkgs/issues/427078) на Linux от imsweetdogs и 7c6f434c соответственно.
 
 ## Инструкция
