@@ -27,7 +27,8 @@ The author of the [Antizapret proxy](http://antizapret.prostovpn.org/) is Valdik
 [Discord-drover](https://github.com/hdrover/discord-drover) by hdrover, [discord-linux-bypass](https://github.com/nik9play/discord-linux-bypass) by nik9play.  
 [Technical help](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) by NoPlagiarism, also helped naming Tor bridges (private frozen project) and testing Webtunnel.  
 Win 7 and bitness tests ([1](https://github.com/Verity-Freedom/Tor-Portable/issues/8#issuecomment-2906773975), [2](https://github.com/Verity-Freedom/Tor-Portable/issues/21#issuecomment-2907699471)) by qwers99.  
-Tests and technical help in Linux [portable](https://github.com/NixOS/nixpkgs/issues/425977) [deployment](https://github.com/NixOS/nixpkgs/issues/427078) by imsweetdogs and 7c6f434c respectively.
+Tests and technical help in Linux [portable](https://github.com/NixOS/nixpkgs/issues/425977) [deployment](https://github.com/NixOS/nixpkgs/issues/427078) by imsweetdogs and 7c6f434c respectively.  
+[Elevation system](https://stackoverflow.com/a/12264592) by Matt, [Win OS version checker](https://stackoverflow.com/a/75970274) by captain_majid.
 
 ## Philosophy
 
