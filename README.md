@@ -87,7 +87,7 @@ Tor Portable itself has two modes: pro and default, which are switched via the c
 
 If you want to try to completely avoid restrictions from sites like Grok.com, you should install [Psiphon TM](https://github.com/Verity-Freedom/Tor-Portable/releases/tag/v1.0), and change the setting of VIRTUAL mode from TOR to PROXY. But I'm not recommending this to everyone, since Psiphon TM is not that properly developed (at the time of writing), and is much slower than Tor. I should try to at least create the Linux version of it, but I use it on my Windows the way it is.
 
-To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre) or [tun2socks](https://github.com/xjasonlyu/tun2socks).
+To proxy individual applications with Tor, some people use tools like [proxifyre](https://github.com/wiresock/proxifyre), [tun2socks](https://github.com/xjasonlyu/tun2socks) or [Throne](https://github.com/throneproj/Throne), I don't see much meaning in it, tho, because Tor doesn't support UDP.
 
 Updater is updater. It updates everything fast and seamlessly. I'm really proud that I made it. [It follows GRU specs](https://github.com/Verity-Freedom/GRU).
 
