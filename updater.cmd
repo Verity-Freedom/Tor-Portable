@@ -1,5 +1,5 @@
 cd /d "%~dp0"
-if "%CD:~-1%" == "\" (set "DIR=%CD:~0,-1%") else set "DIR=%CD%"
+if "%CD:~-1%" == "\" (set "EXT=%CD:~0,-1%") else set "EXT=%CD%"
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service"
 if %errorLevel% EQU 0 (
@@ -7,16 +7,16 @@ call service-manager.cmd
 timeout /t 3 /nobreak
 )
 (
-echo powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win8+_current.zip', '%DIR%\AntiTor_win8+_current.zip')"
-echo call "%userprofile%\extractor.vbs"
+echo powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win8+_current.zip', '%EXT%\AntiTor_win8+_current.zip')"
+echo cscript "%userprofile%\extractor.vbs"
 echo exit
 )>"%userprofile%\updater.cmd"
 (
-cmd /u /c echo CreateObject("Shell.Application"^).NameSpace("%CD%"^).CopyHere(CreateObject("Shell.Application"^).NameSpace("%DIR%\AntiTor_win8+_current.zip"^).items^)
+cmd /u /c echo CreateObject("Shell.Application"^).NameSpace("%CD%"^).CopyHere(CreateObject("Shell.Application"^).NameSpace("%EXT%\AntiTor_win8+_current.zip"^).items^)
 cmd /u /c echo CreateObject("WScript.Shell"^).Run "%userprofile%\cleaner.cmd"
 )>"%userprofile%\extractor.vbs"
 (
-echo del "%DIR%\AntiTor_win8+_current.zip"
+echo del "%EXT%\AntiTor_win8+_current.zip"
 echo xcopy "%userprofile%\data" "%CD%\data" /i /e
 echo rmdir "%userprofile%\data" /s /q
 echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
