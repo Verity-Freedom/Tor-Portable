@@ -6,6 +6,10 @@
 
 [Мой Телеграм-канал](https://t.me/Tor_Portable).
 
+**Keep It Functional, F#cker!** 🤘
+
+**Тор это не браузер!**
+
 ---
 # Tor Portable
 
