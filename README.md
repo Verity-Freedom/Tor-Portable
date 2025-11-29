@@ -2,6 +2,9 @@
 
 [Telegram channel](https://t.me/Tor_Portable)
 
+🤘 **Keep It Functional, F#cker!** 🤘
+
+**Tor is not a browser!**
 ---
 # Tor Portable
 
