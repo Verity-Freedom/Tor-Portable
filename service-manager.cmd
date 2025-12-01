@@ -65,9 +65,12 @@ REM :::::::::::::::::::::::::::::::::::::::::
  REM START
  REM :::::::::::::::::::::::::
  REM Run shell as admin (example) - put here code as you like
+setlocal EnableDelayedExpansion
 for %%I in (VERSION*) do set "UPD=%%~nxI"
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
 if %errorlevel% NEQ 0 (
+choice /m "Update is available. Do you want to update"
+if !errorlevel! EQU 2 GOTO Skip
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
@@ -79,6 +82,7 @@ start "" "%temp%\autoupdater.cmd"
 exit
 )
 del "%temp%\%UPD%"
+:Skip
 copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
