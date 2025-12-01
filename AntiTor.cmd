@@ -10,7 +10,7 @@ echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
 echo :Wait>>"%temp%\autoupdater.cmd"
 echo if not exist "%CD%\tor\tor.exe" GOTO Wait>>"%temp%\autoupdater.cmd"
-echo call "%CD%\AntiTor.exe">>"%temp%\autoupdater.cmd"
+echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
 echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
@@ -127,3 +127,4 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
+
