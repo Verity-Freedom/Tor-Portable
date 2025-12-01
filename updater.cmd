@@ -17,7 +17,7 @@ cmd /u /c echo CreateObject("WScript.Shell"^).Run "%temp%\cleaner.cmd"
 )>"%temp%\extractor.vbs"
 (
 echo del "%WAY%\AntiTor_win8+_current.zip"
-echo xcopy "%temp%\data" "%CD%\data" /i /e
+echo xcopy "%temp%\data" "%CD%\data" /i /e /y
 echo rmdir "%temp%\data" /s /q
 echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
 echo if %%errorLevel%% EQU 0 copy "%CD%\change-mode\pro\torrc.txt" "%CD%\torrc.txt"
@@ -26,6 +26,6 @@ echo del "%temp%\extractor.vbs"
 echo del "%temp%\cleaner.cmd"
 )>"%temp%\cleaner.cmd"
 copy "%CD%\torrc.txt" "%CD%\data\torrc.txt"
-xcopy "%CD%\data" "%temp%\data" /i /e
+xcopy "%CD%\data" "%temp%\data" /i /e /y
 start "" "%temp%\updater.cmd"
 rmdir "%CD%" /s /q
