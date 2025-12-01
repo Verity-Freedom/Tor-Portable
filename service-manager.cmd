@@ -86,7 +86,7 @@ exit
 )
 del "%temp%\%UPD%"
 :Skip
-copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
+if not exist "C:\Windows\System32\acryptprimitives.dll" copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 :Service
 sc query "Tor Win32 Service" >nul
