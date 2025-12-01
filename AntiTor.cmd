@@ -8,9 +8,9 @@ if !errorlevel! EQU 2 GOTO Skip
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
-echo echo If you see this message, then the automatic update is most likely successful. You can wait or press any button to start the program.>>"%temp%\autoupdater.cmd"
-echo timeout /t 15>>"%temp%\autoupdater.cmd"
-echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
+echo :Wait>>"%temp%\autoupdater.cmd"
+echo if not exist "%CD%\tor\tor.exe" GOTO Wait>>"%temp%\autoupdater.cmd"
+echo call "%CD%\AntiTor.exe">>"%temp%\autoupdater.cmd"
 echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
