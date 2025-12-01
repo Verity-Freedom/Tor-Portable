@@ -10,7 +10,7 @@ start "" "%temp%\autoupdater.cmd"
 exit
 ) else (
 del "%temp%\%UPD%"
-del "%temp%\autoupdater.cmd"
+del "%temp%\autoupdater.cmd" >nul 2>&1
 )
 REM see "https://stackoverflow.com/a/75970274" for description
 set TESTstring="Microsoft Windows [Version 39.0.99999]"
