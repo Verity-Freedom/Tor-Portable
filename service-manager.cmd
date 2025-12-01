@@ -71,6 +71,9 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ip
 if %errorlevel% NEQ 0 (
 choice /m "Update is available. Do you want to update"
 if !errorlevel! EQU 2 GOTO Skip
+:Loop
+sc query "Tor Win32 Service" >nul
+if !errorlevel! EQU 0 set "CHECK=0" & GOTO Service
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
@@ -85,6 +88,7 @@ del "%temp%\%UPD%"
 :Skip
 copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
+:Service
 sc query "Tor Win32 Service" >nul
 
 if %errorLevel% EQU 0 (
@@ -107,3 +111,5 @@ if %errorLevel% EQU 0 (
 )
 
 timeout /t 3 /nobreak
+
+If %CHECK% EQU 0 GOTO Loop
