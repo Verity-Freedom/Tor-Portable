@@ -21,9 +21,9 @@ echo xcopy "%temp%\data" "%CD%\data" /i /e
 echo rmdir "%temp%\data" /s /q
 echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
 echo if %%errorLevel%% EQU 0 copy "%CD%\change-mode\pro\torrc.txt" "%CD%\torrc.txt"
-echo cmd /c del "%temp%\updater.cmd"
-echo cmd /c del "%temp%\extractor.vbs"
-echo cmd /c del "%temp%\cleaner.cmd"
+echo del "%temp%\updater.cmd"
+echo del "%temp%\extractor.vbs"
+echo del "%temp%\cleaner.cmd"
 )>"%temp%\cleaner.cmd"
 copy "%CD%\torrc.txt" "%CD%\data\torrc.txt"
 xcopy "%CD%\data" "%temp%\data" /i /e
