@@ -4,11 +4,13 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ip
 if %errorlevel% NEQ 0 (
 echo call "%CD%\updater.cmd">"%temp%\autoupdater.cmd"
 echo timeout /t 15>>"%temp%\autoupdater.cmd"
-echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
-echo del "%temp%\autoupdater.cmd">>"%temp%\autoupdater.cmd"
-call "%temp%\autoupdater.cmd"
+echo call "%CD%\AntiTor.exe">>"%temp%\autoupdater.cmd"
+echo exit>>"%temp%\autoupdater.cmd"
+start "" "%temp%\autoupdater.cmd"
+exit
 ) else (
 del "%temp%\%UPD%"
+del "%temp%\autoupdater.cmd"
 )
 REM see "https://stackoverflow.com/a/75970274" for description
 set TESTstring="Microsoft Windows [Version 39.0.99999]"
