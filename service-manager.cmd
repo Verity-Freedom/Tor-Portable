@@ -74,13 +74,11 @@ echo cls>>"%temp%\autoupdater.cmd"
 echo echo If you see this message, then the automatic update is most likely successful. You can wait or press any button to start the program.>>"%temp%\autoupdater.cmd"
 echo timeout /t 15>>"%temp%\autoupdater.cmd"
 echo call "%CD%\service-manager.cmd">>"%temp%\autoupdater.cmd"
-echo exit>>"%temp%\autoupdater.cmd"
+echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
-) else (
-del "%temp%\%UPD%"
-del "%temp%\autoupdater.cmd" >nul 2>&1
 )
+del "%temp%\%UPD%"
 copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
