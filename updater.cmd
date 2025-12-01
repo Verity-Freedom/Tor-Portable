@@ -3,7 +3,8 @@ if "%CD:~-1%" == "\" (set "WAY=%CD:~0,-1%") else set "WAY=%CD%"
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service"
 if %errorLevel% EQU 0 (
-call service-manager.cmd
+sc stop "Tor Win32 Service"
+sc delete "Tor Win32 Service"
 timeout /t 3 /nobreak
 )
 (
