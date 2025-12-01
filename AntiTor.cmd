@@ -7,8 +7,9 @@ echo timeout /t 15>>"%temp%\autoupdater.cmd"
 echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
 echo cmd /c del "%temp%\autoupdater.cmd">>"%temp%\autoupdater.cmd"
 call "%temp%\autoupdater.cmd"
-)
+) else (
 del "%temp%\%UPD%"
+)
 REM see "https://stackoverflow.com/a/75970274" for description
 set TESTstring="Microsoft Windows [Version 39.0.99999]"
 REM set TESTstring="Microsoft Windows [Version 10.0.22621]"
@@ -119,3 +120,4 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
+
