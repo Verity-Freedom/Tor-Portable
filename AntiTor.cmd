@@ -5,7 +5,7 @@ if %errorlevel% NEQ 0 (
 echo call "%CD%\updater.cmd">"%temp%\autoupdater.cmd"
 echo timeout /t 15>>"%temp%\autoupdater.cmd"
 echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
-echo cmd /c del "%temp%\autoupdater.cmd">>"%temp%\autoupdater.cmd"
+echo del "%temp%\autoupdater.cmd">>"%temp%\autoupdater.cmd"
 call "%temp%\autoupdater.cmd"
 ) else (
 del "%temp%\%UPD%"
@@ -120,4 +120,5 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
+
 
