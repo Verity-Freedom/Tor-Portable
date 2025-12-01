@@ -8,13 +8,11 @@ echo cls>>"%temp%\autoupdater.cmd"
 echo echo If you see this message, then the automatic update is most likely successful. You can wait or press any button to start the program.>>"%temp%\autoupdater.cmd"
 echo timeout /t 15>>"%temp%\autoupdater.cmd"
 echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
-echo exit>>"%temp%\autoupdater.cmd"
+echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
-) else (
-del "%temp%\%UPD%"
-del "%temp%\autoupdater.cmd" >nul 2>&1
 )
+del "%temp%\%UPD%"
 REM see "https://stackoverflow.com/a/75970274" for description
 set TESTstring="Microsoft Windows [Version 39.0.99999]"
 REM set TESTstring="Microsoft Windows [Version 10.0.22621]"
@@ -125,4 +123,3 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
-
