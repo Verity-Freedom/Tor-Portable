@@ -6,7 +6,7 @@ echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
 echo echo If you see this message, then the automatic update is most likely successful. You can wait or press any button to start the program.>>"%temp%\autoupdater.cmd"
-echo timeout /t 30>>"%temp%\autoupdater.cmd"
+echo timeout /t 15>>"%temp%\autoupdater.cmd"
 echo call "%CD%\AntiTor.cmd">>"%temp%\autoupdater.cmd"
 echo exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
@@ -125,3 +125,4 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
+
