@@ -71,14 +71,11 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ip
 if %errorlevel% NEQ 0 (
 choice /m "Update is available. Do you want to update"
 if !errorlevel! EQU 2 GOTO Skip
-:Loop
-sc query "Tor Win32 Service" >nul
-if !errorlevel! EQU 0 set "CHECK=0" & GOTO Service
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
-echo echo If you see this message, then the automatic update is most likely successful. You can wait or press any button to start the program.>>"%temp%\autoupdater.cmd"
-echo timeout /t 15>>"%temp%\autoupdater.cmd"
+echo :Wait>>"%temp%\autoupdater.cmd"
+echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
 echo call "%CD%\service-manager.cmd">>"%temp%\autoupdater.cmd"
 echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
@@ -113,3 +110,4 @@ if %errorLevel% EQU 0 (
 timeout /t 3 /nobreak
 
 If %CHECK% EQU 0 GOTO Loop
+
