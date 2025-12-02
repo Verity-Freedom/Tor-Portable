@@ -112,4 +112,4 @@ if %errorLevel% EQU 0 (
 
 timeout /t 3 /nobreak
 
-If %CHECK% EQU 0 GOTO Loop
+If "%CHECK%"=="0" GOTO Loop
