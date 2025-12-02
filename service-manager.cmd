@@ -71,9 +71,9 @@ powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ip
 if %errorlevel% NEQ 0 (
 choice /m "Update is available. Do you want to update"
 if !errorlevel! EQU 2 GOTO Skip
-:Loop
 sc query "Tor Win32 Service" >nul
 if !errorlevel! EQU 0 set "CHECK=0" & GOTO Service
+:Loop
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
