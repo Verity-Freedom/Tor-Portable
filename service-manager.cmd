@@ -99,6 +99,7 @@ if %errorLevel% EQU 0 (
   "-replace '^GeoIPFile.*$', ('GeoIPFile geoip') "^
   "-replace '^GeoIPv6File.*$', ('GeoIPv6File geoip6') "^
   "| Out-File -encoding default '%CD%\torrc.txt'"
+   If "%CHECK%"=="0" GOTO Loop
 ) else (
     powershell -Command "(gc '%CD%\torrc.txt') "^
       "-replace '^DataDirectory.*$', ('DataDirectory \"%CD%\data\user-data\"' -replace '\\','\\') "^
@@ -111,5 +112,3 @@ if %errorLevel% EQU 0 (
 )
 
 timeout /t 3 /nobreak
-
-If "%CHECK%"=="0" GOTO Loop
