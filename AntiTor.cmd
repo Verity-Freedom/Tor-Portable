@@ -127,4 +127,3 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
-
