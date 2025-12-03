@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 cd "$(dirname "$0")"
 UPD=(VERSION*)
+curl "https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/$UPD" --fail -s -o /dev/null
+if [ $? -eq 22 ]; then
 if systemctl --user is-active --quiet tor.service; then
 systemctl --user disable tor.service --now
 rm ~/.config/systemd/user/tor.service
