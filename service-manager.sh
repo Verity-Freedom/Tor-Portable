@@ -8,8 +8,8 @@ systemctl --user is-active --quiet tor.service
  CHECK=0
  fi
 ./updater.sh
- if [ $CHECK -ne 0 ]; then
- ./service-manager.sh
+ if [ $CHECK -eq 0 ]; then
+ exit
  fi
 fi
 if systemctl --user is-active --quiet tor.service; then
