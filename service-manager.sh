@@ -8,7 +8,7 @@ systemctl --user is-active --quiet tor.service
  if [ $? -eq 0 ]; then
  CHECK=0
  fi
- if [[ $INP != 0 ]]; then
+ if [ $INP != 0 ]; then
  ./updater.sh
  fi
  if [ $CHECK -eq 0 ] && [ $INP != 0 ]; then
