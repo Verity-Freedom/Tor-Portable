@@ -9,4 +9,6 @@ read -n 1 -p "The local version does not match the latest version. It means that
  fi
 fi
 cd tor
+./ipns-republisher.sh &
+sleep 1
 ./ld-linux-x86-64.so.2 --library-path . ./tor -f ../torrc.txt
