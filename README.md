@@ -2,6 +2,8 @@
 
 [Telegram channel](https://t.me/Tor_Portable)
 
+[Tutorial to use Tor Portable to unlock Telegram](https://t.me/Tor_Portable/131)
+
 **Keep It Functional, F#cker!** 🤘
 
 **Tor is not a browser!**
