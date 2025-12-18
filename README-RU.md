@@ -23,7 +23,9 @@
 Поддержать нас:
 
 0xb9569717b5f1ee67a2ace2b999a61e3d8d4cce52 USDT BEP20, https://www.donationalerts.com/r/verity_freedom — Verity Freedom (портативный Тор)  
-***https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Антизапрет, ВАЖНО в ноябре и декабре каждого года)***
+**https://antizapret.prostovpn.org/donate.html — ValdikSS (прокси Антизапрет, ВАЖНО в ноябре и декабре каждого года)**
+
+**Пожалуйста, оставьте звезду:**
 
 <a href="https://star-history.com/#Verity-Freedom/Tor-Portable&Date">
  <picture>
