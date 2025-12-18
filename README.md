@@ -15,6 +15,8 @@ The fine-tuned Tor core for any browser configurations. EN, CN and RU configs. 2
 
 Support me: 0xb9569717b5f1ee67a2ace2b999a61e3d8d4cce52 USDT BEP20, https://www.donationalerts.com/r/verity_freedom.
 
+**Please leave a star:**
+
 <a href="https://star-history.com/#Verity-Freedom/Tor-Portable&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Verity-Freedom/Tor-Portable&type=Date&theme=dark" />
