@@ -12,7 +12,6 @@ REM :::::::::::::::::::::::::::::::::::::::::
  ECHO Running Admin shell
  ECHO =============================
 
-:init
  set "batchPath=%~dpnx0"
  rem this works also from cmd shell, other than %~0
  for %%k in (%0) do set batchName=%%~nk
@@ -39,13 +38,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO For Each strArg in WScript.Arguments >> "%vbsGetPrivileges%"
   ECHO args = args ^& strArg ^& " "  >> "%vbsGetPrivileges%"
   ECHO Next >> "%vbsGetPrivileges%"
-  
-  goto InvokeCmd 
 
-  ECHO UAC.ShellExecute "!batchPath!", args, "", "runas", 1 >> "%vbsGetPrivileges%"
-  goto ExecElevation
-
-:InvokeCmd
   ECHO args = "/c """ + "!batchPath!" + """ " + args >> "%vbsGetPrivileges%"
   ECHO UAC.ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
 
@@ -109,3 +102,4 @@ if %errorLevel% EQU 0 (
 timeout /t 3 /nobreak
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
+
