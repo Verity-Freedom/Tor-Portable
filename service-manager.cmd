@@ -42,7 +42,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
  exit /B
 
 :gotPrivileges
- if '%1'=='ELEV' del "%vbsGetPrivileges%" 1>nul 2>nul
+ del "%vbsGetPrivileges%" 1>nul 2>nul
  endlocal & cd /d "%~dp0"
 
  REM :::::::::::::::::::::::::
