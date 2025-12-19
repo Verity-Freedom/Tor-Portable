@@ -96,10 +96,10 @@ REM :::::::::::::::::::::::::::::::::::::::::
 :gotPrivileges
  endlocal
 
- REM :::::::::::::::::::::::::
- REM START
- REM :::::::::::::::::::::::::
- REM Run shell as admin - put your code below as you like
+REM :::::::::::::::::::::::::
+REM START
+REM :::::::::::::::::::::::::
+REM Run shell as admin - put your code below as you like
 copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll"
 
 :Execution
