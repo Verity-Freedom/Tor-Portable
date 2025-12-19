@@ -1,5 +1,4 @@
-@echo off
-cd /d "%~dp0"
+@echo off & cd /d "%~dp0"
 chcp 1251
 setlocal EnableDelayedExpansion
 for %%I in (VERSION*) do set "UPD=%%~nxI"
