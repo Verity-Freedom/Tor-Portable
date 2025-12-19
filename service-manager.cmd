@@ -23,20 +23,19 @@ REM :::::::::::::::::::::::::::::::::::::::::
   if not '%errorlevel%' == '0' goto getPrivileges
   net session 1>nul 2>NUL
   if '%errorlevel%' == '0' goto gotPrivileges
+  if '%1'=='ELEV' goto gotPrivileges
 
 :getPrivileges
-  if '%1'=='ELEV' goto gotPrivileges
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
 
-  ECHO Set UAC = CreateObject^("Shell.Application"^) > "%vbsGetPrivileges%"
   ECHO args = "ELEV " >> "%vbsGetPrivileges%"
   ECHO For Each strArg in WScript.Arguments >> "%vbsGetPrivileges%"
   ECHO args = args ^& strArg ^& " "  >> "%vbsGetPrivileges%"
   ECHO Next >> "%vbsGetPrivileges%"
   ECHO args = "/c """ + "!batchPath!" + """ " + args >> "%vbsGetPrivileges%"
-  ECHO UAC.ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
+  ECHO CreateObject^("Shell.Application"^).ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile WScript.ScriptFullName >> "%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
