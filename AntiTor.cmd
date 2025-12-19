@@ -1,5 +1,6 @@
 @echo off
 cd /d "%~dp0"
+chcp 1251
 setlocal EnableDelayedExpansion
 for %%I in (VERSION*) do set "UPD=%%~nxI"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
@@ -51,7 +52,6 @@ echo %PROCESSOR_ARCHITECTURE% | findstr /c:"86" >nul && GOTO Win86
 if %os_ver% GEQ 06.2 GOTO Execution
 :Win86
 if exist "C:\Windows\System32\acryptprimitives.dll" GOTO Execution
-chcp 1251
 REM :::::::::::::::::::::::::::::::::::::::::
 REM Elevate.cmd - Version 10
 REM Automatically check & get admin rights
@@ -75,27 +75,26 @@ REM :::::::::::::::::::::::::::::::::::::::::
   if not '%errorlevel%' == '0' goto getPrivileges
   net session 1>nul 2>NUL
   if '%errorlevel%' == '0' goto gotPrivileges
+  if '%1'=='ELEV' goto gotPrivileges
 
 :getPrivileges
-  if '%1'=='ELEV' goto gotPrivileges
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
 
-  ECHO Set UAC = CreateObject^("Shell.Application"^) > "%vbsGetPrivileges%"
-  ECHO args = "ELEV " >> "%vbsGetPrivileges%"
+  ECHO args = "ELEV " > "%vbsGetPrivileges%"
   ECHO For Each strArg in WScript.Arguments >> "%vbsGetPrivileges%"
   ECHO args = args ^& strArg ^& " "  >> "%vbsGetPrivileges%"
   ECHO Next >> "%vbsGetPrivileges%"
   ECHO args = "/c """ + "!batchPath!" + """ " + args >> "%vbsGetPrivileges%"
-  ECHO UAC.ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
+  ECHO CreateObject^("Shell.Application"^).ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
+  ECHO CreateObject("Scripting.FileSystemObject").DeleteFile WScript.ScriptFullName >> "%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit /B
 
 :gotPrivileges
- del "%vbsGetPrivileges%" 1>nul 2>nul
- endlocal & cd /d "%~dp0"
+ endlocal
 
  REM :::::::::::::::::::::::::
  REM START
