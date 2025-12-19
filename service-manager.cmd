@@ -44,8 +44,8 @@ REM :::::::::::::::::::::::::::::::::::::::::
  exit /B
 
 :gotPrivileges
- endlocal & cd /d "%~dp0"
  if '%1'=='ELEV' del "%vbsGetPrivileges%" 1>nul 2>nul
+ endlocal & cd /d "%~dp0"
 
  REM :::::::::::::::::::::::::
  REM START
@@ -99,3 +99,4 @@ if %errorLevel% EQU 0 (
 timeout /t 3 /nobreak
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
+
