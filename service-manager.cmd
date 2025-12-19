@@ -6,7 +6,6 @@ REM Automatically check & get admin rights
 REM see "https://stackoverflow.com/a/12264592" for description
 REM :::::::::::::::::::::::::::::::::::::::::
  
- CLS
  ECHO.
  ECHO =============================
  ECHO Running Admin shell
