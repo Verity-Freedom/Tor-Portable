@@ -72,14 +72,12 @@ REM :::::::::::::::::::::::::::::::::::::::::
 
 :checkPrivileges
   whoami /groups /nh | find "S-1-16-12288" > nul
-  if '%errorlevel%' == '0' ( goto checkPrivileges2 ) else ( goto getPrivileges )
-
-:checkPrivileges2
+  if not '%errorlevel%' == '0' goto getPrivileges
   net session 1>nul 2>NUL
-  if '%errorlevel%' == '0' ( goto gotPrivileges ) else ( goto getPrivileges )
+  if '%errorlevel%' == '0' goto gotPrivileges
 
 :getPrivileges
-  if '%1'=='ELEV' (echo ELEV & goto gotPrivileges)
+  if '%1'=='ELEV' goto gotPrivileges
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
