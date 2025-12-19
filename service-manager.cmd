@@ -10,6 +10,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
  ECHO =============================
  ECHO Running Admin shell
  ECHO =============================
+ ECHO.
 
  set "batchPath=%~dpnx0"
  rem this works also from cmd shell, other than %~0
@@ -27,7 +28,6 @@ REM :::::::::::::::::::::::::::::::::::::::::
 
 :getPrivileges
   if '%1'=='ELEV' (echo ELEV & shift /1 & goto gotPrivileges)
-  ECHO.
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
