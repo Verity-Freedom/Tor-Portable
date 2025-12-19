@@ -1,5 +1,4 @@
-@echo off
-cd /d "%~dp0"
+@echo off & cd /d "%~dp0"
 chcp 1251
 REM :::::::::::::::::::::::::::::::::::::::::
 REM Elevate.cmd - Version 10
