@@ -38,11 +38,9 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO For Each strArg in WScript.Arguments >> "%vbsGetPrivileges%"
   ECHO args = args ^& strArg ^& " "  >> "%vbsGetPrivileges%"
   ECHO Next >> "%vbsGetPrivileges%"
-
   ECHO args = "/c """ + "!batchPath!" + """ " + args >> "%vbsGetPrivileges%"
   ECHO UAC.ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
 
-:ExecElevation
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%" %*
  exit /B
 
@@ -102,3 +100,4 @@ if %errorLevel% EQU 0 (
 timeout /t 3 /nobreak
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
+
