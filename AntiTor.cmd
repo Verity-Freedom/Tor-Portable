@@ -85,7 +85,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit
- 
+
 :gotPrivileges
 REM :::::::::::::::::::::::::
 REM START
