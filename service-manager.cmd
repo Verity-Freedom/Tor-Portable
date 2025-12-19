@@ -30,7 +30,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
 
-  ECHO args = "ELEV " >> "%vbsGetPrivileges%"
+  ECHO args = "ELEV " > "%vbsGetPrivileges%"
   ECHO For Each strArg in WScript.Arguments >> "%vbsGetPrivileges%"
   ECHO args = args ^& strArg ^& " "  >> "%vbsGetPrivileges%"
   ECHO Next >> "%vbsGetPrivileges%"
