@@ -37,12 +37,12 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO Next >> "%vbsGetPrivileges%"
   ECHO args = "/c """ + "!batchPath!" + """ " + args >> "%vbsGetPrivileges%"
   ECHO UAC.ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
+  ECHO CreateObject("Scripting.FileSystemObject").DeleteFile WScript.ScriptFullName >> "%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit /B
 
 :gotPrivileges
- del "%vbsGetPrivileges%" 1>nul 2>nul
  endlocal & cd /d "%~dp0"
 
  REM :::::::::::::::::::::::::
