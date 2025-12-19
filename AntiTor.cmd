@@ -52,9 +52,9 @@ if %os_ver% GEQ 06.2 GOTO Execution
 :Win86
 if exist "C:\Windows\System32\acryptprimitives.dll" GOTO Execution
 REM :::::::::::::::::::::::::::::::::::::::::
-REM Elevate.cmd - Version 10
+REM Elevate.cmd - Version 10 custom
 REM Automatically check & get admin rights
-REM see "https://stackoverflow.com/a/12264592" for description
+REM see "https://stackoverflow.com/a/79585058" for description
 REM :::::::::::::::::::::::::::::::::::::::::
  
  ECHO.
@@ -67,34 +67,26 @@ REM :::::::::::::::::::::::::::::::::::::::::
  rem this works also from cmd shell, other than %~0
  for %%k in (%0) do set batchName=%%~nk
  set "vbsGetPrivileges=%temp%\OEgetPriv_%batchName%.vbs"
- setlocal EnableDelayedExpansion
 
 :checkPrivileges
   whoami /groups /nh | find "S-1-16-12288" > nul
   if not '%errorlevel%'=='0' goto getPrivileges
   net session 1>nul 2>NUL
   if '%errorlevel%'=='0' goto gotPrivileges
-  if '%1'=='ELEV' goto gotPrivileges
 
 :getPrivileges
+  setlocal EnableDelayedExpansion
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
-
-  ECHO args = "ELEV ">"%vbsGetPrivileges%"
-  ECHO For Each strArg in WScript.Arguments>>"%vbsGetPrivileges%"
-  ECHO args = args ^& strArg ^& " ">>"%vbsGetPrivileges%"
-  ECHO Next>>"%vbsGetPrivileges%"
-  ECHO args = "/c """ + "!batchPath!" + """ " + args>>"%vbsGetPrivileges%"
-  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >>"%vbsGetPrivileges%"
+ 
+  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""""!batchPath!""""", "", "runas", 1 >"%vbsGetPrivileges%"
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
- exit /B
-
+ exit
+ 
 :gotPrivileges
- endlocal
-
 REM :::::::::::::::::::::::::
 REM START
 REM :::::::::::::::::::::::::
