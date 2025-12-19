@@ -40,7 +40,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO args = "/c """ + "!batchPath!" + """ " + args >> "%vbsGetPrivileges%"
   ECHO UAC.ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >> "%vbsGetPrivileges%"
 
- "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%" %*
+ "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit /B
 
 :gotPrivileges
