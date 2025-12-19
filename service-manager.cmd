@@ -24,12 +24,11 @@ REM :::::::::::::::::::::::::::::::::::::::::
   if '%errorlevel%'=='0' goto gotPrivileges
 
 :getPrivileges
-  setlocal EnableDelayedExpansion
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
  
-  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""!batchPath!""", "", "runas", 1 >"%vbsGetPrivileges%"
+  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%batchPath%""", "", "runas", 1 >"%vbsGetPrivileges%"
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
