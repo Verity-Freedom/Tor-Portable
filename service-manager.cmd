@@ -97,4 +97,3 @@ if %errorLevel% EQU 0 (
 timeout /t 3 /nobreak
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
-
