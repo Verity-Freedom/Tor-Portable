@@ -36,7 +36,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO args = args ^& strArg ^& " ">>"%vbsGetPrivileges%"
   ECHO Next>>"%vbsGetPrivileges%"
   ECHO args = "/c """ + "!batchPath!" + """ " + args>>"%vbsGetPrivileges%"
-  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1>>"%vbsGetPrivileges%"
+  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >>"%vbsGetPrivileges%"
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile WScript.ScriptFullName>>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
