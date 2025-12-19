@@ -88,7 +88,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO Next>>"%vbsGetPrivileges%"
   ECHO args = "/c """ + "!batchPath!" + """ " + args>>"%vbsGetPrivileges%"
   ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", args, "", "runas", 1 >>"%vbsGetPrivileges%"
-  ECHO CreateObject("Scripting.FileSystemObject").DeleteFile WScript.ScriptFullName>>"%vbsGetPrivileges%"
+  ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit /B
