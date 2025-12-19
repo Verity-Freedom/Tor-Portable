@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 chcp 1251
 REM :::::::::::::::::::::::::::::::::::::::::
 REM Elevate.cmd - Version 10
@@ -42,7 +43,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
  exit /B
 
 :gotPrivileges
- endlocal & cd /d "%~dp0"
+ endlocal
 
  REM :::::::::::::::::::::::::
  REM START
@@ -96,3 +97,4 @@ if %errorLevel% EQU 0 (
 timeout /t 3 /nobreak
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
+
