@@ -27,7 +27,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   if '%errorlevel%' == '0' ( goto gotPrivileges ) else ( goto getPrivileges )
 
 :getPrivileges
-  if '%1'=='ELEV' (echo ELEV & shift /1 & goto gotPrivileges)
+  if '%1'=='ELEV' (echo ELEV & goto gotPrivileges)
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
@@ -44,8 +44,8 @@ REM :::::::::::::::::::::::::::::::::::::::::
  exit /B
 
 :gotPrivileges
- setlocal & cd /d "%~dp0"
- if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
+ endlocal & cd /d "%~dp0"
+ if '%1'=='ELEV' del "%vbsGetPrivileges%" 1>nul 2>nul
 
  REM :::::::::::::::::::::::::
  REM START
