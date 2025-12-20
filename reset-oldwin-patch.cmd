@@ -30,7 +30,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
- exit
+ exit /B
 
 :gotPrivileges
 REM :::::::::::::::::::::::::
