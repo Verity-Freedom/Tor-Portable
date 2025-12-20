@@ -1,9 +1,9 @@
 @echo off & cd /d "%~dp0"
 chcp 1251 >nul
 REM :::::::::::::::::::::::::::::::::::::::::
-REM Elevate.cmd - Version 10 custom
+REM Elevate.cmd - Freedom edition
 REM Automatically check & get admin rights
-REM see "https://stackoverflow.com/a/79585058" for description
+REM See "https://stackoverflow.com/a/79585058" for description
 REM :::::::::::::::::::::::::::::::::::::::::
  
  ECHO.
