@@ -12,8 +12,6 @@ REM :::::::::::::::::::::::::::::::::::::::::
  ECHO =============================
  ECHO.
 
- set "batchPath=%~dpnx0"
- rem this works also from cmd shell, other than %~0
  for %%k in (%0) do set batchName=%%~nk
  set "vbsGetPrivileges=%temp%\OEgetPriv_%batchName%.vbs"
 
@@ -28,7 +26,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
  
-  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%batchPath%""", "", "runas", 1 >"%vbsGetPrivileges%"
+  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%~dpnx0""", "", "runas", 1 >"%vbsGetPrivileges%"
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
@@ -42,5 +40,6 @@ REM Run shell as admin - put your code below as you like
 del /F /Q "C:\Windows\System32\acryptprimitives.dll"
 if exist "C:\Windows\System32\acryptprimitives.dll" (2> nul set =) else (1> nul ver)
 if %errorLevel% EQU 0 echo The patch is not present anymore. You can try another Tor redaction if this one was not running, or try this one again.
+
 
 pause
