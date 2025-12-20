@@ -53,9 +53,9 @@ if %os_ver% GEQ 06.2 GOTO Execution
 :Win86
 if exist "C:\Windows\System32\acryptprimitives.dll" GOTO Execution
 REM :::::::::::::::::::::::::::::::::::::::::
-REM Elevate.cmd - Version 10 custom
+REM Elevate.cmd - Freedom edition
 REM Automatically check & get admin rights
-REM see "https://stackoverflow.com/a/79585058" for description
+REM See "https://stackoverflow.com/a/79585058" for description
 REM :::::::::::::::::::::::::::::::::::::::::
  
  ECHO.
