@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 cd "$(dirname "$0")"
-systemctl --user is-active --quiet tor.service
-if [ $? -eq 0 ]; then
-CHECK=0
-fi
 lsof -t ./tor/ld-linux-x86-64.so.2 | xargs kill
 systemctl --user disable tor.service --now
 rm ~/.config/systemd/user/tor.service
@@ -17,7 +13,4 @@ cp -r ~/data ./
 rm -r ~/data
 if grep -q "The mode is pro" ./data/torrc.txt; then
 cp ./change-mode/pro/torrc.txt torrc.txt
-fi
-if [[ $CHECK = 0 ]]; then
-./service-manager.sh
 fi
