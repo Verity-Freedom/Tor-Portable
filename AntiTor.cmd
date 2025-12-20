@@ -82,7 +82,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
- exit
+ exit /B
 
 :gotPrivileges
 REM :::::::::::::::::::::::::
@@ -99,3 +99,4 @@ timeout /t 3 /nobreak
 )
 cd tor
 start /min tor -f ../torrc.txt
+
