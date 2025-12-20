@@ -12,8 +12,6 @@ REM :::::::::::::::::::::::::::::::::::::::::
  ECHO =============================
  ECHO.
 
- set "batchPath=%~dpnx0"
- rem this works also from cmd shell, other than %~0
  for %%k in (%0) do set batchName=%%~nk
  set "vbsGetPrivileges=%temp%\OEgetPriv_%batchName%.vbs"
 
@@ -28,7 +26,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
  
-  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%batchPath%""", "", "runas", 1 >"%vbsGetPrivileges%"
+  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%~dpnx0""", "", "runas", 1 >"%vbsGetPrivileges%"
   ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
