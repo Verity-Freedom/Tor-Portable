@@ -5,6 +5,7 @@ sc query "Tor Win32 Service" >nul
 if %errorLevel% EQU 0 (
 set "VAR=0"
 call service-manager.cmd
+timeout /t 3 /nobreak
 )
 (
 echo @echo off
