@@ -5,21 +5,22 @@ sc query "Tor Win32 Service" >nul
 if %errorLevel% EQU 0 (
 set "VAR=0"
 call service-manager.cmd
-timeout /t 3 /nobreak
+echo Please wait...
+timeout /t 3 /nobreak >nul
 )
 (
 echo @echo off
-echo powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win7x64_current.zip', '%WAY%\AntiTor_win7x64_current.zip')"
+echo powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win8+_current.zip', '%WAY%\AntiTor_win8+_current.zip')"
 echo cscript "%temp%\extractor.vbs"
 echo exit
 )>"%temp%\updater.cmd"
 (
-cmd /u /c echo CreateObject("Shell.Application"^).NameSpace("%CD%"^).CopyHere(CreateObject("Shell.Application"^).NameSpace("%WAY%\AntiTor_win7x64_current.zip"^).items^)
+cmd /u /c echo CreateObject("Shell.Application"^).NameSpace("%CD%"^).CopyHere(CreateObject("Shell.Application"^).NameSpace("%WAY%\AntiTor_win8+_current.zip"^).items^)
 cmd /u /c echo CreateObject("WScript.Shell"^).Run "%temp%\cleaner.cmd"
 )>"%temp%\extractor.vbs"
 (
 echo @echo off
-echo del "%WAY%\AntiTor_win7x64_current.zip"
+echo del "%WAY%\AntiTor_win8+_current.zip"
 echo xcopy "%temp%\data" "%CD%\data" /i /e /y
 echo rmdir "%temp%\data" /s /q
 echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
