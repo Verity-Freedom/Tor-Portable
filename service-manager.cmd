@@ -46,14 +46,14 @@ if !errorlevel! EQU 2 GOTO Skip
 sc query "Tor Win32 Service" >nul
 if !errorlevel! EQU 0 set "CHECK=0" & GOTO Service
 :Loop
-echo @echo off>"%temp%\autoupdater.cmd"
-echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
-echo cls>>"%temp%\autoupdater.cmd"
-echo :Wait>>"%temp%\autoupdater.cmd"
-echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
-echo timeout /t 1 /nobreak>>"%temp%\autoupdater.cmd"
-echo if "%CHECK%" NEQ "1" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
-echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
+powershell -Command " '@echo off' | Out-File "%temp%\autoupdater.cmd" -encoding oem
+powershell -Command " 'call "%CD%\updater.cmd"' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
+powershell -Command " 'cls' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
+powershell -Command " ':Wait' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
+powershell -Command " 'if not exist "%CD%\torrc.txt" GOTO Wait' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
+powershell -Command " 'timeout /t 1 /nobreak' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
+powershell -Command " 'call "%CD%\%~nx0"' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
+powershell -Command " 'del "%temp%\autoupdater.cmd" & exit' | Out-File "%temp%\autoupdater.cmd" -append -encoding oem
 start "" "%temp%\autoupdater.cmd"
 exit
 )
