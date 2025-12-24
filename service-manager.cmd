@@ -1,5 +1,4 @@
 @echo off & cd /d "%~dp0"
-chcp 1251 >nul
 REM :::::::::::::::::::::::::::::::::::::::::
 REM Elevate.cmd - Freedom edition
 REM Automatically check & get admin rights
@@ -26,8 +25,8 @@ REM :::::::::::::::::::::::::::::::::::::::::
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
  
-  ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%~dpnx0""", "", "runas", 1 >"%vbsGetPrivileges%"
-  ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
+  cmd /u /c ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%~dpnx0""", "", "runas", 1 >"%vbsGetPrivileges%"
+  cmd /u /c ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit /B
