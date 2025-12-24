@@ -83,6 +83,9 @@ if %errorLevel% EQU 0 (
     sc start "Tor Win32 Service"
 )
 
-If not "%CHECK%"=="0" timeout /t 3 /nobreak
+Echo.
+Echo Please wait...
+Echo.
+timeout /t 3 /nobreak >nul
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
