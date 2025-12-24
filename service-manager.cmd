@@ -36,31 +36,32 @@ REM :::::::::::::::::::::::::
 REM START
 REM :::::::::::::::::::::::::
 REM Run shell as admin - put your code below as you like
+sc query "Tor Win32 Service" >nul
+if %errorlevel% EQU 0 set "CHECK=0" & GOTO Service
+:Loop
 setlocal EnableDelayedExpansion
 for %%I in (VERSION*) do set "UPD=%%~nxI"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
 if %errorlevel% NEQ 0 (
 choice /m "The local version does not match the latest version. It means that update is available, but in edge cases marks accessibility issues. Do you want to update"
 if !errorlevel! EQU 2 GOTO Skip
-sc query "Tor Win32 Service" >nul
-if !errorlevel! EQU 0 set "CHECK=0" & GOTO Service
-:Loop
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
 echo :Wait>>"%temp%\autoupdater.cmd"
 echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
 echo timeout /t 1 /nobreak>>"%temp%\autoupdater.cmd"
-echo call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
+echo if "%CHECK%" NEQ "1" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
 echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
 )
 del "%temp%\%UPD%"
 :Skip
+If "%CHECK%"=="1" exit
+:Service
 if not exist "C:\Windows\System32\acryptprimitives.dll" copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
-:Service
 sc query "Tor Win32 Service" >nul
 
 if %errorLevel% EQU 0 (
@@ -82,6 +83,6 @@ if %errorLevel% EQU 0 (
     sc start "Tor Win32 Service"
 )
 
-timeout /t 3 /nobreak
+If not "%CHECK%"=="0" timeout /t 3 /nobreak
 
 If "%CHECK%"=="0" set "CHECK=1" & GOTO Loop
