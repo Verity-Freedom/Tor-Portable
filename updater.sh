@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 cd "$(dirname "$0")"
+ping -c 1 ipfs.io
+if [ $? -ne 0 ]; then
+read -p "I need ipfs.io connectivity to update. Please check your Internet connection."
+exit
+fi
 lsof -t ./tor/ld-linux-x86-64.so.2 | xargs kill
 systemctl --user disable tor.service --now
 rm ~/.config/systemd/user/tor.service
