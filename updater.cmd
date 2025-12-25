@@ -31,8 +31,9 @@ echo if not exist "%CD%\torrc.txt" (
 echo xcopy "%temp%\backup" "%CD%" /i /e /y
 echo rmdir "%temp%\backup" /s /q
 echo echo Update failed. Please retry.
+echo del "%temp%\cleaner.cmd"
 echo pause
-echo del "%temp%\cleaner.cmd" ^& exit
+echo exit
 echo ^)
 echo rmdir "%temp%\backup" /s /q
 echo if "%VAR%"=="0" call "%CD%\service-manager.cmd"
