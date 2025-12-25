@@ -26,10 +26,18 @@ echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
 echo if %%errorLevel%% EQU 0 copy "%CD%\change-mode\pro\torrc.txt" "%CD%\torrc.txt"
 echo del "%temp%\updater.cmd"
 echo del "%temp%\extractor.vbs"
+echo if not exist "%CD%\torrc.txt" (
+echo xcopy "%temp%\backup" "%CD%" /i /e /y
+echo rmdir "%temp%\backup" /s /q
+echo echo Update failed. Please retry.
+echo pause
+echo ^)
+echo rmdir "%temp%\backup" /s /q
 echo if "%VAR%"=="0" call "%CD%\service-manager.cmd"
 echo del "%temp%\cleaner.cmd"
 )>"%temp%\cleaner.cmd"
 copy "%CD%\torrc.txt" "%CD%\data\torrc.txt"
 xcopy "%CD%\data" "%temp%\data" /i /e /y
+xcopy "%CD%" "%temp%\backup" /i /e /y
 start "" "%temp%\updater.cmd"
 rmdir "%CD%" /s /q
