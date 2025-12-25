@@ -10,6 +10,7 @@ timeout /t 3 /nobreak >nul
 (
 echo @echo off
 echo powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win8+_current.zip', '%WAY%\AntiTor_win8+_current.zip')"
+echo if %%errorlevel%% NEQ 0 call "%temp%\cleaner.cmd"
 echo cscript "%temp%\extractor.vbs"
 echo exit
 )>"%temp%\updater.cmd"
@@ -31,6 +32,7 @@ echo xcopy "%temp%\backup" "%CD%" /i /e /y
 echo rmdir "%temp%\backup" /s /q
 echo echo Update failed. Please retry.
 echo pause
+echo del "%temp%\cleaner.cmd" ^& exit
 echo ^)
 echo rmdir "%temp%\backup" /s /q
 echo if "%VAR%"=="0" call "%CD%\service-manager.cmd"
