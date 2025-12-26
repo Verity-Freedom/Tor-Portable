@@ -58,7 +58,7 @@ Tor Portable is hosted on the IPNS "eternal cloud", which is extremely convenien
 
 [Download the release from here](https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/).
 
-Select the Tor you need and unpack it. Avoid special characters in the paths to your folder. Running AntiTor will open Tor for current session, while running service-manager will create a service. To remove the service, run service-manager again. AntiTor and service-manager are the only two files that will run Tor correctly. Tor will start with all the necessary universal connection settings. Opening tor.exe in the tor folder will launch pure, bridgeless core Tor. It can take a significant amount of time to find its directory, but if successful, it might even work quite well.
+Select the Tor you need and unpack it. Avoid special characters in the paths to your folder. AntiDetect does not have an exe file without a digital signature. Other options for Windows can provoke a false antivirus reaction, but have an exe. Running AntiTor will open Tor for current session, while running service-manager will create a service. To remove the service, run service-manager again. AntiTor and service-manager are the only two files that will run Tor correctly. Tor will start with all the necessary universal connection settings. Opening tor.exe in the tor folder will launch pure, bridgeless core Tor. It can take a significant amount of time to find its directory, but if successful, it might even work quite well.
 
 If you are running win 7 version, do not mix up the bitness. If you mixed up the bitness, open the reset-oldwin-patch file and download the version with a different bitness.
 
