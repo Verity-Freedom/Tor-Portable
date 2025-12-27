@@ -87,4 +87,4 @@ Echo Please don't close this window, I will finish the work and check version...
 Echo.
 timeout /t 3 /nobreak
 
-if "%UPDATE%" EQU "0" set "UPDATE=1" & goto Loop
+if "%UPDATE%" EQU "0" set "UPDATE=" & goto Loop
