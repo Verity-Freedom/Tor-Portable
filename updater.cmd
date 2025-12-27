@@ -9,7 +9,6 @@ if "%CD:~-1%" == "\" (set "WAY=%CD:~0,-1%") else set "WAY=%CD%"
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
 if %errorLevel% EQU 0 (
-set "VAR=0"
 call service-manager.cmd
 timeout /t 3 /nobreak >nul
 )
@@ -32,7 +31,6 @@ echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
 echo if %%errorLevel%% EQU 0 copy "%CD%\change-mode\pro\torrc.txt" "%CD%\torrc.txt"
 echo del "%temp%\updater.cmd"
 echo del "%temp%\extractor.vbs"
-echo if "%VAR%"=="0" call "%CD%\service-manager.cmd"
 echo del "%temp%\cleaner.cmd"
 )>"%temp%\cleaner.cmd"
 copy "%CD%\torrc.txt" "%CD%\data\torrc.txt"
