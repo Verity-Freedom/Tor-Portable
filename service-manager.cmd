@@ -40,9 +40,12 @@ setlocal EnableDelayedExpansion
 for %%I in (VERSION*) do set "UPD=%%~nxI"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
 if %errorlevel% NEQ 0 (
-choice /c abc /n /m "The local version does not match the latest version. Do you want to update and preserve service (A), update and remove service (B), or skip update (C)?"
+sc query "Tor Win32 Service" >nul
+if !errorlevel! EQU 0 set "UPDATE=0" & goto Service
+:Loop
+choice /c abc /n /m "The local version does not match the latest version. Do you want to update and start service (A), update without starting service (B), or skip update (C)?"
 if !errorlevel! EQU 1 set "CHECK=0"
-if !errorlevel! EQU 3 GOTO Skip
+if !errorlevel! EQU 3 GOTO Service
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
@@ -55,12 +58,12 @@ start "" "%temp%\autoupdater.cmd"
 exit
 )
 del "%temp%\%UPD%"
-:Skip
+:Service
 if not exist "C:\Windows\System32\acryptprimitives.dll" copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
 
-if %errorLevel% EQU 0 (
+if %errorlevel% EQU 0 (
    sc stop "Tor Win32 Service"
    sc delete "Tor Win32 Service"
    powershell -Command "(gc '%CD%\torrc.txt') "^
@@ -79,4 +82,9 @@ if %errorLevel% EQU 0 (
     sc start "Tor Win32 Service"
 )
 
+Echo.
+Echo Please don't close this window, I will finish the work and check version...
+Echo.
 timeout /t 3 /nobreak
+
+if "%UPDATE%" EQU "0" set "UPDATE=1" & goto Loop
