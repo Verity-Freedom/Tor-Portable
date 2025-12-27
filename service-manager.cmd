@@ -41,10 +41,10 @@ for %%I in (VERSION*) do set "UPD=%%~nxI"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
 if %errorlevel% NEQ 0 (
 sc query "Tor Win32 Service" >nul
-if !errorlevel! EQU 0 set "UPDATE=0" & goto Service
+if !errorlevel! EQU 0 set "CHECK=0" & goto Service
 :Loop
 choice /c abc /n /m "The local version does not match the latest version. Do you want to update and start service (A), update without starting service (B), or skip update (C)?"
-if !errorlevel! EQU 1 set "CHECK=0"
+if !errorlevel! EQU 1 set "UPDATE=0"
 if !errorlevel! EQU 3 GOTO Service
 echo @echo off>"%temp%\autoupdater.cmd"
 echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
@@ -52,14 +52,14 @@ echo cls>>"%temp%\autoupdater.cmd"
 echo :Wait>>"%temp%\autoupdater.cmd"
 echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
 echo timeout /t 1 /nobreak>>"%temp%\autoupdater.cmd"
-echo if "%CHECK%" EQU "0" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
+echo if "%UPDATE%" EQU "0" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
 echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
 )
 del "%temp%\%UPD%"
 :Service
-if "%UPDATE%" EQU "1" exit
+if "%CHECK%" EQU "1" exit
 if not exist "C:\Windows\System32\acryptprimitives.dll" copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
@@ -88,4 +88,4 @@ Echo Please don't close this window, I will finish the work and check version...
 timeout /t 3 /nobreak
 Echo.
 
-if "%UPDATE%" EQU "0" set "UPDATE=1" & goto Loop
+if "%CHECK%" EQU "0" set "CHECK=1" & goto Loop
