@@ -19,15 +19,6 @@ exit
 del "%temp%\%UPD%"
 :Skip
 REM see "https://stackoverflow.com/a/75970274" for description
-set TESTstring="Microsoft Windows [Version 39.0.99999]"
-REM set TESTstring="Microsoft Windows [Version 10.0.22621]"
-REM set TESTstring="Microsoft Windows [Version 10.0.22000]"
-REM set TESTstring="Microsoft Windows [Version 10.0.10240]"
-REM set TESTstring="Microsoft Windows [Version 6.3.9600]"
-REM set TESTstring="Microsoft Windows [Version 6.1.7601]"
-REM set TESTstring="Microsoft Windows XP [Version 5.1.2600]"
-REM set TESTstring="Microsoft Windows [Version 4.10]"
-
 Set osName=Unknown Windows
 for /f "tokens=3-7 delims=[.] " %%i in ('ver') do @(if %%i==XP (set os_ver_org=%%k.%%l) else (if %%j geq 10 (set os_ver_org=%%j.%%k.%%l) else (set os_ver_org=%%j.%%k)))
 set os_ver=%os_ver_org%
