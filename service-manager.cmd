@@ -41,7 +41,7 @@ for %%I in (VERSION*) do set "UPD=%%~nxI"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/%UPD%', '%temp%\%UPD%')" >nul
 if %errorlevel% NEQ 0 (
 sc query "Tor Win32 Service" >nul
-if !errorlevel! EQU 0 set "UPDATE=0" & goto Service
+if !errorlevel! EQU 0 set "UPDATE=0" & goto Skip
 :Loop
 choice /c abc /n /m "The local version does not match the latest version. Do you want to update and start service (A), update without starting service (B), or skip update (C)?"
 if !errorlevel! EQU 1 set "CHECK=0"
@@ -59,6 +59,7 @@ exit
 )
 del "%temp%\%UPD%"
 :Service
+if "%UPDATE%" EQU "1" exit
 if not exist "C:\Windows\System32\acryptprimitives.dll" copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
@@ -87,4 +88,4 @@ Echo Please don't close this window, I will finish the work and check version...
 timeout /t 3 /nobreak
 Echo.
 
-if "%UPDATE%" EQU "0" set "UPDATE=" & goto Loop
+if "%UPDATE%" EQU "0" set "UPDATE=1" & goto Loop
