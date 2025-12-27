@@ -52,7 +52,7 @@ echo cls>>"%temp%\autoupdater.cmd"
 echo :Wait>>"%temp%\autoupdater.cmd"
 echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
 echo timeout /t 1 /nobreak>>"%temp%\autoupdater.cmd"
-echo if "%UPDATE%" EQU "0" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
+echo if "!UPDATE!" EQU "0" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
 echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
 start "" "%temp%\autoupdater.cmd"
 exit
