@@ -84,7 +84,7 @@ if %errorlevel% EQU 0 (
 
 Echo.
 Echo Please don't close this window, I will finish the work and check version...
-Echo.
 timeout /t 3 /nobreak
+Echo.
 
 if "%UPDATE%" EQU "0" set "UPDATE=" & goto Loop
