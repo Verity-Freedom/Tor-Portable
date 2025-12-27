@@ -59,7 +59,7 @@ exit
 )
 del "%temp%\%UPD%"
 :Service
-if "%CHECK%" EQU "1" exit
+if "%CHECK%" EQU "1" && "!UPDATE!" NEQ "0" exit
 if not exist "C:\Windows\System32\acryptprimitives.dll" copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dll" >nul 2>&1
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
