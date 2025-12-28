@@ -2,7 +2,7 @@
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
 if %errorlevel% EQU 0 (
-cmd /c service-manager.cmd
+call service-manager.cmd
 timeout /t 3 /nobreak
 )
 findstr /c:"The mode is default" torrc.txt
