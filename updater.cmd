@@ -8,7 +8,7 @@ exit
 if "%CD:~-1%" == "\" (set "WAY=%CD:~0,-1%") else set "WAY=%CD%"
 taskkill /im tor.exe >nul 2>&1
 sc query "Tor Win32 Service" >nul
-if %errorLevel% EQU 0 (
+if %errorlevel% EQU 0 (
 cmd /c service-manager.cmd
 timeout /t 3 /nobreak >nul
 )
