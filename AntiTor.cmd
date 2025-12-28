@@ -6,14 +6,14 @@ if %errorlevel% NEQ 0 (
 choice /m "The local version does not match the latest version. It means that update is available, but in edge cases marks accessibility issues. Do you want to update"
 if !errorlevel! EQU 2 GOTO Skip
 echo @echo off>"%temp%\autoupdater.cmd"
-echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
+echo cmd /c "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
 echo :Wait>>"%temp%\autoupdater.cmd"
 echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
 echo timeout /t 1 /nobreak>>"%temp%\autoupdater.cmd"
-echo call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
-echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
-start "" "%temp%\autoupdater.cmd"
+echo cmd /c "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
+echo del "%temp%\autoupdater.cmd">>"%temp%\autoupdater.cmd"
+cmd /c "%temp%\autoupdater.cmd"
 exit
 )
 del "%temp%\%UPD%"
@@ -84,7 +84,7 @@ copy "%CD%\oldwin\acryptprimitives.dll" "C:\Windows\System32\acryptprimitives.dl
 :Execution
 sc query "Tor Win32 Service" >nul
 if %errorLevel% EQU 0 (
-call service-manager.cmd
+cmd /c service-manager.cmd
 timeout /t 3 /nobreak
 )
 cd tor
