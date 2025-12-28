@@ -47,14 +47,14 @@ choice /c abc /n /m "The local version does not match the latest version. Do you
 if !errorlevel! EQU 1 set "UPDATE=0"
 if !errorlevel! EQU 3 GOTO Service
 echo @echo off>"%temp%\autoupdater.cmd"
-echo cmd /c "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
+echo call "%CD%\updater.cmd">>"%temp%\autoupdater.cmd"
 echo cls>>"%temp%\autoupdater.cmd"
 echo :Wait>>"%temp%\autoupdater.cmd"
 echo if not exist "%CD%\torrc.txt" GOTO Wait>>"%temp%\autoupdater.cmd"
 echo timeout /t 1 /nobreak>>"%temp%\autoupdater.cmd"
-echo if "!UPDATE!" EQU "0" cmd /c "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
-echo del "%temp%\autoupdater.cmd">>"%temp%\autoupdater.cmd"
-cmd /c "%temp%\autoupdater.cmd"
+echo if "!UPDATE!" EQU "0" call "%CD%\%~nx0">>"%temp%\autoupdater.cmd"
+echo del "%temp%\autoupdater.cmd" ^& exit>>"%temp%\autoupdater.cmd"
+start "" "%temp%\autoupdater.cmd"
 exit
 )
 del "%temp%\%UPD%"
