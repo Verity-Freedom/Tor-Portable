@@ -38,5 +38,5 @@ REM :::::::::::::::::::::::::
 REM Run shell as admin - put your code below as you like
 del /F /Q "C:\Windows\System32\acryptprimitives.dll"
 if exist "C:\Windows\System32\acryptprimitives.dll" (2> nul set =) else (1> nul ver)
-if %errorLevel% EQU 0 echo The patch is not present anymore. You can try another Tor redaction if this one was not running, or try this one again.
+if %errorlevel% EQU 0 echo The patch is not present anymore. You can try another Tor redaction if this one was not running, or try this one again.
 pause
