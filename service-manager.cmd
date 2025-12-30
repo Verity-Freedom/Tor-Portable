@@ -17,7 +17,7 @@ REM :::::::::::::::::::::::::::::::::::::::::
 :checkPrivileges
   %SystemRoot%\System32\whoami.exe /groups /nh | %SystemRoot%\System32\find.exe "S-1-16-12288" 1>nul
   if errorlevel 1 goto getPrivileges
-  %SystemRoot%\System32\net.exe session 1>nul 2>NUL
+  %SystemRoot%\System32\net.exe session >nul 2>&1
   if not errorlevel 1 goto gotPrivileges
 
 :getPrivileges
@@ -83,9 +83,9 @@ if %errorlevel% EQU 0 (
     sc start "Tor Win32 Service"
 )
 
-Echo.
+Echo/
 Echo Please don't close this window, I will finish the work and check version...
 timeout /t 3 /nobreak
-Echo.
+Echo/
 
 if "%CHECK%" EQU "0" set "CHECK=1" & goto Loop
