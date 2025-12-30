@@ -89,4 +89,3 @@ timeout /t 3 /nobreak
 Echo.
 
 if "%CHECK%" EQU "0" set "CHECK=1" & goto Loop
-
