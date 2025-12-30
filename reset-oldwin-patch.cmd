@@ -15,9 +15,9 @@ REM :::::::::::::::::::::::::::::::::::::::::
  set "vbsGetPrivileges=%temp%\OEgetPriv_%batchName%.vbs"
 
 :checkPrivileges
-  %SystemRoot%\System32\whoami.exe /groups /nh | %SystemRoot%\System32\find.exe "S-1-16-12288" 1>nul
+  %SystemRoot%\System32\whoami.exe /groups /nh | %SystemRoot%\System32\find.exe "S-1-16-12288" >nul
   if errorlevel 1 goto getPrivileges
-  %SystemRoot%\System32\net.exe session 1>nul 2>NUL
+  %SystemRoot%\System32\net.exe session >nul 2>&1
   if not errorlevel 1 goto gotPrivileges
 
 :getPrivileges
