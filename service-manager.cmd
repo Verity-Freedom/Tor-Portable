@@ -5,28 +5,28 @@ REM Automatically check & get admin rights
 REM See "https://stackoverflow.com/a/79585058" for description
 REM :::::::::::::::::::::::::::::::::::::::::
  
- ECHO.
+ ECHO/
  ECHO =============================
  ECHO Running Admin shell
  ECHO =============================
- ECHO.
+ ECHO/
 
  for %%k in (%0) do set batchName=%%~nk
  set "vbsGetPrivileges=%temp%\OEgetPriv_%batchName%.vbs"
 
 :checkPrivileges
-  whoami /groups /nh | find "S-1-16-12288" > nul
-  if not '%errorlevel%'=='0' goto getPrivileges
-  net session 1>nul 2>NUL
-  if '%errorlevel%'=='0' goto gotPrivileges
+  %SystemRoot%\System32\whoami.exe /groups /nh | %SystemRoot%\System32\find.exe "S-1-16-12288" 1>nul
+  if errorlevel 1 goto getPrivileges
+  %SystemRoot%\System32\net.exe session 1>nul 2>NUL
+  if not errorlevel 1 goto gotPrivileges
 
 :getPrivileges
   ECHO **************************************
   ECHO Invoking UAC for Privilege Escalation
   ECHO **************************************
  
-  cmd /u /c ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%~dpnx0""", "", "runas", 1 >"%vbsGetPrivileges%"
-  cmd /u /c ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
+  %SystemRoot%\System32\cmd.exe /u /c ECHO CreateObject("Shell.Application").ShellExecute "%SystemRoot%\System32\cmd.exe", "/c""%~f0""", "", "runas", 1 >"%vbsGetPrivileges%"
+  %SystemRoot%\System32\cmd.exe /u /c ECHO CreateObject("Scripting.FileSystemObject").DeleteFile "%vbsGetPrivileges%">>"%vbsGetPrivileges%"
 
  "%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%"
  exit /B
@@ -89,3 +89,4 @@ timeout /t 3 /nobreak
 Echo.
 
 if "%CHECK%" EQU "0" set "CHECK=1" & goto Loop
+
