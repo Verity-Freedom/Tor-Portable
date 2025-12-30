@@ -46,7 +46,7 @@
 [Техническая помощь](https://github.com/Verity-Freedom/Tor-Portable/commits?author=NoPlagiarism) от NoPlagiarism, также помог проименовать Тор мосты (приватный замороженный проект) и тестировать Webtunnel.  
 Тесты Win 7 и битности ([1](https://github.com/Verity-Freedom/Tor-Portable/issues/8#issuecomment-2906773975), [2](https://github.com/Verity-Freedom/Tor-Portable/issues/21#issuecomment-2907699471)) от qwers99.  
 Тесты и техническая помощь в [портативном](https://github.com/NixOS/nixpkgs/issues/425977) [развёртывании](https://github.com/NixOS/nixpkgs/issues/427078) на Linux от imsweetdogs и 7c6f434c соответственно.  
-Система элевации от [Matt](https://stackoverflow.com/a/12264592) и [Verity Freedom](https://stackoverflow.com/a/79585058), [чекер версии Windows](https://stackoverflow.com/a/75970274) от captain_majid.
+Система элевации от [Matt](https://stackoverflow.com/a/12264592), [Verity Freedom](https://stackoverflow.com/a/79585058) и [Mofi](https://stackoverflow.com/questions/7044985/how-can-i-auto-elevate-my-batch-file-so-that-it-requests-from-uac-administrator/12264592#comment140920768_12264592) (профессиональное рецензирование и редактура), [чекер версии Windows](https://stackoverflow.com/a/75970274) от captain_majid.
 
 ## Инструкция
 
