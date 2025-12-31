@@ -16,7 +16,6 @@ timeout /t 3 /nobreak >nul
 echo @echo off
 echo powershell -Command "(New-Object Net.WebClient).DownloadFile('https://ipfs.io/ipns/k51qzi5uqu5dldod6robuflgitvj276br0xye3adipm3kc0bh17hfiv1e0hnp4/AntiTor_win8+_current.zip', '%WAY%\AntiTor_win8+_current.zip')"
 echo cscript "%temp%\extractor.vbs"
-echo exit
 )>"%temp%\updater.cmd"
 (
 cmd /u /c echo CreateObject("Shell.Application"^).NameSpace("%CD%"^).CopyHere(CreateObject("Shell.Application"^).NameSpace("%WAY%\AntiTor_win8+_current.zip"^).items^)
@@ -35,5 +34,5 @@ echo del "%temp%\cleaner.cmd"
 )>"%temp%\cleaner.cmd"
 copy "%CD%\torrc.txt" "%CD%\data\torrc.txt"
 xcopy "%CD%\data" "%temp%\data" /i /e /y
-start "" "%temp%\updater.cmd"
+start "" cmd /c "%temp%\updater.cmd"
 rmdir "%CD%" /s /q
