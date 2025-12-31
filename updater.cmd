@@ -26,15 +26,6 @@ echo @echo off
 echo del "%WAY%\AntiTor_win8+_current.zip"
 echo xcopy "%temp%\data" "%CD%\data" /i /e /y
 echo rmdir "%temp%\data" /s /q
-echo if not exist "%CD%\torrc.txt" (
-echo xcopy "%temp%\backup" "%CD%" /i /y
-echo rmdir "%temp%\backup" /s /q
-echo echo Update failed. Please retry.
-echo del "%temp%\cleaner.cmd"
-echo pause
-echo exit
-echo ^)
-echo rmdir "%temp%\backup" /s /q
 echo findstr /c:"The mode is pro" "%CD%\data\torrc.txt"
 echo if %%errorLevel%% EQU 0 copy "%CD%\change-mode\pro\torrc.txt" "%CD%\torrc.txt"
 echo del "%temp%\updater.cmd"
@@ -43,6 +34,5 @@ echo del "%temp%\cleaner.cmd"
 )>"%temp%\cleaner.cmd"
 copy "%CD%\torrc.txt" "%CD%\data\torrc.txt"
 xcopy "%CD%\data" "%temp%\data" /i /e /y
-xcopy "%CD%\updater.cmd" "%temp%\backup\" /y
 start "" cmd /c "%temp%\updater.cmd"
 rmdir "%CD%" /s /q
