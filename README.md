@@ -15,7 +15,15 @@ The fine-tuned Tor core for any browser configurations. EN, CN and RU configs. 2
 
 Support me: 0xAE1B6c125383D1a5B83a2C906C22215e32E7184B USDT BEP20.
 
-**Please leave a star.**
+**Please leave a star:**
+
+<a href="https://star-history.dera.page/#Chara-Freedom/Tor-Portable">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=Chara-Freedom/Tor-Portable&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=Chara-Freedom/Tor-Portable" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=Chara-Freedom/Tor-Portable" />
+ </picture>
+</a>
 
 Developed with community support (especially thanks to [bananakid](https://github.com/anticensority/runet-censorship-bypass/issues/224#issuecomment-2025676123) and [DesuIsALie](https://github.com/Chara-Freedom/Tor-Portable/issues/2#issuecomment-2362230547)).  
 Concept, configurations, Win 7 patch, Linux portable deployment, [update system](https://github.com/Chara-Freedom/GRU-current), services, guide, exe code by Chara Freedom.  
